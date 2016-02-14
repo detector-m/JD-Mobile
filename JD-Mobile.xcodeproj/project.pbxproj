@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		D556117A1C68946200890AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D55611791C68946200890AC3 /* main.m */; };
-		D556117D1C68946200890AC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D556117C1C68946200890AC3 /* AppDelegate.m */; };
-		D55611801C68946200890AC3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D556117F1C68946200890AC3 /* ViewController.m */; };
-		D55611831C68946200890AC3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D55611811C68946200890AC3 /* Main.storyboard */; };
 		D55611851C68946200890AC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55611841C68946200890AC3 /* Images.xcassets */; };
 		D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55611861C68946200890AC3 /* LaunchScreen.xib */; };
 		D55611941C68946200890AC3 /* JD_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55611931C68946200890AC3 /* JD_MobileTests.m */; };
+		D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D556119F1C68AD7100890AC3 /* AppDelegate.m */; };
+		D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B471C7098BB0005B338 /* DZTabBarController.m */; };
+		D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B4A1C709B5A0005B338 /* DZNavigationController.m */; };
+		D5976B4E1C709C690005B338 /* DZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B4D1C709C690005B338 /* DZHomeViewController.m */; };
+		D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B501C709CDC0005B338 /* DZClassifyViewController.m */; };
+		D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B531C709D2F0005B338 /* DZDiscoveryViewController.m */; };
+		D5976B571C709DA70005B338 /* DZCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B561C709DA70005B338 /* DZCartViewController.m */; };
+		D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B591C709DE90005B338 /* DZMineViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,16 +35,28 @@
 		D55611741C68946200890AC3 /* JD-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JD-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55611781C68946200890AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55611791C68946200890AC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D556117B1C68946200890AC3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D556117C1C68946200890AC3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D556117E1C68946200890AC3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D556117F1C68946200890AC3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D55611821C68946200890AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D55611841C68946200890AC3 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D55611871C68946200890AC3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		D556118D1C68946200890AC3 /* JD-MobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JD-MobileTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55611921C68946200890AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55611931C68946200890AC3 /* JD_MobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JD_MobileTests.m; sourceTree = "<group>"; };
+		D556119E1C68AD7100890AC3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		D556119F1C68AD7100890AC3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D5976B461C7098BB0005B338 /* DZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTabBarController.h; sourceTree = "<group>"; };
+		D5976B471C7098BB0005B338 /* DZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTabBarController.m; sourceTree = "<group>"; };
+		D5976B491C709B5A0005B338 /* DZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNavigationController.h; sourceTree = "<group>"; };
+		D5976B4A1C709B5A0005B338 /* DZNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZNavigationController.m; sourceTree = "<group>"; };
+		D5976B4C1C709C690005B338 /* DZHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZHomeViewController.h; sourceTree = "<group>"; };
+		D5976B4D1C709C690005B338 /* DZHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZHomeViewController.m; sourceTree = "<group>"; };
+		D5976B4F1C709CDC0005B338 /* DZClassifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZClassifyViewController.h; sourceTree = "<group>"; };
+		D5976B501C709CDC0005B338 /* DZClassifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZClassifyViewController.m; sourceTree = "<group>"; };
+		D5976B521C709D2F0005B338 /* DZDiscoveryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDiscoveryViewController.h; sourceTree = "<group>"; };
+		D5976B531C709D2F0005B338 /* DZDiscoveryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDiscoveryViewController.m; sourceTree = "<group>"; };
+		D5976B551C709DA70005B338 /* DZCartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCartViewController.h; sourceTree = "<group>"; };
+		D5976B561C709DA70005B338 /* DZCartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCartViewController.m; sourceTree = "<group>"; };
+		D5976B581C709DE90005B338 /* DZMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMineViewController.h; sourceTree = "<group>"; };
+		D5976B591C709DE90005B338 /* DZMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMineViewController.m; sourceTree = "<group>"; };
+		D5976B5B1C70A1010005B338 /* JD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JD-Prefix.pch"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,13 +98,19 @@
 		D55611761C68946200890AC3 /* JD-Mobile */ = {
 			isa = PBXGroup;
 			children = (
-				D556117B1C68946200890AC3 /* AppDelegate.h */,
-				D556117C1C68946200890AC3 /* AppDelegate.m */,
-				D556117E1C68946200890AC3 /* ViewController.h */,
-				D556117F1C68946200890AC3 /* ViewController.m */,
-				D55611811C68946200890AC3 /* Main.storyboard */,
-				D55611841C68946200890AC3 /* Images.xcassets */,
-				D55611861C68946200890AC3 /* LaunchScreen.xib */,
+				D55611A11C68ADA500890AC3 /* Base */,
+				D55611A31C68ADA500890AC3 /* Cart */,
+				D55611A71C68ADA500890AC3 /* Category */,
+				D55611A81C68ADA500890AC3 /* Classify */,
+				D55611AC1C68ADA500890AC3 /* Commodity */,
+				D55611B01C68ADA500890AC3 /* DB */,
+				D55611B11C68ADA500890AC3 /* Discovery */,
+				D55611B61C68ADA500890AC3 /* Home */,
+				D55611BA1C68ADA500890AC3 /* Main */,
+				D55611BE1C68ADA500890AC3 /* Mine */,
+				D55611C41C68ADA500890AC3 /* Utils */,
+				D556119D1C68AD7100890AC3 /* Other */,
+				D55611C21C68ADA500890AC3 /* Resource */,
 				D55611771C68946200890AC3 /* Supporting Files */,
 			);
 			path = "JD-Mobile";
@@ -96,8 +119,11 @@
 		D55611771C68946200890AC3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D55611841C68946200890AC3 /* Images.xcassets */,
+				D55611861C68946200890AC3 /* LaunchScreen.xib */,
 				D55611781C68946200890AC3 /* Info.plist */,
 				D55611791C68946200890AC3 /* main.m */,
+				D5976B5B1C70A1010005B338 /* JD-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -117,6 +143,289 @@
 				D55611921C68946200890AC3 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D556119D1C68AD7100890AC3 /* Other */ = {
+			isa = PBXGroup;
+			children = (
+				D556119E1C68AD7100890AC3 /* AppDelegate.h */,
+				D556119F1C68AD7100890AC3 /* AppDelegate.m */,
+			);
+			path = Other;
+			sourceTree = "<group>";
+		};
+		D55611A11C68ADA500890AC3 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				D55611A21C68ADA500890AC3 /* AMScrollingNavBar */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		D55611A21C68ADA500890AC3 /* AMScrollingNavBar */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AMScrollingNavBar;
+			sourceTree = "<group>";
+		};
+		D55611A31C68ADA500890AC3 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				D55611A41C68ADA500890AC3 /* Controller */,
+				D55611A51C68ADA500890AC3 /* Model */,
+				D55611A61C68ADA500890AC3 /* View */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		D55611A41C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5976B551C709DA70005B338 /* DZCartViewController.h */,
+				D5976B561C709DA70005B338 /* DZCartViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611A51C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611A61C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611A71C68ADA500890AC3 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		D55611A81C68ADA500890AC3 /* Classify */ = {
+			isa = PBXGroup;
+			children = (
+				D55611A91C68ADA500890AC3 /* Controller */,
+				D55611AA1C68ADA500890AC3 /* Model */,
+				D55611AB1C68ADA500890AC3 /* View */,
+			);
+			path = Classify;
+			sourceTree = "<group>";
+		};
+		D55611A91C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5976B4F1C709CDC0005B338 /* DZClassifyViewController.h */,
+				D5976B501C709CDC0005B338 /* DZClassifyViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611AA1C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611AB1C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611AC1C68ADA500890AC3 /* Commodity */ = {
+			isa = PBXGroup;
+			children = (
+				D55611AD1C68ADA500890AC3 /* Controller */,
+				D55611AE1C68ADA500890AC3 /* Model */,
+				D55611AF1C68ADA500890AC3 /* View */,
+			);
+			path = Commodity;
+			sourceTree = "<group>";
+		};
+		D55611AD1C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611AE1C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611AF1C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611B01C68ADA500890AC3 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DB;
+			sourceTree = "<group>";
+		};
+		D55611B11C68ADA500890AC3 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				D55611B21C68ADA500890AC3 /* Controller */,
+				D55611B31C68ADA500890AC3 /* Model */,
+				D55611B41C68ADA500890AC3 /* View */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		D55611B21C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5976B521C709D2F0005B338 /* DZDiscoveryViewController.h */,
+				D5976B531C709D2F0005B338 /* DZDiscoveryViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611B31C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611B41C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611B61C68ADA500890AC3 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				D55611B71C68ADA500890AC3 /* Controller */,
+				D55611B81C68ADA500890AC3 /* Model */,
+				D55611B91C68ADA500890AC3 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		D55611B71C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5976B4C1C709C690005B338 /* DZHomeViewController.h */,
+				D5976B4D1C709C690005B338 /* DZHomeViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611B81C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611B91C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611BA1C68ADA500890AC3 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				D55611BB1C68ADA500890AC3 /* Controller */,
+				D55611BC1C68ADA500890AC3 /* Model */,
+				D55611BD1C68ADA500890AC3 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		D55611BB1C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5976B461C7098BB0005B338 /* DZTabBarController.h */,
+				D5976B471C7098BB0005B338 /* DZTabBarController.m */,
+				D5976B491C709B5A0005B338 /* DZNavigationController.h */,
+				D5976B4A1C709B5A0005B338 /* DZNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611BC1C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611BD1C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611BE1C68ADA500890AC3 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				D55611BF1C68ADA500890AC3 /* Controller */,
+				D55611C01C68ADA500890AC3 /* Model */,
+				D55611C11C68ADA500890AC3 /* View */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		D55611BF1C68ADA500890AC3 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D5976B581C709DE90005B338 /* DZMineViewController.h */,
+				D5976B591C709DE90005B338 /* DZMineViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D55611C01C68ADA500890AC3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D55611C11C68ADA500890AC3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D55611C21C68ADA500890AC3 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		D55611C41C68ADA500890AC3 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,7 +508,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55611831C68946200890AC3 /* Main.storyboard in Resources */,
 				D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */,
 				D55611851C68946200890AC3 /* Images.xcassets in Resources */,
 			);
@@ -219,9 +527,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D55611801C68946200890AC3 /* ViewController.m in Sources */,
-				D556117D1C68946200890AC3 /* AppDelegate.m in Sources */,
+				D5976B571C709DA70005B338 /* DZCartViewController.m in Sources */,
+				D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */,
+				D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */,
 				D556117A1C68946200890AC3 /* main.m in Sources */,
+				D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */,
+				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
+				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
+				D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */,
+				D5976B4E1C709C690005B338 /* DZHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +558,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		D55611811C68946200890AC3 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D55611821C68946200890AC3 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		D55611861C68946200890AC3 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -347,6 +653,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JD-Mobile/JD-Prefix.pch";
 				INFOPLIST_FILE = "JD-Mobile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -357,6 +665,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				INFOPLIST_FILE = "JD-Mobile/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -416,6 +725,7 @@
 				D55611991C68946200890AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D556119A1C68946200890AC3 /* Build configuration list for PBXNativeTarget "JD-MobileTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +734,7 @@
 				D556119C1C68946200890AC3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
