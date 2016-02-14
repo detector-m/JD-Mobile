@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4333457013C6F724B86B71A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927CA4705B1EF75BD8743A5 /* libPods.a */; };
+		D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5841C70BE2F001648AB /* RCDraggableButton.m */; };
+		D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5871C70BF6C001648AB /* DZImage2ViewCell.m */; };
+		D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF58A1C70C063001648AB /* DZImage3ViewCell.m */; };
+		D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF58C1C70C063001648AB /* DZImage4ViewCell.m */; };
+		D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF58E1C70C063001648AB /* DZImage5ViewCell.m */; };
+		D53DF5941C70C063001648AB /* DZImage6ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5901C70C063001648AB /* DZImage6ViewCell.m */; };
 		D556117A1C68946200890AC3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D55611791C68946200890AC3 /* main.m */; };
 		D55611851C68946200890AC3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D55611841C68946200890AC3 /* Images.xcassets */; };
 		D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55611861C68946200890AC3 /* LaunchScreen.xib */; };
@@ -19,6 +26,9 @@
 		D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B531C709D2F0005B338 /* DZDiscoveryViewController.m */; };
 		D5976B571C709DA70005B338 /* DZCartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B561C709DA70005B338 /* DZCartViewController.m */; };
 		D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B591C709DE90005B338 /* DZMineViewController.m */; };
+		D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B5D1C70B03B0005B338 /* DZCellConfig.m */; };
+		D5976B611C70B4550005B338 /* DZImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B601C70B4550005B338 /* DZImageName.m */; };
+		D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B631C70B4A80005B338 /* DZImage1ViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +42,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		19CC2AC90500E857DB3214E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		6E30EE1A880119AF2B6B0530 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		9927CA4705B1EF75BD8743A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D53DF5831C70BE2F001648AB /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
+		D53DF5841C70BE2F001648AB /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
+		D53DF5861C70BF6C001648AB /* DZImage2ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage2ViewCell.h; sourceTree = "<group>"; };
+		D53DF5871C70BF6C001648AB /* DZImage2ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage2ViewCell.m; sourceTree = "<group>"; };
+		D53DF5891C70C063001648AB /* DZImage3ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage3ViewCell.h; sourceTree = "<group>"; };
+		D53DF58A1C70C063001648AB /* DZImage3ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage3ViewCell.m; sourceTree = "<group>"; };
+		D53DF58B1C70C063001648AB /* DZImage4ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage4ViewCell.h; sourceTree = "<group>"; };
+		D53DF58C1C70C063001648AB /* DZImage4ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage4ViewCell.m; sourceTree = "<group>"; };
+		D53DF58D1C70C063001648AB /* DZImage5ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage5ViewCell.h; sourceTree = "<group>"; };
+		D53DF58E1C70C063001648AB /* DZImage5ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage5ViewCell.m; sourceTree = "<group>"; };
+		D53DF58F1C70C063001648AB /* DZImage6ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage6ViewCell.h; sourceTree = "<group>"; };
+		D53DF5901C70C063001648AB /* DZImage6ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage6ViewCell.m; sourceTree = "<group>"; };
 		D55611741C68946200890AC3 /* JD-Mobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JD-Mobile.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D55611781C68946200890AC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D55611791C68946200890AC3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -57,6 +82,12 @@
 		D5976B581C709DE90005B338 /* DZMineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMineViewController.h; sourceTree = "<group>"; };
 		D5976B591C709DE90005B338 /* DZMineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMineViewController.m; sourceTree = "<group>"; };
 		D5976B5B1C70A1010005B338 /* JD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JD-Prefix.pch"; sourceTree = "<group>"; };
+		D5976B5C1C70B03B0005B338 /* DZCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCellConfig.h; sourceTree = "<group>"; };
+		D5976B5D1C70B03B0005B338 /* DZCellConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCellConfig.m; sourceTree = "<group>"; };
+		D5976B5F1C70B4550005B338 /* DZImageName.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImageName.h; sourceTree = "<group>"; };
+		D5976B601C70B4550005B338 /* DZImageName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImageName.m; sourceTree = "<group>"; };
+		D5976B621C70B4A80005B338 /* DZImage1ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage1ViewCell.h; sourceTree = "<group>"; };
+		D5976B631C70B4A80005B338 /* DZImage1ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage1ViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4333457013C6F724B86B71A4 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,12 +109,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		735AA60A9F9B7760D1328CB5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9927CA4705B1EF75BD8743A5 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BD500033C3690C46DFCBA367 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				19CC2AC90500E857DB3214E9 /* Pods.debug.xcconfig */,
+				6E30EE1A880119AF2B6B0530 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D556116B1C68946200890AC3 = {
 			isa = PBXGroup;
 			children = (
 				D55611761C68946200890AC3 /* JD-Mobile */,
 				D55611901C68946200890AC3 /* JD-MobileTests */,
 				D55611751C68946200890AC3 /* Products */,
+				BD500033C3690C46DFCBA367 /* Pods */,
+				735AA60A9F9B7760D1328CB5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -335,6 +386,10 @@
 		D55611B81C68ADA500890AC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D5976B5C1C70B03B0005B338 /* DZCellConfig.h */,
+				D5976B5D1C70B03B0005B338 /* DZCellConfig.m */,
+				D5976B5F1C70B4550005B338 /* DZImageName.h */,
+				D5976B601C70B4550005B338 /* DZImageName.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -342,6 +397,20 @@
 		D55611B91C68ADA500890AC3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D53DF5831C70BE2F001648AB /* RCDraggableButton.h */,
+				D53DF5841C70BE2F001648AB /* RCDraggableButton.m */,
+				D5976B621C70B4A80005B338 /* DZImage1ViewCell.h */,
+				D5976B631C70B4A80005B338 /* DZImage1ViewCell.m */,
+				D53DF5861C70BF6C001648AB /* DZImage2ViewCell.h */,
+				D53DF5871C70BF6C001648AB /* DZImage2ViewCell.m */,
+				D53DF5891C70C063001648AB /* DZImage3ViewCell.h */,
+				D53DF58A1C70C063001648AB /* DZImage3ViewCell.m */,
+				D53DF58B1C70C063001648AB /* DZImage4ViewCell.h */,
+				D53DF58C1C70C063001648AB /* DZImage4ViewCell.m */,
+				D53DF58D1C70C063001648AB /* DZImage5ViewCell.h */,
+				D53DF58E1C70C063001648AB /* DZImage5ViewCell.m */,
+				D53DF58F1C70C063001648AB /* DZImage6ViewCell.h */,
+				D53DF5901C70C063001648AB /* DZImage6ViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -435,9 +504,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D55611971C68946200890AC3 /* Build configuration list for PBXNativeTarget "JD-Mobile" */;
 			buildPhases = (
+				C68A364006BDCA3F0CAE4854 /* Check Pods Manifest.lock */,
 				D55611701C68946200890AC3 /* Sources */,
 				D55611711C68946200890AC3 /* Frameworks */,
 				D55611721C68946200890AC3 /* Resources */,
+				B94B933B1415E49F8A4B99F1 /* Embed Pods Frameworks */,
+				9180A096B7EA90DF3748B65E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -522,19 +594,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		9180A096B7EA90DF3748B65E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B94B933B1415E49F8A4B99F1 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C68A364006BDCA3F0CAE4854 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D55611701C68946200890AC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D5976B571C709DA70005B338 /* DZCartViewController.m in Sources */,
+				D53DF5941C70C063001648AB /* DZImage6ViewCell.m in Sources */,
 				D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */,
 				D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */,
 				D556117A1C68946200890AC3 /* main.m in Sources */,
 				D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */,
+				D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */,
+				D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */,
+				D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */,
+				D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */,
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
 				D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */,
+				D5976B611C70B4550005B338 /* DZImageName.m in Sources */,
+				D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */,
+				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
+				D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */,
 				D5976B4E1C709C690005B338 /* DZHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -651,6 +780,7 @@
 		};
 		D55611981C68946200890AC3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 19CC2AC90500E857DB3214E9 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -663,6 +793,7 @@
 		};
 		D55611991C68946200890AC3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6E30EE1A880119AF2B6B0530 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
