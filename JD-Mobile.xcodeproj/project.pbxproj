@@ -19,6 +19,7 @@
 		D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = D55611861C68946200890AC3 /* LaunchScreen.xib */; };
 		D55611941C68946200890AC3 /* JD_MobileTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D55611931C68946200890AC3 /* JD_MobileTests.m */; };
 		D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D556119F1C68AD7100890AC3 /* AppDelegate.m */; };
+		D57442651C70CD1F00B1BE0D /* UIView+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D57442641C70CD1F00B1BE0D /* UIView+Extension.m */; };
 		D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B471C7098BB0005B338 /* DZTabBarController.m */; };
 		D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B4A1C709B5A0005B338 /* DZNavigationController.m */; };
 		D5976B4E1C709C690005B338 /* DZHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B4D1C709C690005B338 /* DZHomeViewController.m */; };
@@ -29,6 +30,10 @@
 		D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B5D1C70B03B0005B338 /* DZCellConfig.m */; };
 		D5976B611C70B4550005B338 /* DZImageName.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B601C70B4550005B338 /* DZImageName.m */; };
 		D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5976B631C70B4A80005B338 /* DZImage1ViewCell.m */; };
+		D5BA98EF1C714CC900D21FDE /* DZAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98EE1C714CC900D21FDE /* DZAbstractDotView.m */; };
+		D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98F11C714D7900D21FDE /* DZAnimatedDotView.m */; };
+		D5BA98F51C714F0600D21FDE /* DZDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98F41C714F0600D21FDE /* DZDotView.m */; };
+		D5BA98F81C714F5600D21FDE /* DZPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98F71C714F5600D21FDE /* DZPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +72,8 @@
 		D55611931C68946200890AC3 /* JD_MobileTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JD_MobileTests.m; sourceTree = "<group>"; };
 		D556119E1C68AD7100890AC3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		D556119F1C68AD7100890AC3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		D57442631C70CD1F00B1BE0D /* UIView+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Extension.h"; sourceTree = "<group>"; };
+		D57442641C70CD1F00B1BE0D /* UIView+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Extension.m"; sourceTree = "<group>"; };
 		D5976B461C7098BB0005B338 /* DZTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZTabBarController.h; sourceTree = "<group>"; };
 		D5976B471C7098BB0005B338 /* DZTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZTabBarController.m; sourceTree = "<group>"; };
 		D5976B491C709B5A0005B338 /* DZNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZNavigationController.h; sourceTree = "<group>"; };
@@ -88,6 +95,14 @@
 		D5976B601C70B4550005B338 /* DZImageName.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImageName.m; sourceTree = "<group>"; };
 		D5976B621C70B4A80005B338 /* DZImage1ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage1ViewCell.h; sourceTree = "<group>"; };
 		D5976B631C70B4A80005B338 /* DZImage1ViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZImage1ViewCell.m; sourceTree = "<group>"; };
+		D5BA98ED1C714CC900D21FDE /* DZAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAbstractDotView.h; sourceTree = "<group>"; };
+		D5BA98EE1C714CC900D21FDE /* DZAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAbstractDotView.m; sourceTree = "<group>"; };
+		D5BA98F01C714D7900D21FDE /* DZAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAnimatedDotView.h; sourceTree = "<group>"; };
+		D5BA98F11C714D7900D21FDE /* DZAnimatedDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAnimatedDotView.m; sourceTree = "<group>"; };
+		D5BA98F31C714F0600D21FDE /* DZDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDotView.h; sourceTree = "<group>"; };
+		D5BA98F41C714F0600D21FDE /* DZDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDotView.m; sourceTree = "<group>"; };
+		D5BA98F61C714F5600D21FDE /* DZPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZPageControl.h; sourceTree = "<group>"; };
+		D5BA98F71C714F5600D21FDE /* DZPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -256,6 +271,8 @@
 		D55611A71C68ADA500890AC3 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D57442631C70CD1F00B1BE0D /* UIView+Extension.h */,
+				D57442641C70CD1F00B1BE0D /* UIView+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -493,8 +510,32 @@
 		D55611C41C68ADA500890AC3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D57442661C70DA2400B1BE0D /* CycleScrollView */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		D57442661C70DA2400B1BE0D /* CycleScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D57442671C70DA2400B1BE0D /* PageControl */,
+			);
+			path = CycleScrollView;
+			sourceTree = "<group>";
+		};
+		D57442671C70DA2400B1BE0D /* PageControl */ = {
+			isa = PBXGroup;
+			children = (
+				D5BA98ED1C714CC900D21FDE /* DZAbstractDotView.h */,
+				D5BA98EE1C714CC900D21FDE /* DZAbstractDotView.m */,
+				D5BA98F01C714D7900D21FDE /* DZAnimatedDotView.h */,
+				D5BA98F11C714D7900D21FDE /* DZAnimatedDotView.m */,
+				D5BA98F31C714F0600D21FDE /* DZDotView.h */,
+				D5BA98F41C714F0600D21FDE /* DZDotView.m */,
+				D5BA98F61C714F5600D21FDE /* DZPageControl.h */,
+				D5BA98F71C714F5600D21FDE /* DZPageControl.m */,
+			);
+			path = PageControl;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -544,6 +585,7 @@
 		D556116C1C68946200890AC3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = DZ;
 				LastUpgradeCheck = 0640;
 				ORGANIZATIONNAME = dengwei;
 				TargetAttributes = {
@@ -649,17 +691,22 @@
 			files = (
 				D5976B571C709DA70005B338 /* DZCartViewController.m in Sources */,
 				D53DF5941C70C063001648AB /* DZImage6ViewCell.m in Sources */,
+				D5BA98EF1C714CC900D21FDE /* DZAbstractDotView.m in Sources */,
 				D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */,
 				D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */,
 				D556117A1C68946200890AC3 /* main.m in Sources */,
 				D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */,
+				D57442651C70CD1F00B1BE0D /* UIView+Extension.m in Sources */,
 				D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */,
+				D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */,
 				D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */,
 				D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */,
 				D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */,
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
 				D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */,
+				D5BA98F81C714F5600D21FDE /* DZPageControl.m in Sources */,
+				D5BA98F51C714F0600D21FDE /* DZDotView.m in Sources */,
 				D5976B611C70B4550005B338 /* DZImageName.m in Sources */,
 				D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */,
 				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
