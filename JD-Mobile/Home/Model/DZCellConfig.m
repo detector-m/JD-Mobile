@@ -25,7 +25,7 @@
                                   title:(NSString *)title
                          showInfoMethod:(SEL)showInfoMethod
                            heightOfCell:(CGFloat)heightOfCell {
-    DZCellConfig *cellConfig = [[DZCellConfig alloc] init];
+    DZCellConfig *cellConfig = [DZCellConfig new];
     
     cellConfig.className = className;
     cellConfig.title = title;

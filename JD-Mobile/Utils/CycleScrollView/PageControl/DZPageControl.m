@@ -299,7 +299,6 @@ static CGSize const kDefaultDotSize = {8, 8};
     self.dotViewClass = nil;
 }
 
-
 - (void)setCurrentDotImage:(UIImage *)currentDotimage {
     _currentDotImage = currentDotimage;
     [self resetDotViews];
@@ -315,7 +314,6 @@ static CGSize const kDefaultDotSize = {8, 8};
 
 
 #pragma mark - Getters
-
 
 - (NSMutableArray *)dots {
     if (!_dots) {
