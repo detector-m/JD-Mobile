@@ -113,8 +113,6 @@
     _tableView.dataSource = self;
     _tableView.tableHeaderView = [self addHeaderView];
     
-    
-    
     topBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     topBtn.frame = CGRectMake(self.view.frame.size.width - 60, self.view.frame.size.height - 100, 40, 40);
     [topBtn setBackgroundImage:[UIImage imageNamed:@"nearby_return_top_btn"] forState:UIControlStateNormal];
@@ -153,13 +151,6 @@
 //    self.navigationItem.titleView = searchView;
 }
 
-#pragma mark - btn 点击事件
-- (void)DoSomething {
-    //到顶部
-    [_tableView setContentOffset:CGPointMake(0, -64) animated:YES];
-    
-}
-
 - (UIView*)addHeaderView {
     UIView *header=[[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 180)];
     NSArray *imagesURLStrings = @[
@@ -182,7 +173,6 @@
     _cycleScrollView.pageControlStyle = DZCycleScrollViewPageContolStyleClassic;
     _cycleScrollView.autoScrollTimeInterval = 2.0; // 轮播时间间隔，默认1.0秒，可自定义
     
-    
     //模拟加载延迟
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
         _cycleScrollView.imageURLStringsGroup = imagesURLStrings;
@@ -195,96 +185,103 @@
 
 - (void)setupHeader{
     
-//    SDRefreshHeaderView *refreshHeader = [SDRefreshHeaderView refreshViewWithStyle:SDRefreshViewStyleCustom];
-//    //默认是在navigationController环境下，如果不是在此环境下，请设置
-//    refreshHeader.isEffectedByNavigationController = YES;
-//    [refreshHeader addToScrollView:_tableView];
-//    
-//    UIImageView *headerBackground=[[UIImageView alloc] init];
-//    headerBackground.frame = CGRectMake(30, 0, 50, refreshHeader.bounds.size.height);
-//    headerBackground.image = [UIImage imageNamed:@"speed"];
-//    [refreshHeader addSubview:headerBackground];
-//    // 动画view
-//    UIImageView *animationView = [[UIImageView alloc] init];
-//    animationView.frame = CGRectMake(80, 20, 50, refreshHeader.bounds.size.height);
-//    animationView.image = [UIImage imageNamed:@"staticDeliveryStaff"];
-//    [refreshHeader addSubview:animationView];
-//    _animationView = animationView;
-//    
-//    UIImageView *boxView = [[UIImageView alloc] init];
-//    boxView.frame = CGRectMake(200, 10, 15, 8);
-//    boxView.image = [UIImage imageNamed:@"box"];
-//    [refreshHeader addSubview:boxView];
-//    _boxView = boxView;
-//    
-//    UILabel *label1= [[UILabel alloc] init];
-//    label1.frame = CGRectMake(animationView.frame.size.width+110, 15, 200, 20);
-//    label1.text = @"让购物更便捷";
-//    label1.textColor = JDColor(128,128,128);
-//    label1.font =  [UIFont fontWithName:@"Helvetica-Bold" size:16]; ;
-//    [refreshHeader addSubview:label1];
-//    
-//    UILabel *label= [[UILabel alloc] init];
-//    label.frame = CGRectMake(animationView.frame.size.width+110, 40, 200, 20);
-//    label.text = @"下拉更新...";
-//    label.textColor = JDColor(182,182,182);
-//    label.font = [UIFont systemFontOfSize:14];
-//    [refreshHeader addSubview:label];
-//    _label = label;
-//    
-//    __weak SDRefreshHeaderView *weakRefreshHeader = refreshHeader;
-//    refreshHeader.beginRefreshingOperation = ^{
-//        // 模拟加载延迟
-//        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//            
-//            [weakRefreshHeader endRefreshing];
-//        });
-//    };
-//    // normal状态执行的操作
-//    refreshHeader.normalStateOperationBlock = ^(SDRefreshView *refreshView, CGFloat progress){
-//        refreshView.hidden = NO;
-//        if (progress == 0) {
-//            _animationView.transform = CGAffineTransformMakeScale(0.1, 0.1);
-//            _boxView.hidden = NO;
-//            _label.text = @"下拉更新...";
-//            [_animationView stopAnimating];
-//        }
-//        
-//        self.animationView.transform = CGAffineTransformConcat(CGAffineTransformMakeTranslation(progress * 10, -20 * progress), CGAffineTransformMakeScale(progress, progress));
-//        self.boxView.transform = CGAffineTransformMakeTranslation(- progress * 90, progress * 35);
-//    };
-//    
-//    // willRefresh状态执行的操作
-//    refreshHeader.willRefreshStateOperationBlock = ^(SDRefreshView *refreshView, CGFloat progress){
-//        _boxView.hidden = YES;
-//        _label.text = @"松手更新...";
-//        _animationView.transform = CGAffineTransformConcat(CGAffineTransformMakeTranslation(10, -20), CGAffineTransformMakeScale(1, 1));
-//        NSArray *images = @[[UIImage imageNamed:@"deliveryStaff0"],
-//                            [UIImage imageNamed:@"deliveryStaff1"],
-//                            [UIImage imageNamed:@"deliveryStaff2"],
-//                            [UIImage imageNamed:@"deliveryStaff3"]
-//                            ];
-//        _animationView.animationImages = images;
-//        [_animationView startAnimating];
-//    };
-//    
-//    // refreshing状态执行的操作
-//    refreshHeader.refreshingStateOperationBlock = ^(SDRefreshView *refreshView, CGFloat progress){
-//        _label.text = @"更新中...";
-//        //                [UIView animateWithDuration:1.5 animations:^{
-//        //                    self.animationView.transform = CGAffineTransformMakeTranslation(200, -20);
-//        //                }];
-//    };
-//    
-//    // 进入页面自动加载一次数据
-//    [refreshHeader beginRefreshing];
+    //    SDRefreshHeaderView *refreshHeader = [SDRefreshHeaderView refreshViewWithStyle:SDRefreshViewStyleCustom];
+    //    //默认是在navigationController环境下，如果不是在此环境下，请设置
+    //    refreshHeader.isEffectedByNavigationController = YES;
+    //    [refreshHeader addToScrollView:_tableView];
+    //
+    //    UIImageView *headerBackground=[[UIImageView alloc] init];
+    //    headerBackground.frame = CGRectMake(30, 0, 50, refreshHeader.bounds.size.height);
+    //    headerBackground.image = [UIImage imageNamed:@"speed"];
+    //    [refreshHeader addSubview:headerBackground];
+    //    // 动画view
+    //    UIImageView *animationView = [[UIImageView alloc] init];
+    //    animationView.frame = CGRectMake(80, 20, 50, refreshHeader.bounds.size.height);
+    //    animationView.image = [UIImage imageNamed:@"staticDeliveryStaff"];
+    //    [refreshHeader addSubview:animationView];
+    //    _animationView = animationView;
+    //
+    //    UIImageView *boxView = [[UIImageView alloc] init];
+    //    boxView.frame = CGRectMake(200, 10, 15, 8);
+    //    boxView.image = [UIImage imageNamed:@"box"];
+    //    [refreshHeader addSubview:boxView];
+    //    _boxView = boxView;
+    //
+    //    UILabel *label1= [[UILabel alloc] init];
+    //    label1.frame = CGRectMake(animationView.frame.size.width+110, 15, 200, 20);
+    //    label1.text = @"让购物更便捷";
+    //    label1.textColor = JDColor(128,128,128);
+    //    label1.font =  [UIFont fontWithName:@"Helvetica-Bold" size:16]; ;
+    //    [refreshHeader addSubview:label1];
+    //
+    //    UILabel *label= [[UILabel alloc] init];
+    //    label.frame = CGRectMake(animationView.frame.size.width+110, 40, 200, 20);
+    //    label.text = @"下拉更新...";
+    //    label.textColor = JDColor(182,182,182);
+    //    label.font = [UIFont systemFontOfSize:14];
+    //    [refreshHeader addSubview:label];
+    //    _label = label;
+    //
+    //    __weak SDRefreshHeaderView *weakRefreshHeader = refreshHeader;
+    //    refreshHeader.beginRefreshingOperation = ^{
+    //        // 模拟加载延迟
+    //        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+    //
+    //            [weakRefreshHeader endRefreshing];
+    //        });
+    //    };
+    //    // normal状态执行的操作
+    //    refreshHeader.normalStateOperationBlock = ^(SDRefreshView *refreshView, CGFloat progress){
+    //        refreshView.hidden = NO;
+    //        if (progress == 0) {
+    //            _animationView.transform = CGAffineTransformMakeScale(0.1, 0.1);
+    //            _boxView.hidden = NO;
+    //            _label.text = @"下拉更新...";
+    //            [_animationView stopAnimating];
+    //        }
+    //
+    //        self.animationView.transform = CGAffineTransformConcat(CGAffineTransformMakeTranslation(progress * 10, -20 * progress), CGAffineTransformMakeScale(progress, progress));
+    //        self.boxView.transform = CGAffineTransformMakeTranslation(- progress * 90, progress * 35);
+    //    };
+    //
+    //    // willRefresh状态执行的操作
+    //    refreshHeader.willRefreshStateOperationBlock = ^(SDRefreshView *refreshView, CGFloat progress){
+    //        _boxView.hidden = YES;
+    //        _label.text = @"松手更新...";
+    //        _animationView.transform = CGAffineTransformConcat(CGAffineTransformMakeTranslation(10, -20), CGAffineTransformMakeScale(1, 1));
+    //        NSArray *images = @[[UIImage imageNamed:@"deliveryStaff0"],
+    //                            [UIImage imageNamed:@"deliveryStaff1"],
+    //                            [UIImage imageNamed:@"deliveryStaff2"],
+    //                            [UIImage imageNamed:@"deliveryStaff3"]
+    //                            ];
+    //        _animationView.animationImages = images;
+    //        [_animationView startAnimating];
+    //    };
+    //
+    //    // refreshing状态执行的操作
+    //    refreshHeader.refreshingStateOperationBlock = ^(SDRefreshView *refreshView, CGFloat progress){
+    //        _label.text = @"更新中...";
+    //        //                [UIView animateWithDuration:1.5 animations:^{
+    //        //                    self.animationView.transform = CGAffineTransformMakeTranslation(200, -20);
+    //        //                }];
+    //    };
+    //    
+    //    // 进入页面自动加载一次数据
+    //    [refreshHeader beginRefreshing];
 }
 
-- (void)camera{
+#pragma mark - 按钮点击事件
+- (void)DoSomething {
+    //到顶部
+    [_tableView setContentOffset:CGPointMake(0, -64) animated:YES];
+    
+}
+
+- (void)camera {
     NSLog(@"camera");
 }
 
-- (void)message{
+- (void)message {
     NSLog(@"message");
 //    ViewController *secondView = [[ViewController alloc] init];
 //    [self.navigationController pushViewController:secondView animated:YES];
@@ -339,6 +336,16 @@
 //    [self.navigationController pushViewController:secondView animated:YES];
 }
 
+#pragma mark - DZCycleScrollViewDelegate
+- (void)cycleScrollView:(DZCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index {
+    NSLog(@"点击了第%ld张图片", index);
+}
+
+- (void)indexOnPageControl:(NSInteger)index{
+    NSLog(@"现在是第%ld张图片", index);
+}
+
+#pragma mark - ReceiveMemoryWarning
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
