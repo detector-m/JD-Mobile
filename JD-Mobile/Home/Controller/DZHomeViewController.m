@@ -17,8 +17,10 @@
 #import "DZImage5ViewCell.h"
 #import "DZImage6ViewCell.h"
 #import "DZCycleScrollView.h"
+#import "DZSearchBarView.h"
+#import "UIBarButtonItem+Extension.h"
 
-@interface DZHomeViewController ()<UITableViewDataSource, UITableViewDelegate, DZCycleScrollViewDelegate>
+@interface DZHomeViewController ()<UITableViewDataSource, UITableViewDelegate, DZCycleScrollViewDelegate, DZSearchBarViewDelegate>
 {
     
     UISearchBar *_searchBar;
@@ -135,20 +137,20 @@
     
     
     //设置为半透明
-    //[self.navigationController.navigationBar setTranslucent:YES];
+    [self.navigationController.navigationBar setTranslucent:YES];
     
     //设置透明度
     //[self.navigationController.navigationBar setAlpha:0.3f];
     
-//    self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithImageName:@"ico_camera_7" highImageName:nil title:@"扫啊扫" target:self action:@selector(camera)];
-//    
-//    self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithImageName:@"HomePage_Message" highImageName:nil title:@"消息中心" target:self action:@selector(message)];
-//    
-//    //将搜索条放在一个UIView上
-//    SearchBarView *searchView = [[SearchBarView alloc]initWithFrame:CGRectMake(0, 7, 240, 30)];
-//    searchView.delegate=self;
-//    
-//    self.navigationItem.titleView = searchView;
+    self.navigationItem.leftBarButtonItem = [UIBarButtonItem BarButtonItemWithImageName:@"ico_camera_7" highImageName:nil title:@"扫一扫" target:self action:@selector(camera)];
+    
+    self.navigationItem.rightBarButtonItem = [UIBarButtonItem BarButtonItemWithImageName:@"HomePage_Message" highImageName:nil title:@"消息" target:self action:@selector(message)];
+    
+    //将搜索条放在一个UIView上
+    DZSearchBarView *searchView = [[DZSearchBarView alloc]initWithFrame:CGRectMake(0, 7, 220, 30)];
+    searchView.delegate = self;
+    
+    self.navigationItem.titleView = searchView;
 }
 
 - (UIView*)addHeaderView {
@@ -307,7 +309,6 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return [self.dataArray[section] count];
 }
-
 
 #pragma mark 设置cell
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		4333457013C6F724B86B71A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927CA4705B1EF75BD8743A5 /* libPods.a */; };
 		D50BE5791C722B3E000794BD /* loadAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5781C722B3E000794BD /* loadAvatar@2x.png */; };
+		D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57B1C722E70000794BD /* DZSearchBarView.m */; };
+		D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57E1C722FF6000794BD /* UIImage+Extension.m */; };
+		D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */; };
+		D50BE5851C723301000794BD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5841C723301000794BD /* NSString+Extension.m */; };
 		D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5841C70BE2F001648AB /* RCDraggableButton.m */; };
 		D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5871C70BF6C001648AB /* DZImage2ViewCell.m */; };
 		D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF58A1C70C063001648AB /* DZImage3ViewCell.m */; };
@@ -56,6 +60,14 @@
 		6E30EE1A880119AF2B6B0530 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9927CA4705B1EF75BD8743A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		D50BE5781C722B3E000794BD /* loadAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadAvatar@2x.png"; sourceTree = "<group>"; };
+		D50BE57A1C722E70000794BD /* DZSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSearchBarView.h; sourceTree = "<group>"; };
+		D50BE57B1C722E70000794BD /* DZSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSearchBarView.m; sourceTree = "<group>"; };
+		D50BE57D1C722FF6000794BD /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		D50BE57E1C722FF6000794BD /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		D50BE5801C723254000794BD /* UIBarButtonItem+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Extension.h"; sourceTree = "<group>"; };
+		D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
+		D50BE5831C723301000794BD /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		D50BE5841C723301000794BD /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
 		D53DF5831C70BE2F001648AB /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
 		D53DF5841C70BE2F001648AB /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
 		D53DF5861C70BF6C001648AB /* DZImage2ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage2ViewCell.h; sourceTree = "<group>"; };
@@ -295,6 +307,12 @@
 			children = (
 				D57442631C70CD1F00B1BE0D /* UIView+Extension.h */,
 				D57442641C70CD1F00B1BE0D /* UIView+Extension.m */,
+				D50BE57D1C722FF6000794BD /* UIImage+Extension.h */,
+				D50BE57E1C722FF6000794BD /* UIImage+Extension.m */,
+				D50BE5801C723254000794BD /* UIBarButtonItem+Extension.h */,
+				D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */,
+				D50BE5831C723301000794BD /* NSString+Extension.h */,
+				D50BE5841C723301000794BD /* NSString+Extension.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -485,6 +503,8 @@
 		D55611BD1C68ADA500890AC3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D50BE57A1C722E70000794BD /* DZSearchBarView.h */,
+				D50BE57B1C722E70000794BD /* DZSearchBarView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -737,12 +757,16 @@
 				D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */,
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
+				D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */,
+				D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */,
 				D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */,
 				D5BA98FE1C7153DF00D21FDE /* NSData+DZDataCache.m in Sources */,
 				D5BA99041C71554100D21FDE /* DZCycleScrollView.m in Sources */,
+				D50BE5851C723301000794BD /* NSString+Extension.m in Sources */,
 				D5BA98F81C714F5600D21FDE /* DZPageControl.m in Sources */,
 				D5BA98F51C714F0600D21FDE /* DZDotView.m in Sources */,
 				D5976B611C70B4550005B338 /* DZImageName.m in Sources */,
+				D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */,
 				D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */,
 				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
 				D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */,
