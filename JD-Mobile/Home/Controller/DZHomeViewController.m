@@ -26,7 +26,6 @@
     
     UISearchBar *_searchBar;
     DZCycleScrollView *_cycleScrollView;
-    UIView *_loadAvataView;
     UITableView * _tableView;
     UIButton * topBtn;
     CGFloat lastContentOffset;
@@ -126,10 +125,6 @@
     [self.view  addSubview:topBtn];
     //下拉刷新
     [self setupHeader];
-    
-    //显示拖动按钮
-    _loadAvataView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
-    _loadAvataView.hidden = NO;
 }
 
 #pragma mark - 设置导航栏
@@ -199,7 +194,7 @@
     [refreshHeader addSubview:headerBackground];
     // 动画view
     UIImageView *animationView = [[UIImageView alloc] init];
-    animationView.frame = CGRectMake(80, 20, 50, refreshHeader.bounds.size.height);
+    animationView.frame = CGRectMake(80, 0, 50, refreshHeader.bounds.size.height);
     animationView.image = [UIImage imageNamed:@"staticDeliveryStaff"];
     [refreshHeader addSubview:animationView];
     _animationView = animationView;
@@ -289,17 +284,6 @@
     XLog(@"message");
 }
 
-#pragma mark - display
-- (void)viewWillAppear:(BOOL)animated {
-    _loadAvataView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
-    _loadAvataView.hidden = NO;
-}
-
-- (void)viewDidDisappear:(BOOL)animated {
-    _loadAvataView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
-    _loadAvataView.hidden = YES;
-}
-
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -314,7 +298,7 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     // 获取cellConfig
-    DZCellConfig *cellConfig = self.dataArray[indexPath.section][indexPath.row];
+    DZCellConfig *cellConfig = _dataArray[indexPath.section][indexPath.row];
     
     // 获取对应cell并根据模型显示
     UITableViewCell *cell = [cellConfig cellOfCellConfigWithTableView:tableView dataModel:self.modelToShow];
@@ -332,9 +316,6 @@
 #pragma mark 选中cell
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     [tableView deselectRowAtIndexPath:indexPath animated:YES];//取消选中项
-//    // 获取cellConfig
-//    ViewController *secondView = [[ViewController alloc] init];
-//    [self.navigationController pushViewController:secondView animated:YES];
 }
 
 #pragma mark - DZCycleScrollViewDelegate
@@ -355,13 +336,8 @@
     if (scrollView.contentOffset.y < lastContentOffset ){
         //向上
         topBtn.hidden = YES;
-        
     } else if (scrollView. contentOffset.y >lastContentOffset){
         //向下
-        //        CATransition *animation = [CATransition animation];
-        //        animation.type = kCATransitionMoveIn;
-        //        animation.duration = 1.0f;
-        //        [_TopView.layer addAnimation:animation forKey:nil];
         topBtn.hidden = NO;
     }
 }
