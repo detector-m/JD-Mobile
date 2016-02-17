@@ -279,7 +279,6 @@
 - (void)DoSomething {
     //到顶部
     [_tableView setContentOffset:CGPointMake(0, -64) animated:YES];
-    
 }
 
 - (void)camera {
@@ -288,8 +287,6 @@
 
 - (void)message {
     XLog(@"message");
-//    ViewController *secondView = [[ViewController alloc] init];
-//    [self.navigationController pushViewController:secondView animated:YES];
 }
 
 #pragma mark - display
@@ -347,6 +344,26 @@
 
 - (void)indexOnPageControl:(NSInteger)index{
     XLog(@"现在是第%ld张图片", index);
+}
+
+#pragma mark - UIScrollViewDelegate
+-(void)scrollViewWillBeginDragging:(UIScrollView*)scrollView{
+    lastContentOffset = scrollView.contentOffset.y;
+}
+
+-( void )scrollViewDidScroll:( UIScrollView *)scrollView {
+    if (scrollView.contentOffset.y < lastContentOffset ){
+        //向上
+        topBtn.hidden = YES;
+        
+    } else if (scrollView. contentOffset.y >lastContentOffset){
+        //向下
+        //        CATransition *animation = [CATransition animation];
+        //        animation.type = kCATransitionMoveIn;
+        //        animation.duration = 1.0f;
+        //        [_TopView.layer addAnimation:animation forKey:nil];
+        topBtn.hidden = NO;
+    }
 }
 
 #pragma mark - ReceiveMemoryWarning
