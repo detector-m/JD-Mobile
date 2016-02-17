@@ -13,6 +13,11 @@
 		D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57E1C722FF6000794BD /* UIImage+Extension.m */; };
 		D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */; };
 		D50BE5851C723301000794BD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5841C723301000794BD /* NSString+Extension.m */; };
+		D53C20B51C72A69700C2C21E /* dzRefeshView_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C20B41C72A69700C2C21E /* dzRefeshView_arrow@2x.png */; };
+		D53C20B81C72A76E00C2C21E /* DZRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C20B71C72A76E00C2C21E /* DZRefreshView.m */; };
+		D53C20BB1C72A79600C2C21E /* DZRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C20BA1C72A79600C2C21E /* DZRefreshHeaderView.m */; };
+		D53C20BE1C72A7B400C2C21E /* DZRefreshFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C20BD1C72A7B400C2C21E /* DZRefreshFooterView.m */; };
+		D53C20C31C72A8C100C2C21E /* UIView+DZ.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C20C21C72A8C100C2C21E /* UIView+DZ.m */; };
 		D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5841C70BE2F001648AB /* RCDraggableButton.m */; };
 		D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF5871C70BF6C001648AB /* DZImage2ViewCell.m */; };
 		D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D53DF58A1C70C063001648AB /* DZImage3ViewCell.m */; };
@@ -68,6 +73,17 @@
 		D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		D50BE5831C723301000794BD /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		D50BE5841C723301000794BD /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		D53C20B41C72A69700C2C21E /* dzRefeshView_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dzRefeshView_arrow@2x.png"; sourceTree = "<group>"; };
+		D53C20B61C72A76E00C2C21E /* DZRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRefreshView.h; sourceTree = "<group>"; };
+		D53C20B71C72A76E00C2C21E /* DZRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRefreshView.m; sourceTree = "<group>"; };
+		D53C20B91C72A79600C2C21E /* DZRefreshHeaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRefreshHeaderView.h; sourceTree = "<group>"; };
+		D53C20BA1C72A79600C2C21E /* DZRefreshHeaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRefreshHeaderView.m; sourceTree = "<group>"; };
+		D53C20BC1C72A7B400C2C21E /* DZRefreshFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRefreshFooterView.h; sourceTree = "<group>"; };
+		D53C20BD1C72A7B400C2C21E /* DZRefreshFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRefreshFooterView.m; sourceTree = "<group>"; };
+		D53C20BF1C72A7D700C2C21E /* DZRefresh.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRefresh.h; sourceTree = "<group>"; };
+		D53C20C01C72A84700C2C21E /* Common.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Common.h; sourceTree = "<group>"; };
+		D53C20C11C72A8C100C2C21E /* UIView+DZ.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DZ.h"; sourceTree = "<group>"; };
+		D53C20C21C72A8C100C2C21E /* UIView+DZ.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DZ.m"; sourceTree = "<group>"; };
 		D53DF5831C70BE2F001648AB /* RCDraggableButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RCDraggableButton.h; sourceTree = "<group>"; };
 		D53DF5841C70BE2F001648AB /* RCDraggableButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RCDraggableButton.m; sourceTree = "<group>"; };
 		D53DF5861C70BF6C001648AB /* DZImage2ViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZImage2ViewCell.h; sourceTree = "<group>"; };
@@ -175,6 +191,23 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		D53C20B31C72A69700C2C21E /* RefreshView */ = {
+			isa = PBXGroup;
+			children = (
+				D53C20B41C72A69700C2C21E /* dzRefeshView_arrow@2x.png */,
+				D53C20B61C72A76E00C2C21E /* DZRefreshView.h */,
+				D53C20B71C72A76E00C2C21E /* DZRefreshView.m */,
+				D53C20B91C72A79600C2C21E /* DZRefreshHeaderView.h */,
+				D53C20BA1C72A79600C2C21E /* DZRefreshHeaderView.m */,
+				D53C20BC1C72A7B400C2C21E /* DZRefreshFooterView.h */,
+				D53C20BD1C72A7B400C2C21E /* DZRefreshFooterView.m */,
+				D53C20BF1C72A7D700C2C21E /* DZRefresh.h */,
+				D53C20C11C72A8C100C2C21E /* UIView+DZ.h */,
+				D53C20C21C72A8C100C2C21E /* UIView+DZ.m */,
+			);
+			path = RefreshView;
+			sourceTree = "<group>";
+		};
 		D556116B1C68946200890AC3 = {
 			isa = PBXGroup;
 			children = (
@@ -250,6 +283,7 @@
 			children = (
 				D556119E1C68AD7100890AC3 /* AppDelegate.h */,
 				D556119F1C68AD7100890AC3 /* AppDelegate.m */,
+				D53C20C01C72A84700C2C21E /* Common.h */,
 			);
 			path = Other;
 			sourceTree = "<group>";
@@ -554,6 +588,7 @@
 			isa = PBXGroup;
 			children = (
 				D57442661C70DA2400B1BE0D /* CycleScrollView */,
+				D53C20B31C72A69700C2C21E /* RefreshView */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -676,6 +711,7 @@
 				D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */,
 				D55611851C68946200890AC3 /* Images.xcassets in Resources */,
 				D50BE5791C722B3E000794BD /* loadAvatar@2x.png in Resources */,
+				D53C20B51C72A69700C2C21E /* dzRefeshView_arrow@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -746,6 +782,7 @@
 				D5BA98EF1C714CC900D21FDE /* DZAbstractDotView.m in Sources */,
 				D5BA99011C71548000D21FDE /* DZCollectionViewCell.m in Sources */,
 				D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */,
+				D53C20BE1C72A7B400C2C21E /* DZRefreshFooterView.m in Sources */,
 				D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */,
 				D556117A1C68946200890AC3 /* main.m in Sources */,
 				D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */,
@@ -759,18 +796,21 @@
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
 				D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */,
 				D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */,
+				D53C20B81C72A76E00C2C21E /* DZRefreshView.m in Sources */,
 				D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */,
 				D5BA98FE1C7153DF00D21FDE /* NSData+DZDataCache.m in Sources */,
 				D5BA99041C71554100D21FDE /* DZCycleScrollView.m in Sources */,
 				D50BE5851C723301000794BD /* NSString+Extension.m in Sources */,
 				D5BA98F81C714F5600D21FDE /* DZPageControl.m in Sources */,
 				D5BA98F51C714F0600D21FDE /* DZDotView.m in Sources */,
+				D53C20BB1C72A79600C2C21E /* DZRefreshHeaderView.m in Sources */,
 				D5976B611C70B4550005B338 /* DZImageName.m in Sources */,
 				D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */,
 				D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */,
 				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
 				D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */,
 				D5BA98FB1C71537500D21FDE /* UIView+DZExtension.m in Sources */,
+				D53C20C31C72A8C100C2C21E /* UIView+DZ.m in Sources */,
 				D5976B4E1C709C690005B338 /* DZHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

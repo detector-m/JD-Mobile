@@ -24,43 +24,43 @@
     [_avatar setBackgroundImage:[UIImage imageNamed:@"loadAvatar"] forState:UIControlStateNormal];
     _avatar.adjustsImageWhenHighlighted = NO;
     [_avatar setLongPressBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow LongPress");
+        XLog(@"\n\tAvatar in keyWindow LongPress");
         //More todo here.
         
     }];
     
     [_avatar setTapBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow Tap");
+        XLog(@"\n\tAvatar in keyWindow Tap");
         //More todo here.
         
     }];
     
     [_avatar setDoubleTapBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow DoubleTap");
+        XLog(@"\n\tAvatar in keyWindow DoubleTap");
         //More todo here.
         
     }];
     
     [_avatar setDraggingBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow Dragging");
+        XLog(@"\n\tAvatar in keyWindow Dragging");
         //More todo here.
         
     }];
     
     [_avatar setDragDoneBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow DragDone");
+        XLog(@"\n\tAvatar in keyWindow DragDone");
         //More todo here.
         
     }];
     
     [_avatar setAutoDockingBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow AutoDocking");
+        XLog(@"\n\tAvatar in keyWindow AutoDocking");
         //More todo here.
         
     }];
     
     [_avatar setAutoDockingDoneBlock:^(RCDraggableButton *avatar) {
-        NSLog(@"\n\tAvatar in keyWindow AutoDockingDone");
+        XLog(@"\n\tAvatar in keyWindow AutoDockingDone");
         //More todo here.
         
     }];

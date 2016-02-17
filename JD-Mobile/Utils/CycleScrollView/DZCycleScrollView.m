@@ -307,11 +307,11 @@ NSString * const ID = @"cycleCell";
     } else {
         size = CGSizeMake(self.imagesGroup.count * self.pageControlDotSize.width * 1.2, self.pageControlDotSize.height);
     }
-    CGFloat x = (self.sd_width - size.width) * 0.5;
+    CGFloat x = (self.dz_width - size.width) * 0.5;
     if (self.pageControlAliment == DZCycleScrollViewPageContolAlimentRight) {
-        x = self.mainView.sd_width - size.width - 10;
+        x = self.mainView.dz_width - size.width - 10;
     }
-    CGFloat y = self.mainView.sd_height - size.height - 10;
+    CGFloat y = self.mainView.dz_height - size.height - 10;
     
     if ([self.pageControl isKindOfClass:[DZPageControl class]]) {
         DZPageControl *pageControl = (DZPageControl *)_pageControl;
@@ -384,7 +384,7 @@ NSString * const ID = @"cycleCell";
 #pragma mark - UIScrollViewDelegate
 
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    int itemIndex = (scrollView.contentOffset.x + self.mainView.sd_width * 0.5) / self.mainView.sd_width;
+    int itemIndex = (scrollView.contentOffset.x + self.mainView.dz_width * 0.5) / self.mainView.dz_width;
     if (!self.imagesGroup.count) return; // 解决清除timer时偶尔会出现的问题
     int indexOnPageControl = itemIndex % self.imagesGroup.count;
     _indexPage=indexOnPageControl;

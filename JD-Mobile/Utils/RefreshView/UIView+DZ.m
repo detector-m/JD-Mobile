@@ -1,14 +1,14 @@
 //
-//  UIView+DZExtension.m
+//  UIView+DZ.m
 //  JD-Mobile
 //
-//  Created by dengwei on 16/2/15.
+//  Created by dengwei on 16/2/16.
 //  Copyright (c) 2016年 dengwei. All rights reserved.
 //
 
-#import "UIView+DZExtension.h"
+#import "UIView+DZ.h"
 
-@implementation UIView (DZExtension)
+@implementation UIView (DZ)
 
 - (CGFloat)dz_height {
     return self.frame.size.height;

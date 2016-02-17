@@ -44,7 +44,7 @@
  */
 + (instancetype)BarButtonItemWithImageName:(NSString *)imageName highImageName:(NSString *)highImageName title:(NSString *)title target:(id)target action:(SEL)action {
     UIButton *button = [[UIButton alloc] init];
-    
+
     [button setImage:[UIImage imageWithName:imageName] forState:UIControlStateNormal];
     [button setImage:[UIImage imageWithName:highImageName] forState:UIControlStateHighlighted];
     if (title) {
@@ -61,7 +61,7 @@
     [button setContentVerticalAlignment:UIControlContentVerticalAlignmentTop];
     //设置title在button上的位置（上top，左left，下bottom，右right）
     button.titleEdgeInsets = UIEdgeInsetsMake(30,-30, 0, 0);
-    
+
     // 监听按钮点击
     [button addTarget:target action:action forControlEvents:UIControlEventTouchUpInside];
     return [[self alloc] initWithCustomView:button];
