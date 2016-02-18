@@ -9,6 +9,11 @@
 #ifndef JD_Mobile_Common_h
 #define JD_Mobile_Common_h
 
+//SQL语句
+#define USER_TABLE_SQL @"CREATE TABLE IF NOT EXISTS `user` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `user_id` VARCHAR(20) UNIQUE NOT NULL,`user_phone` VARCHAR(20) NOT NULL,`user_pwd` NOT NULL,`time` VARCHAR(20) NOT NULL,'user_name' VARCHAR(20) ,commodity,shop,record)"
+
+#define _LolitaFunctions [DZLolitaFunctions sharedObject]
+
 //公用颜色
 #define DZCommonColor [UIColor colorWithRed:0.478 green:0.478 blue:0.478 alpha:1]
 //颜色

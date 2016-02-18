@@ -10,14 +10,14 @@
 
 typedef NS_ENUM(NSUInteger, DZCustomSwitchStatus)
 {
-    CustomSwitchStatusOn = 0,//开启
-    CustomSwitchStatusOff = 1//关闭
+    DZCustomSwitchStatusOn = 0,//开启
+    DZCustomSwitchStatusOff = 1//关闭
 };
 
 typedef NS_ENUM(NSUInteger, DZCustomSwitchArrange)
 {
-    CustomSwitchArrangeONLeftOFFRight = 0,//左边是开启,右边是关闭，默认
-    CustomSwitchArrangeOFFLeftONRight = 1//左边是关闭，右边是开启
+    DZCustomSwitchArrangeONLeftOFFRight = 0,//左边是开启,右边是关闭，默认
+    DZCustomSwitchArrangeOFFLeftONRight = 1//左边是关闭，右边是开启
 };
 
 @protocol DZCustomSwitchDelegate <NSObject>

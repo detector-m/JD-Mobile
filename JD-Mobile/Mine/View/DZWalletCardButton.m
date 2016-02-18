@@ -27,7 +27,6 @@
     [self addSubview:_title];
 }
 
-
 - (void)walletCardWith1:(NSString*)number Title:(NSString*)title Width:(CGFloat)width height:(CGFloat)height{
     UILabel *_number=[[UILabel alloc]initWithFrame:CGRectMake(0, 0, width, 25)];
     _number.textAlignment = NSTextAlignmentCenter;

@@ -54,25 +54,25 @@
 }
 
 -(void)setStatus:(DZCustomSwitchStatus)status {
-    if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-        if (self.status == CustomSwitchStatusOn) {
-            if (status == CustomSwitchStatusOff) {
+    if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+        if (self.status == DZCustomSwitchStatusOn) {
+            if (status == DZCustomSwitchStatusOff) {
                 
                 [self moveButtonTranslation:_minusTranslate];
                 
             }
         }else{
-            if (status == CustomSwitchStatusOn) {
+            if (status == DZCustomSwitchStatusOn) {
                 [self moveButtonTranslation:0];
             }
         }
     }else{
-        if (self.status == CustomSwitchStatusOn) {
-            if (status == CustomSwitchStatusOff) {
+        if (self.status == DZCustomSwitchStatusOn) {
+            if (status == DZCustomSwitchStatusOff) {
                 [self moveButtonTranslation:0];
             }
         }else{
-            if (status == CustomSwitchStatusOn) {
+            if (status == DZCustomSwitchStatusOn) {
                 [self moveButtonTranslation:_minusTranslate];
             }
         }
@@ -110,7 +110,7 @@
     [_offButton setImage:offImage forState:UIControlStateNormal];
     _currentTranslationX = 0;
     
-    if (_arrange == CustomSwitchArrangeONLeftOFFRight) {
+    if (_arrange == DZCustomSwitchArrangeONLeftOFFRight) {
         _onButton.frame = CGRectMake(0, 0, _onImage.size.width, _onImage.size.height);
         _offButton.frame = CGRectMake(_onImage.size.width - _onImage.size.height, 0, _offImage.size.width, _offImage.size.height);
     }else{
@@ -158,10 +158,10 @@
 }
 
 -(void)switchBtnClicked {
-    if (_status == CustomSwitchStatusOn) {
-        [self setStatus:CustomSwitchStatusOff];
+    if (_status == DZCustomSwitchStatusOn) {
+        [self setStatus:DZCustomSwitchStatusOff];
     }else{
-        [self setStatus:CustomSwitchStatusOn];
+        [self setStatus:DZCustomSwitchStatusOn];
     }
 }
 
@@ -175,12 +175,12 @@
         //往左边滑x<0 ,往右边滑x>0
         if (translation < 0) {
             BOOL move = NO;
-            if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-                if (_status == CustomSwitchStatusOff) {
+            if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+                if (_status == DZCustomSwitchStatusOff) {
                     move = YES;
                 }
             }else{
-                if (_status == CustomSwitchStatusOn) {
+                if (_status == DZCustomSwitchStatusOn) {
                     move = YES;
                 }
             }
@@ -196,12 +196,12 @@
             }
         }else if (translation > 0) {
             BOOL move = NO;
-            if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-                if (_status == CustomSwitchStatusOn) {
+            if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+                if (_status == DZCustomSwitchStatusOn) {
                     move = YES;
                 }
             }else{
-                if (_status == CustomSwitchStatusOff) {
+                if (_status == DZCustomSwitchStatusOff) {
                     move = YES;
                 }
             }
@@ -220,48 +220,48 @@
         _currentTranslationX = panGuester.view.transform.tx;
         if (translation < 0) {
             if (fabs(moveTranslation) >= _minusTranslate / 3) {
-                if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-                    if (_status == CustomSwitchStatusOff) {
+                if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+                    if (_status == DZCustomSwitchStatusOff) {
                         [self moveButtonTranslation:0];
-                        [self setStatus:CustomSwitchStatusOn];
+                        [self setStatus:DZCustomSwitchStatusOn];
                     }
                 }else{
-                    if (_status == CustomSwitchStatusOn) {
+                    if (_status == DZCustomSwitchStatusOn) {
                         [self moveButtonTranslation:0];
-                        [self setStatus:CustomSwitchStatusOff];
+                        [self setStatus:DZCustomSwitchStatusOff];
                     }
                 }
             }else{
-                if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-                    if (_status == CustomSwitchStatusOff) {
+                if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+                    if (_status == DZCustomSwitchStatusOff) {
                         [self moveButtonTranslation:_minusTranslate];
                     }
                 }else{
-                    if (_status == CustomSwitchStatusOn) {
+                    if (_status == DZCustomSwitchStatusOn) {
                         [self moveButtonTranslation:_minusTranslate];
                     }
                 }
             }
         }else if (translation > 0) {
             if (fabs(moveTranslation) >= _minusTranslate/2) {
-                if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-                    if (_status == CustomSwitchStatusOn) {
+                if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+                    if (_status == DZCustomSwitchStatusOn) {
                         [self moveButtonTranslation:_minusTranslate];
-                        [self setStatus:CustomSwitchStatusOff];
+                        [self setStatus:DZCustomSwitchStatusOff];
                     }
                 }else{
-                    if (_status == CustomSwitchStatusOff) {
+                    if (_status == DZCustomSwitchStatusOff) {
                         [self moveButtonTranslation:_minusTranslate];
-                        [self setStatus:CustomSwitchStatusOn];
+                        [self setStatus:DZCustomSwitchStatusOn];
                     }
                 }
             }else{
-                if (_arrange == CustomSwitchArrangeOFFLeftONRight) {
-                    if (_status == CustomSwitchStatusOn) {
+                if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
+                    if (_status == DZCustomSwitchStatusOn) {
                         [self moveButtonTranslation:0];
                     }
                 }else{
-                    if (_status == CustomSwitchStatusOff) {
+                    if (_status == DZCustomSwitchStatusOff) {
                         [self moveButtonTranslation:0];
                     }
                 }
@@ -290,10 +290,10 @@
         
         _minusTranslate = _onImage.size.width - _onImage.size.height;
         _currentTranslationX = 0;
-        if (_arrange == CustomSwitchArrangeONLeftOFFRight) {
+        if (_arrange == DZCustomSwitchArrangeONLeftOFFRight) {
             _onButton.frame = _leftRect;
             _offButton.frame =  _middleRect;
-            if (self.status == CustomSwitchStatusOn) {
+            if (self.status == DZCustomSwitchStatusOn) {
                 [self moveButtonTranslation:_minusTranslate];
             }else{
                 [self moveButtonTranslation:0];
@@ -302,7 +302,7 @@
         }else{
             _offButton.frame = _leftRect;
             _onButton.frame =  _middleRect;
-            if (self.status == CustomSwitchStatusOn) {
+            if (self.status == DZCustomSwitchStatusOn) {
                 [self moveButtonTranslation:0];
             }else{
                 [self moveButtonTranslation:_minusTranslate];
