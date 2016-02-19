@@ -68,6 +68,7 @@
 		D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805041C7765510078AF52 /* DZMyAccountViewController.m */; };
 		D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805071C776D450078AF52 /* DZAboutViewController.m */; };
 		D5E8050A1C7771F40078AF52 /* chars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5E805091C7771F40078AF52 /* chars.jpg */; };
+		D5E8050D1C7778210078AF52 /* DZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E8050C1C7778210078AF52 /* DZSettingViewController.m */; };
 		D5E881E71C74B36B00C2F296 /* cell_01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E11C74B36B00C2F296 /* cell_01.PNG */; };
 		D5E881E81C74B36B00C2F296 /* cell_02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E21C74B36B00C2F296 /* cell_02.PNG */; };
 		D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E31C74B36B00C2F296 /* cell_03.PNG */; };
@@ -209,6 +210,8 @@
 		D5E805061C776D450078AF52 /* DZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAboutViewController.h; sourceTree = "<group>"; };
 		D5E805071C776D450078AF52 /* DZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAboutViewController.m; sourceTree = "<group>"; };
 		D5E805091C7771F40078AF52 /* chars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chars.jpg; sourceTree = "<group>"; };
+		D5E8050B1C7778210078AF52 /* DZSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingViewController.h; sourceTree = "<group>"; };
+		D5E8050C1C7778210078AF52 /* DZSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingViewController.m; sourceTree = "<group>"; };
 		D5E881E11C74B36B00C2F296 /* cell_01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_01.PNG; sourceTree = "<group>"; };
 		D5E881E21C74B36B00C2F296 /* cell_02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_02.PNG; sourceTree = "<group>"; };
 		D5E881E31C74B36B00C2F296 /* cell_03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_03.PNG; sourceTree = "<group>"; };
@@ -651,6 +654,8 @@
 				D5E805041C7765510078AF52 /* DZMyAccountViewController.m */,
 				D5E805061C776D450078AF52 /* DZAboutViewController.h */,
 				D5E805071C776D450078AF52 /* DZAboutViewController.m */,
+				D5E8050B1C7778210078AF52 /* DZSettingViewController.h */,
+				D5E8050C1C7778210078AF52 /* DZSettingViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -944,6 +949,7 @@
 				D5976B611C70B4550005B338 /* DZImageName.m in Sources */,
 				D57F40771C761C8400B07E07 /* DZMasonyUtil.m in Sources */,
 				D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */,
+				D5E8050D1C7778210078AF52 /* DZSettingViewController.m in Sources */,
 				D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */,
 				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
 				D57F405F1C7608AA00B07E07 /* DZBaseDao.m in Sources */,
