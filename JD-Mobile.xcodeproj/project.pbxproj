@@ -65,6 +65,7 @@
 		D5BA98FE1C7153DF00D21FDE /* NSData+DZDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98FD1C7153DF00D21FDE /* NSData+DZDataCache.m */; };
 		D5BA99011C71548000D21FDE /* DZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA99001C71548000D21FDE /* DZCollectionViewCell.m */; };
 		D5BA99041C71554100D21FDE /* DZCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA99031C71554100D21FDE /* DZCycleScrollView.m */; };
+		D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805041C7765510078AF52 /* DZMyAccountViewController.m */; };
 		D5E881E71C74B36B00C2F296 /* cell_01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E11C74B36B00C2F296 /* cell_01.PNG */; };
 		D5E881E81C74B36B00C2F296 /* cell_02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E21C74B36B00C2F296 /* cell_02.PNG */; };
 		D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E31C74B36B00C2F296 /* cell_03.PNG */; };
@@ -201,6 +202,8 @@
 		D5BA99001C71548000D21FDE /* DZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCollectionViewCell.m; sourceTree = "<group>"; };
 		D5BA99021C71554100D21FDE /* DZCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCycleScrollView.h; sourceTree = "<group>"; };
 		D5BA99031C71554100D21FDE /* DZCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCycleScrollView.m; sourceTree = "<group>"; };
+		D5E805031C7765510078AF52 /* DZMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMyAccountViewController.h; sourceTree = "<group>"; };
+		D5E805041C7765510078AF52 /* DZMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMyAccountViewController.m; sourceTree = "<group>"; };
 		D5E881E11C74B36B00C2F296 /* cell_01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_01.PNG; sourceTree = "<group>"; };
 		D5E881E21C74B36B00C2F296 /* cell_02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_02.PNG; sourceTree = "<group>"; };
 		D5E881E31C74B36B00C2F296 /* cell_03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_03.PNG; sourceTree = "<group>"; };
@@ -638,6 +641,8 @@
 				D57F405B1C76085300B07E07 /* DZLoginViewController.m */,
 				D57F40661C760CF000B07E07 /* DZRegisterViewController.h */,
 				D57F40671C760CF000B07E07 /* DZRegisterViewController.m */,
+				D5E805031C7765510078AF52 /* DZMyAccountViewController.h */,
+				D5E805041C7765510078AF52 /* DZMyAccountViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -907,6 +912,7 @@
 				D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */,
 				D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */,
 				D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */,
+				D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */,
 				D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */,
 				D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */,
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
