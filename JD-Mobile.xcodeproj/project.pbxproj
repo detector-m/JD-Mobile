@@ -69,6 +69,7 @@
 		D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805071C776D450078AF52 /* DZAboutViewController.m */; };
 		D5E8050A1C7771F40078AF52 /* chars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5E805091C7771F40078AF52 /* chars.jpg */; };
 		D5E8050D1C7778210078AF52 /* DZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E8050C1C7778210078AF52 /* DZSettingViewController.m */; };
+		D5E805101C777AF20078AF52 /* DZCashierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E8050F1C777AF20078AF52 /* DZCashierViewController.m */; };
 		D5E881E71C74B36B00C2F296 /* cell_01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E11C74B36B00C2F296 /* cell_01.PNG */; };
 		D5E881E81C74B36B00C2F296 /* cell_02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E21C74B36B00C2F296 /* cell_02.PNG */; };
 		D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E31C74B36B00C2F296 /* cell_03.PNG */; };
@@ -212,6 +213,8 @@
 		D5E805091C7771F40078AF52 /* chars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chars.jpg; sourceTree = "<group>"; };
 		D5E8050B1C7778210078AF52 /* DZSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSettingViewController.h; sourceTree = "<group>"; };
 		D5E8050C1C7778210078AF52 /* DZSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingViewController.m; sourceTree = "<group>"; };
+		D5E8050E1C777AF20078AF52 /* DZCashierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCashierViewController.h; sourceTree = "<group>"; };
+		D5E8050F1C777AF20078AF52 /* DZCashierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCashierViewController.m; sourceTree = "<group>"; };
 		D5E881E11C74B36B00C2F296 /* cell_01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_01.PNG; sourceTree = "<group>"; };
 		D5E881E21C74B36B00C2F296 /* cell_02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_02.PNG; sourceTree = "<group>"; };
 		D5E881E31C74B36B00C2F296 /* cell_03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_03.PNG; sourceTree = "<group>"; };
@@ -656,6 +659,8 @@
 				D5E805071C776D450078AF52 /* DZAboutViewController.m */,
 				D5E8050B1C7778210078AF52 /* DZSettingViewController.h */,
 				D5E8050C1C7778210078AF52 /* DZSettingViewController.m */,
+				D5E8050E1C777AF20078AF52 /* DZCashierViewController.h */,
+				D5E8050F1C777AF20078AF52 /* DZCashierViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -914,6 +919,7 @@
 				D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */,
 				D57F40621C76091C00B07E07 /* DZDatabase.m in Sources */,
 				D53C20BE1C72A7B400C2C21E /* DZRefreshFooterView.m in Sources */,
+				D5E805101C777AF20078AF52 /* DZCashierViewController.m in Sources */,
 				D57F406E1C7619AD00B07E07 /* DZLolitaFunctions.m in Sources */,
 				D57F40711C761AB700B07E07 /* MBProgressHUD+MJ.m in Sources */,
 				D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */,
