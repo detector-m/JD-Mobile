@@ -66,6 +66,8 @@
 		D5BA99011C71548000D21FDE /* DZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA99001C71548000D21FDE /* DZCollectionViewCell.m */; };
 		D5BA99041C71554100D21FDE /* DZCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA99031C71554100D21FDE /* DZCycleScrollView.m */; };
 		D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805041C7765510078AF52 /* DZMyAccountViewController.m */; };
+		D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805071C776D450078AF52 /* DZAboutViewController.m */; };
+		D5E8050A1C7771F40078AF52 /* chars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5E805091C7771F40078AF52 /* chars.jpg */; };
 		D5E881E71C74B36B00C2F296 /* cell_01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E11C74B36B00C2F296 /* cell_01.PNG */; };
 		D5E881E81C74B36B00C2F296 /* cell_02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E21C74B36B00C2F296 /* cell_02.PNG */; };
 		D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E31C74B36B00C2F296 /* cell_03.PNG */; };
@@ -204,6 +206,9 @@
 		D5BA99031C71554100D21FDE /* DZCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCycleScrollView.m; sourceTree = "<group>"; };
 		D5E805031C7765510078AF52 /* DZMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMyAccountViewController.h; sourceTree = "<group>"; };
 		D5E805041C7765510078AF52 /* DZMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMyAccountViewController.m; sourceTree = "<group>"; };
+		D5E805061C776D450078AF52 /* DZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAboutViewController.h; sourceTree = "<group>"; };
+		D5E805071C776D450078AF52 /* DZAboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAboutViewController.m; sourceTree = "<group>"; };
+		D5E805091C7771F40078AF52 /* chars.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = chars.jpg; sourceTree = "<group>"; };
 		D5E881E11C74B36B00C2F296 /* cell_01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_01.PNG; sourceTree = "<group>"; };
 		D5E881E21C74B36B00C2F296 /* cell_02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_02.PNG; sourceTree = "<group>"; };
 		D5E881E31C74B36B00C2F296 /* cell_03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_03.PNG; sourceTree = "<group>"; };
@@ -251,6 +256,7 @@
 		D50BE5771C722B22000794BD /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D5E805091C7771F40078AF52 /* chars.jpg */,
 				D5E881E11C74B36B00C2F296 /* cell_01.PNG */,
 				D5E881E21C74B36B00C2F296 /* cell_02.PNG */,
 				D5E881E31C74B36B00C2F296 /* cell_03.PNG */,
@@ -643,6 +649,8 @@
 				D57F40671C760CF000B07E07 /* DZRegisterViewController.m */,
 				D5E805031C7765510078AF52 /* DZMyAccountViewController.h */,
 				D5E805041C7765510078AF52 /* DZMyAccountViewController.m */,
+				D5E805061C776D450078AF52 /* DZAboutViewController.h */,
+				D5E805071C776D450078AF52 /* DZAboutViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -823,6 +831,7 @@
 				D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */,
 				D50BE5791C722B3E000794BD /* loadAvatar@2x.png in Resources */,
 				D5E881E71C74B36B00C2F296 /* cell_01.PNG in Resources */,
+				D5E8050A1C7771F40078AF52 /* chars.jpg in Resources */,
 				D53C20B51C72A69700C2C21E /* dzRefeshView_arrow@2x.png in Resources */,
 				D5E881E81C74B36B00C2F296 /* cell_02.PNG in Resources */,
 			);
@@ -918,6 +927,7 @@
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
 				D57F40741C761B4E00B07E07 /* UIButton+Extension.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
+				D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */,
 				D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */,
 				D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */,
 				D53C20B81C72A76E00C2C21E /* DZRefreshView.m in Sources */,
