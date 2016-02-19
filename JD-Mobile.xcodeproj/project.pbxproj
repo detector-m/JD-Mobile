@@ -70,6 +70,8 @@
 		D5E8050A1C7771F40078AF52 /* chars.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5E805091C7771F40078AF52 /* chars.jpg */; };
 		D5E8050D1C7778210078AF52 /* DZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E8050C1C7778210078AF52 /* DZSettingViewController.m */; };
 		D5E805101C777AF20078AF52 /* DZCashierViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E8050F1C777AF20078AF52 /* DZCashierViewController.m */; };
+		D5E805131C777CCF0078AF52 /* DZMyOrderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805121C777CCF0078AF52 /* DZMyOrderViewController.m */; };
+		D5E805151C777DAB0078AF52 /* 553f59feN842cece4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D5E805141C777DAB0078AF52 /* 553f59feN842cece4.jpg */; };
 		D5E881E71C74B36B00C2F296 /* cell_01.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E11C74B36B00C2F296 /* cell_01.PNG */; };
 		D5E881E81C74B36B00C2F296 /* cell_02.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E21C74B36B00C2F296 /* cell_02.PNG */; };
 		D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */ = {isa = PBXBuildFile; fileRef = D5E881E31C74B36B00C2F296 /* cell_03.PNG */; };
@@ -215,6 +217,9 @@
 		D5E8050C1C7778210078AF52 /* DZSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSettingViewController.m; sourceTree = "<group>"; };
 		D5E8050E1C777AF20078AF52 /* DZCashierViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCashierViewController.h; sourceTree = "<group>"; };
 		D5E8050F1C777AF20078AF52 /* DZCashierViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCashierViewController.m; sourceTree = "<group>"; };
+		D5E805111C777CCF0078AF52 /* DZMyOrderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMyOrderViewController.h; sourceTree = "<group>"; };
+		D5E805121C777CCF0078AF52 /* DZMyOrderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMyOrderViewController.m; sourceTree = "<group>"; };
+		D5E805141C777DAB0078AF52 /* 553f59feN842cece4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 553f59feN842cece4.jpg; sourceTree = "<group>"; };
 		D5E881E11C74B36B00C2F296 /* cell_01.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_01.PNG; sourceTree = "<group>"; };
 		D5E881E21C74B36B00C2F296 /* cell_02.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_02.PNG; sourceTree = "<group>"; };
 		D5E881E31C74B36B00C2F296 /* cell_03.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cell_03.PNG; sourceTree = "<group>"; };
@@ -262,6 +267,7 @@
 		D50BE5771C722B22000794BD /* image */ = {
 			isa = PBXGroup;
 			children = (
+				D5E805141C777DAB0078AF52 /* 553f59feN842cece4.jpg */,
 				D5E805091C7771F40078AF52 /* chars.jpg */,
 				D5E881E11C74B36B00C2F296 /* cell_01.PNG */,
 				D5E881E21C74B36B00C2F296 /* cell_02.PNG */,
@@ -661,6 +667,8 @@
 				D5E8050C1C7778210078AF52 /* DZSettingViewController.m */,
 				D5E8050E1C777AF20078AF52 /* DZCashierViewController.h */,
 				D5E8050F1C777AF20078AF52 /* DZCashierViewController.m */,
+				D5E805111C777CCF0078AF52 /* DZMyOrderViewController.h */,
+				D5E805121C777CCF0078AF52 /* DZMyOrderViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -836,6 +844,7 @@
 				D5E881EA1C74B36B00C2F296 /* cell_04.PNG in Resources */,
 				D5E881EB1C74B36B00C2F296 /* cell_05.PNG in Resources */,
 				D57F40501C75DD8E00B07E07 /* DZCustomSwitch.xib in Resources */,
+				D5E805151C777DAB0078AF52 /* 553f59feN842cece4.jpg in Resources */,
 				D5E881EC1C74B36B00C2F296 /* cell_06.PNG in Resources */,
 				D55611851C68946200890AC3 /* Images.xcassets in Resources */,
 				D5E881E91C74B36B00C2F296 /* cell_03.PNG in Resources */,
@@ -928,6 +937,7 @@
 				D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */,
 				D57442651C70CD1F00B1BE0D /* UIView+Extension.m in Sources */,
 				D57F404E1C75DD7700B07E07 /* DZCustomSwitch.m in Sources */,
+				D5E805131C777CCF0078AF52 /* DZMyOrderViewController.m in Sources */,
 				D57F40481C75DC4D00B07E07 /* DZUserModel.m in Sources */,
 				D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */,
 				D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */,

@@ -61,7 +61,7 @@
     UIView *header =[[UIView alloc]init];
     header.backgroundColor = [UIColor whiteColor];
     UIImageView *bgView = [UIImageView new];
-    bgView.image=[UIImage imageNamed:@"order_split"];
+    bgView.image = [UIImage imageNamed:@"order_split"];
     [header addSubview:bgView];
     
     [bgView mas_makeConstraints:^(MASConstraintMaker *make) {
