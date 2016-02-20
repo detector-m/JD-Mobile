@@ -34,7 +34,6 @@
 #pragma mark - 代理方法
 #pragma mark 设置分组标题内容高度
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
     return 40;
 }
 
@@ -72,7 +71,7 @@
     }];
     UIImageView * groupIoc =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
     groupIoc.contentMode =  UIViewContentModeCenter;
-    groupIoc.image=[UIImage imageNamed:@"orderDetail_JDShopIcon"];
+    groupIoc.image = [UIImage imageNamed:@"orderDetail_JDShopIcon"];
     [header addSubview:groupIoc];
     
     UILabel * groupTitle = [[UILabel alloc]initWithFrame:CGRectMake(30, 0, 100, 40)];
@@ -112,7 +111,7 @@
     UIView * footer =[[UIView alloc]init];
     footer.backgroundColor = [UIColor whiteColor];
     UIImageView *bgView = [UIImageView new];
-    bgView.image=[UIImage imageNamed:@"order_split"];
+    bgView.image = [UIImage imageNamed:@"order_split"];
     [footer addSubview:bgView];
     
     [bgView mas_makeConstraints:^(MASConstraintMaker *make) {

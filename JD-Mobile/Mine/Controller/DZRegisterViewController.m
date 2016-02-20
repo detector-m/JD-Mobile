@@ -46,10 +46,10 @@
     [_phoneField addTarget:self action:@selector(returnOnKeyboard:) forControlEvents:UIControlEventEditingChanged];
     [self.view addSubview:_phoneField];
     
-    _radioButton =[UIButton createButtonWithTitle:@"同意京东用户注册协议" Image:@"charge_success_tip"  Target:self Selector:nil];
+    _radioButton = [UIButton createButtonWithTitle:@"同意京东用户注册协议" Image:@"charge_success_tip"  Target:self Selector:nil];
     [_radioButton.titleLabel setFont:[UIFont systemFontOfSize:15]];
     [_radioButton setTitleColor:DZColor(190, 190, 192) forState:UIControlStateNormal];
-    _radioButton.frame=CGRectMake(5, 130, 200, 25);
+    _radioButton.frame = CGRectMake(5, 130, 200, 25);
     [self.view addSubview:_radioButton];
     
     //下一部按钮
@@ -82,7 +82,7 @@
     um.userPhone = phone;
     um.userPwd = @"123456";
     um.time = locationString;
-    um.userName = @"人生真是寂寞啊";
+    um.userName = @"chars";
     um.commodity = [NSNumber numberWithInteger:13];
     um.shop = [NSNumber numberWithInteger:3];
     um.record = [NSNumber numberWithInteger:12];

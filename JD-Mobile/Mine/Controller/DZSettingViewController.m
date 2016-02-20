@@ -73,7 +73,6 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    
     // Return the number of rows in the section.
     switch (section) {
         case 0:  return 3;
@@ -83,7 +82,6 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
     static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
     
@@ -113,7 +111,6 @@
             cell.detailTextLabel.text = @"V4.2.1";
             cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"my_list_arrow"]];
         }
-        
     }
     
     return cell;
@@ -129,7 +126,7 @@
             break;
         case 1:
             if (indexPath.row == 0) {
-                DZAboutViewController * about=[[DZAboutViewController alloc]init];
+                DZAboutViewController * about = [[DZAboutViewController alloc]init];
                 [self.navigationController pushViewController:about animated:YES];
             }
             break;

@@ -31,8 +31,6 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
 @property (nonatomic, strong) UIButton *registerButton;
 @property (nonatomic, strong) UIButton *backPwdButton;
 
-@property (nonatomic, strong) MBProgressHUD *HUD;
-
 @end
 
 @implementation DZLoginViewController
@@ -78,11 +76,11 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     loginBg.image=[UIImage imageWithName:@"login_background"];
     [self.view addSubview:loginBg];
     //账号框
-    _accountField =[UITextField new];
+    _accountField = [UITextField new];
     _accountField.placeholder = @"用户名/邮箱/手机号";
     _accountField.textColor = [UIColor blackColor];
     _accountField.autocapitalizationType = UITextAutocapitalizationTypeNone;//首字母是否大写
-    _accountField.borderStyle=UITextBorderStyleNone; //外框类型
+    _accountField.borderStyle = UITextBorderStyleNone; //外框类型
     _accountField.delegate = self;//设置代理 用于实现协议
     _accountField.returnKeyType = UIReturnKeyNext;//设置键盘按键类型
     _accountField.clearButtonMode = UITextFieldViewModeWhileEditing;//UITextField 的一件清除按钮是否出现
@@ -93,6 +91,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     view.alpha = 0.5;
     view.backgroundColor = [UIColor grayColor];
     [loginBg addSubview:view];
+    
     //密码框
     _passwordField = [DZTextField new];
     _passwordField.placeholder = @"请输入密码";
@@ -107,7 +106,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     
     // 密码显示开关
     _passwordSwitch = [[DZCustomSwitch alloc]initWithFrame:CGRectMake(loginBg.size.width-100, 270, 100, 60)];
-    _passwordSwitch.delegate=self;
+    _passwordSwitch.delegate = self;
     _passwordSwitch.arrange = DZCustomSwitchArrangeONLeftOFFRight;
     _passwordSwitch.onImage = [UIImage imageWithName:@"register_passwd_on"] ;
     _passwordSwitch.offImage = [UIImage imageWithName:@"register_passwd_off"];
@@ -127,6 +126,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
         make.size.mas_equalTo(CGSizeMake(self.view.width-100, 60));
         make.bottom.mas_equalTo(loginBg.mas_bottom);
     }];
+    
     //登录按钮
     _loginButton = [[UIButton alloc]initWithFrame:CGRectMake(20,350 ,self.view.width-20*2, 40)];
     [_loginButton setTitle:@"登录" forState:UIControlStateNormal];
@@ -137,15 +137,16 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     [self.view addSubview:_loginButton];
     
     _registerButton = [UIButton createButtonWithFrame:CGRectMake(20, 410, 100, 20) Title:@"手机快速注册" Target:self Selector:@selector(onClick:)];
-    _registerButton.tag=0;
+    _registerButton.tag = 0;
     [self.view addSubview:_registerButton];
     
     _backPwdButton = [UIButton createButtonWithFrame:CGRectMake(self.view.width-120, 410, 100, 20) Title:@"找回密码" Target:self Selector:@selector(onClick:)];
-    _backPwdButton.tag=1;
+    _backPwdButton.tag = 1;
     [self.view addSubview:_backPwdButton];
+    
     //尾部
-    UIView * loginFootBg =[UIView new];
-    loginFootBg.backgroundColor=[UIColor whiteColor];
+    UIView * loginFootBg = [UIView new];
+    loginFootBg.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:loginFootBg];
     [loginFootBg mas_makeConstraints:^(MASConstraintMaker *make) {
         make.size.mas_equalTo(CGSizeMake(self.view.frame.size.width, 40));
@@ -173,7 +174,6 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     gesture.numberOfTapsRequired = 1;
     gesture.delegate = self;
     [self.view addGestureRecognizer:gesture];
-    
 }
 
 - (void)onClick:(UIButton*)sender{
@@ -221,7 +221,6 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     }else{
         [MBProgressHUD showSuccess:@"账户和密码不匹配"];
     }
-    
 }
 
 - (void)myTask {
@@ -250,7 +249,6 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     [_passwordField resignFirstResponder];
 }
 
-
 - (void)returnOnKeyboard:(UITextField *)sender {
     
     if (_accountField.text.length != 0 && _passwordField.text.length !=0 ) {
@@ -265,8 +263,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
 }
 
 #pragma mark - UITextFieldDelegate
-- (BOOL)textFieldShouldReturn:(UITextField *)textField
-{
+- (BOOL)textFieldShouldReturn:(UITextField *)textField {
     if (textField == _accountField) {
         return [_passwordField becomeFirstResponder];
     } else {
@@ -276,8 +273,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
 }
 
 #pragma mark - customSwitch delegate
--(void)customSwitchSetStatus:(DZCustomSwitchStatus)status
-{
+-(void)customSwitchSetStatus:(DZCustomSwitchStatus)status {
     switch (status) {
         case DZCustomSwitchStatusOn:
             XLog(@"on");

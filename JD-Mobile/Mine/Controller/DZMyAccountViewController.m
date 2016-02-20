@@ -29,7 +29,6 @@
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-    
     // Return the number of sections.
     return 2;
 }
@@ -43,7 +42,6 @@
     }
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -53,19 +51,19 @@
     }
     if (indexPath.section==0) {
         cell.textLabel.text = @[@"头像", @"用户名",@"昵称",@"性别",@"出生日期"][indexPath.row];
-        if (indexPath.row==0) {
-            UIImageView *face=[[UIImageView alloc]initWithFrame:CGRectMake(self.tableView.frame.size.width-80,5,50,50)];
+        if (indexPath.row == 0) {
+            UIImageView *face = [[UIImageView alloc]initWithFrame:CGRectMake(self.tableView.frame.size.width-80,5,50,50)];
             face.image=[UIImage imageNamed:@"my_head_default"];
             [cell.contentView addSubview:face];
-        }else if(indexPath.row>0){
-            cell.detailTextLabel.font=[UIFont systemFontOfSize:14];
-            cell.detailTextLabel.text=@[@"",@"jd_4343434235435",@"人生真是寂寞啊",@"男",@"1991月7月2日"][indexPath.row];
+        }else if(indexPath.row > 0){
+            cell.detailTextLabel.font = [UIFont systemFontOfSize:14];
+            cell.detailTextLabel.text = @[@"",@"jd_4343434235435",@"chars",@"男",@"1991月7月2日"][indexPath.row];
         }
-    }else if(indexPath.section==1){
+    }else if(indexPath.section == 1){
         cell.textLabel.text = @[@"地址管理", @"账户安全"][indexPath.row];
     }
     
-    cell.accessoryType=UITableViewCellAccessoryDisclosureIndicator;
+    cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
     
     return cell;
 }

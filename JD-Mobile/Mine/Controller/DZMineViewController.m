@@ -22,7 +22,7 @@
 
 @interface DZMineViewController ()<UIAlertViewDelegate>
 {
-    UIScrollView * _scrollView;
+    UIScrollView *_scrollView;
     NSMutableArray *_myArray;//模型
 }
 
@@ -40,8 +40,6 @@
     
     //设置导航栏
     [self setupNavigationItem];
-    //初始化视图
-    //[self initView];
     //初始化数据
     [self initData];
 }
@@ -52,7 +50,6 @@
     }else{
         [self refreshView];
         self.tableView.tableHeaderView = [self addHeaderBar];
-        
     }
 }
 
@@ -86,14 +83,9 @@
 
 #pragma mark 加载数据
 -(void)initData{
-    _myArray=[[NSMutableArray alloc]init];
+    _myArray = [[NSMutableArray alloc]init];
 }
 
-/**
- *  <#Description#>
- *
- *  @return <#return value description#>
- */
 -(UIImageView*)addNoHeaderBar{
     UIImageView *header = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 180)];
     header.userInteractionEnabled = YES;
@@ -120,22 +112,22 @@
         make.size.mas_equalTo(CGSizeMake(self.view.frame.size.width, 50));
         make.bottom.mas_equalTo(header.mas_bottom);
     }];
-    UIButton *view1 = [UIButton new];
-    view1.titleLabel.font = [UIFont boldSystemFontOfSize:14 ];
-    [view1 setTitle:@"关注的商品" forState:UIControlStateNormal];
-    [bgView addSubview:view1];
+    UIButton *product = [UIButton new];
+    product.titleLabel.font = [UIFont boldSystemFontOfSize:14 ];
+    [product setTitle:@"关注的商品" forState:UIControlStateNormal];
+    [bgView addSubview:product];
     
-    UIButton *view2 = [UIButton new];
-    view2.titleLabel.font = [UIFont boldSystemFontOfSize:14 ];
-    [view2 setTitle:@"关注的店铺" forState:UIControlStateNormal];
-    [bgView addSubview:view2];
+    UIButton *store = [UIButton new];
+    store.titleLabel.font = [UIFont boldSystemFontOfSize:14 ];
+    [store setTitle:@"关注的店铺" forState:UIControlStateNormal];
+    [bgView addSubview:store];
     
-    UIButton *view3 = [UIButton new];
-    view3.titleLabel.font = [UIFont boldSystemFontOfSize:14 ];
-    [view3 setTitle:@"浏览记录" forState:UIControlStateNormal];
-    [bgView addSubview:view3];
+    UIButton *browse = [UIButton new];
+    browse.titleLabel.font = [UIFont boldSystemFontOfSize:14 ];
+    [browse setTitle:@"浏览记录" forState:UIControlStateNormal];
+    [bgView addSubview:browse];
     
-    [DZMasonyUtil equalSpacingView:@[view1,view2,view3]
+    [DZMasonyUtil equalSpacingView:@[product,store,browse]
                        viewWidth:(self.view.frame.size.width/3)-1
                       viewHeight:50
                   superViewWidth:self.view.frame.size.width];
@@ -169,11 +161,11 @@
     userName.text = _myInfo.userName;
     [header addSubview:userName];
     
-    UILabel * dengji = [[UILabel alloc]initWithFrame:CGRectMake(120, 55, header.size.width-120, 20)];
-    dengji.textColor = [UIColor whiteColor];
-    dengji.font = [UIFont systemFontOfSize:12];
-    dengji.text = @"至尊用户";
-    [header addSubview:dengji];
+    UILabel * grade = [[UILabel alloc]initWithFrame:CGRectMake(120, 55, header.size.width-120, 20)];
+    grade.textColor = [UIColor whiteColor];
+    grade.font = [UIFont systemFontOfSize:12];
+    grade.text = @"至尊用户";
+    [header addSubview:grade];
     
     UILabel * address = [[UILabel alloc]initWithFrame:CGRectMake(240, header.size.height-80, 120, 20)];
     address.textColor = [UIColor whiteColor];
@@ -190,20 +182,20 @@
         make.bottom.mas_equalTo(header.mas_bottom);
     }];
     
-    DZWalletCardButton *btn11 = [DZWalletCardButton new];
-    [btn11 walletCardWith1:[NSString stringWithFormat:@"%@",_myInfo.commodity] Title:@"关注的商品" Width:self.view.width/3 height:50];
-    [bgView addSubview:btn11];
+    DZWalletCardButton *focusProduct = [DZWalletCardButton new];
+    [focusProduct walletCardWith1:[NSString stringWithFormat:@"%@",_myInfo.commodity] Title:@"关注的商品" Width:self.view.width/3 height:50];
+    [bgView addSubview:focusProduct];
     
-    DZWalletCardButton *btn22 = [DZWalletCardButton new];
-    [btn22 walletCardWith1:[NSString stringWithFormat:@"%@",_myInfo.shop] Title:@"关注的店铺" Width:self.view.width/3 height:50];
-    [bgView addSubview:btn22];
+    DZWalletCardButton *focusStore = [DZWalletCardButton new];
+    [focusStore walletCardWith1:[NSString stringWithFormat:@"%@",_myInfo.shop] Title:@"关注的店铺" Width:self.view.width/3 height:50];
+    [bgView addSubview:focusStore];
     
     
-    DZWalletCardButton *btn33 = [DZWalletCardButton new];
-    [btn33 walletCardWith1:[NSString stringWithFormat:@"%@",_myInfo.record] Title:@"浏览记录" Width:self.view.width/3 height:50];
-    [bgView addSubview:btn33];
+    DZWalletCardButton *browseHistory = [DZWalletCardButton new];
+    [browseHistory walletCardWith1:[NSString stringWithFormat:@"%@",_myInfo.record] Title:@"浏览记录" Width:self.view.width/3 height:50];
+    [bgView addSubview:browseHistory];
     
-    [DZMasonyUtil equalSpacingView:@[btn11,btn22,btn33]
+    [DZMasonyUtil equalSpacingView:@[focusProduct,focusStore,browseHistory]
                        viewWidth:self.view.frame.size.width/3
                       viewHeight:50
                   superViewWidth:self.view.frame.size.width];
@@ -219,7 +211,6 @@
 
 #pragma mark 设置分组标题内容高度
 - (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section{
-    
     return 25;
 }
 
@@ -251,8 +242,7 @@
 }
 
 #pragma mark返回每行的单元格
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     static NSString *cellIdentifier = @"UITableViewCellIdentifierKey";
     
     //首先根据标示去缓存池取
@@ -317,50 +307,50 @@
     }];
     
     if (section == 0) {
-        UIButton *btn1 = [UIButton createButtonWithImage:@"wait_money_icon" Title:@"待付款" Target:self Selector:@selector(OnClick:)];
-        btn1.tag=1;
-        [footer addSubview:btn1];
+        UIButton *pay = [UIButton createButtonWithImage:@"wait_money_icon" Title:@"待付款" Target:self Selector:@selector(OnClick:)];
+        pay.tag = 1;
+        [footer addSubview:pay];
         
-        UIButton *btn2 = [UIButton createButtonWithImage:@"wait_product_icon" Title:@"待收货" Target:self Selector:@selector(OnClick:)];
-        btn2.tag=2;
-        [footer addSubview:btn2];
+        UIButton *receipt = [UIButton createButtonWithImage:@"wait_product_icon" Title:@"待收货" Target:self Selector:@selector(OnClick:)];
+        receipt.tag = 2;
+        [footer addSubview:receipt];
         
-        UIButton *btn3 = [UIButton createButtonWithImage:@"wait_comment_icon" Title:@"待评价" Target:self Selector:@selector(OnClick:)];
-        btn3.tag=3;
-        [footer addSubview:btn3];
+        UIButton *evaluate = [UIButton createButtonWithImage:@"wait_comment_icon" Title:@"待评价" Target:self Selector:@selector(OnClick:)];
+        evaluate.tag = 3;
+        [footer addSubview:evaluate];
         
-        UIButton *btn4 = [UIButton createButtonWithImage:@"wait_after_icon" Title:@"返修/退货" Target:self Selector:@selector(OnClick:)];
-        btn4.tag=4;
-        [footer addSubview:btn4];
+        UIButton *repair = [UIButton createButtonWithImage:@"wait_after_icon" Title:@"返修/退货" Target:self Selector:@selector(OnClick:)];
+        repair.tag = 4;
+        [footer addSubview:repair];
         
-        [DZMasonyUtil equalSpacingView:@[btn1,btn2,btn3,btn4]
+        [DZMasonyUtil equalSpacingView:@[pay,receipt,evaluate,repair]
                            viewWidth:self.view.width/4
                           viewHeight:CellFooterheight
                       superViewWidth:self.view.width];
         return footer;
-    }else if(section==1){
-        DZWalletCardButton *btn11 = [DZWalletCardButton new];
-        [btn11 walletCardWith:@"0.00" Title:@"账户余额" Width:self.view.width/4 height:CellFooterheight];
+    }else if(section == 1){
+        DZWalletCardButton *balance = [DZWalletCardButton new];
+        [balance walletCardWith:@"0.00" Title:@"账户余额" Width:self.view.width/4 height:CellFooterheight];
         
-        [footer addSubview:btn11];
+        [footer addSubview:balance];
         
-        DZWalletCardButton *btn22 =[DZWalletCardButton new];
-        [btn22 walletCardWith:@"0" Title:@"优惠劵" Width:self.view.width/4 height:CellFooterheight];
+        DZWalletCardButton *privilege =[DZWalletCardButton new];
+        [privilege walletCardWith:@"0" Title:@"优惠劵" Width:self.view.width/4 height:CellFooterheight];
         
-        [footer addSubview:btn22];
+        [footer addSubview:privilege];
         
         
-        DZWalletCardButton *btn33 = [DZWalletCardButton new];
-        [btn33 walletCardWith:@"0" Title:@"京豆" Width:self.view.width/4 height:CellFooterheight];
+        DZWalletCardButton *bean = [DZWalletCardButton new];
+        [bean walletCardWith:@"0" Title:@"京豆" Width:self.view.width/4 height:CellFooterheight];
         
-        [footer addSubview:btn33];
+        [footer addSubview:bean];
         
-        DZWalletCardButton *btn44 = [DZWalletCardButton new];
-        [btn44 walletCardWith:@"0" Title:@"京东卡/E卡" Width:self.view.width/4 height:CellFooterheight];
+        DZWalletCardButton *clip = [DZWalletCardButton new];
+        [clip walletCardWith:@"0" Title:@"京东卡/E卡" Width:self.view.width/4 height:CellFooterheight];
         
-        [footer addSubview:btn44];
+        [footer addSubview:clip];
         
-        [DZMasonyUtil equalSpacingView:@[btn11,btn22,btn33,btn44]
+        [DZMasonyUtil equalSpacingView:@[balance,privilege,bean,clip]
                            viewWidth:self.view.width/4
                           viewHeight:CellFooterheight
                       superViewWidth:self.view.width];
