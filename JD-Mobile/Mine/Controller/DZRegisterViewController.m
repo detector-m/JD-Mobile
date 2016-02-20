@@ -72,12 +72,12 @@
     NSCharacterSet *whithNewUser = [NSCharacterSet whitespaceAndNewlineCharacterSet];
     NSString *phone = [_phoneField.text stringByTrimmingCharactersInSet:whithNewUser];
     
-    NSDate *  senddate = [NSDate date];
+    NSDate *senddate = [NSDate date];
     NSDateFormatter  *dateformatter = [[NSDateFormatter alloc] init];
     [dateformatter setDateFormat:@"YYYYMMdd"];
     NSString * locationString = [dateformatter stringFromDate:senddate];
     
-    DZUserModel * um = [[DZUserModel alloc]init];
+    DZUserModel *um = [[DZUserModel alloc]init];
     um.userId = [NSString stringWithFormat:@"%i",arc4random()%10000 + 1];
     um.userPhone = phone;
     um.userPwd = @"123456";
@@ -87,7 +87,7 @@
     um.shop = [NSNumber numberWithInteger:3];
     um.record = [NSNumber numberWithInteger:12];
     
-    DZUserDao * ud = [[DZUserDao alloc]init];
+    DZUserDao *ud = [[DZUserDao alloc]init];
     if ([ud insertUser:um]) {
         [MBProgressHUD showSuccess:@"注册成功"];
     }else{

@@ -10,13 +10,13 @@
 
 @interface DZUserModel : NSObject
 
-@property(nonatomic,strong)NSString * userId;
-@property(nonatomic,strong)NSString * userPhone;
-@property(nonatomic,strong)NSString * userPwd;
-@property(nonatomic,strong)NSString * time;
-@property(nonatomic,strong)NSString * userName;
-@property(nonatomic,strong)NSNumber * commodity;
-@property(nonatomic,strong)NSNumber * shop;
-@property(nonatomic,strong)NSNumber * record;
+@property(nonatomic,strong)NSString *userId;
+@property(nonatomic,strong)NSString *userPhone;
+@property(nonatomic,strong)NSString *userPwd;
+@property(nonatomic,strong)NSString *time;
+@property(nonatomic,strong)NSString *userName;
+@property(nonatomic,strong)NSNumber *commodity;
+@property(nonatomic,strong)NSNumber *shop;
+@property(nonatomic,strong)NSNumber *record;
 
 @end

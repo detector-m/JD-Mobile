@@ -37,13 +37,13 @@
 }
 
 #pragma mark 实现图片的缩小或者放大
--(UIImage*) scaleImageWithSize:(CGSize)size {
+-(UIImage *) scaleImageWithSize:(CGSize)size {
     
     UIGraphicsBeginImageContextWithOptions(size,NO,0);  //size 为CGSize类型，即你所需要的图片尺寸
     
     [self drawInRect:CGRectMake(0, 0, size.width, size.height)];
     
-    UIImage* scaledImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *scaledImage = UIGraphicsGetImageFromCurrentImageContext();
     
     UIGraphicsEndImageContext();
     
@@ -58,7 +58,7 @@
  *
  *  @return <#return value description#>
  */
-- (UIImage*)transformWidth:(CGFloat)width
+- (UIImage *)transformWidth:(CGFloat)width
                     height:(CGFloat)height {
     
     CGFloat destW = width;

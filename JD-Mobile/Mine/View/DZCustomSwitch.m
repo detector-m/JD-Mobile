@@ -18,7 +18,6 @@
     CGRect _middleRect;
     BOOL first;
     CGFloat _currentTranslationX;
-    
 }
 
 @property(nonatomic,retain) UIView *customSwitch;
@@ -36,7 +35,6 @@
 @synthesize offButton = _offButton;
 @synthesize arrange = _arrange;
 @synthesize status = _status;
-
 
 -(id)init {
     if (self == [super init]) {
@@ -57,9 +55,7 @@
     if (_arrange == DZCustomSwitchArrangeOFFLeftONRight) {
         if (self.status == DZCustomSwitchStatusOn) {
             if (status == DZCustomSwitchStatusOff) {
-                
                 [self moveButtonTranslation:_minusTranslate];
-                
             }
         }else{
             if (status == DZCustomSwitchStatusOn) {
@@ -96,7 +92,7 @@
     }];
 }
 
--(id)initWithOnImage:(UIImage*)onImage offImage:(UIImage*)offImage arrange:(DZCustomSwitchArrange)arrange {
+-(id)initWithOnImage:(UIImage *)onImage offImage:(UIImage *)offImage arrange:(DZCustomSwitchArrange)arrange{
     self.onImage = onImage;
     self.offImage = offImage;
     
@@ -132,15 +128,15 @@
 }
 
 -(void)switchBtnDragged{
-    
+    XLog(@"switchBtnDragged");
 }
 
 -(void)awakeFromNib {
-    self.backgroundColor=[UIColor clearColor];
+    self.backgroundColor = [UIColor clearColor];
     NSArray *nibs = [[NSBundle mainBundle] loadNibNamed:@"DZCustomSwitch" owner:self options:nil];
     for (UIView *view in nibs) {
         if ([view isKindOfClass:[UIView class]]) {
-            _customSwitch = (UIView*)view;
+            _customSwitch = (UIView *)view;
             break;
         }
     }
@@ -165,7 +161,7 @@
     }
 }
 
--(void)switchBtnDragged:(UIPanGestureRecognizer*)panGuester {
+-(void)switchBtnDragged:(UIPanGestureRecognizer *)panGuester {
     CGFloat translation = [panGuester translationInView:panGuester.view].x;
     CGFloat moveTranslation = 0.0;
     moveTranslation = translation + _currentTranslationX;

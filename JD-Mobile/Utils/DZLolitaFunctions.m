@@ -56,7 +56,7 @@
 }
 
 - (UILabel *)leftViewForTextFieldWithTest:(NSString *)test{
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 80, 60)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, 80, 60)];
     label.text = test;
     label.font = [UIFont systemFontOfSize:16];
     label.textColor = DZColor(104, 104, 104);

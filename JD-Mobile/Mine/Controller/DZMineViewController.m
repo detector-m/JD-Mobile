@@ -86,7 +86,7 @@
     _myArray = [[NSMutableArray alloc]init];
 }
 
--(UIImageView*)addNoHeaderBar{
+-(UIImageView *)addNoHeaderBar{
     UIImageView *header = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 180)];
     header.userInteractionEnabled = YES;
     header.image = [UIImage imageNamed:@"my_unlogin_bg"];
@@ -140,7 +140,7 @@
  *
  *  @return 返回表格头部
  */
--(UIImageView*)addHeaderBar{
+-(UIImageView *)addHeaderBar{
     UIImageView *header = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, 180)];
     header.userInteractionEnabled = YES;
     header.image = [UIImage imageNamed:@"my_login_bg"];
@@ -156,18 +156,18 @@
     [unLoginBtnBg setRippeEffectEnabled:NO];
     [header addSubview:unLoginBtnBg];
     
-    UILabel * userName = [[UILabel alloc]initWithFrame:CGRectMake(120, 25, header.size.width-120, 30)];
+    UILabel *userName = [[UILabel alloc]initWithFrame:CGRectMake(120, 25, header.size.width-120, 30)];
     userName.textColor = [UIColor whiteColor];
     userName.text = _myInfo.userName;
     [header addSubview:userName];
     
-    UILabel * grade = [[UILabel alloc]initWithFrame:CGRectMake(120, 55, header.size.width-120, 20)];
+    UILabel *grade = [[UILabel alloc]initWithFrame:CGRectMake(120, 55, header.size.width-120, 20)];
     grade.textColor = [UIColor whiteColor];
     grade.font = [UIFont systemFontOfSize:12];
     grade.text = @"至尊用户";
     [header addSubview:grade];
     
-    UILabel * address = [[UILabel alloc]initWithFrame:CGRectMake(240, header.size.height-80, 120, 20)];
+    UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(240, header.size.height-80, 120, 20)];
     address.textColor = [UIColor whiteColor];
     address.font = [UIFont systemFontOfSize:12];
     address.text = @"账户管理、收货地址〉";
@@ -369,13 +369,13 @@
     }
 }
 
-- (void)OnClick:(UIButton*)sender{
+- (void)OnClick:(UIButton *)sender{
     if ([DZUserDefaultsUtils getOwnID] == 0) {
         [self showLoginView];
         return;
     }
     
-    DZMyOrderViewController * myOrder=[[DZMyOrderViewController alloc]init];
+    DZMyOrderViewController *myOrder=[[DZMyOrderViewController alloc]init];
     switch (sender.tag) {
         case 1:
             [self.navigationController pushViewController:myOrder animated:YES];

@@ -59,7 +59,7 @@
 
 #pragma mark 返回table头
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{
-    UIView * header = [[UIView alloc]init];
+    UIView *header = [[UIView alloc]init];
     header.backgroundColor = [UIColor whiteColor];
     UIImageView *bgView = [UIImageView new];
     bgView.image = [UIImage imageNamed:@"order_split"];
@@ -69,17 +69,17 @@
         make.size.mas_equalTo(CGSizeMake(self.view.frame.size.width, 0.5));
         make.bottom.mas_equalTo(header.mas_bottom);
     }];
-    UIImageView * groupIoc =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
+    UIImageView *groupIoc =[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, 40, 40)];
     groupIoc.contentMode =  UIViewContentModeCenter;
     groupIoc.image = [UIImage imageNamed:@"orderDetail_JDShopIcon"];
     [header addSubview:groupIoc];
     
-    UILabel * groupTitle = [[UILabel alloc]initWithFrame:CGRectMake(30, 0, 100, 40)];
+    UILabel *groupTitle = [[UILabel alloc]initWithFrame:CGRectMake(30, 0, 100, 40)];
     groupTitle.text = @"京东";
     groupTitle.font = [UIFont systemFontOfSize:15];
     [header addSubview:groupTitle];
     
-    UILabel * groupType = [[UILabel alloc]initWithFrame:CGRectMake(70, 0, self.view.width-90, 40)];
+    UILabel *groupType = [[UILabel alloc]initWithFrame:CGRectMake(70, 0, self.view.width-90, 40)];
     groupType.text = @"等待付款";
     groupType.textAlignment = NSTextAlignmentRight;
     groupType.textColor = [UIColor redColor];
@@ -90,7 +90,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier=@"UITableViewCellIdentifierKey";
+    static NSString *cellIdentifier = @"UITableViewCellIdentifierKey";
     
     //首先根据标示去缓存池取
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
@@ -108,7 +108,7 @@
 
 #pragma mark 返回table尾
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section{
-    UIView * footer =[[UIView alloc]init];
+    UIView *footer = [[UIView alloc]init];
     footer.backgroundColor = [UIColor whiteColor];
     UIImageView *bgView = [UIImageView new];
     bgView.image = [UIImage imageNamed:@"order_split"];
@@ -119,16 +119,16 @@
         make.top.mas_equalTo(footer.mas_top);
     }];
     
-    UILabel * groupPrice = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, self.view.width-100, 40)];
+    UILabel *groupPrice = [[UILabel alloc]initWithFrame:CGRectMake(10, 0, self.view.width-100, 40)];
     groupPrice.text = @"实付款:￥2999.00";
     groupPrice.font = [UIFont systemFontOfSize:15];
     [footer addSubview:groupPrice];
     
-    UIButton * groupBtn = [[UIButton alloc]initWithFrame:CGRectMake(self.view.width-90, 7, 70, 26)];
+    UIButton *groupBtn = [[UIButton alloc]initWithFrame:CGRectMake(self.view.width-90, 7, 70, 26)];
     groupBtn.layer.borderWidth = 0.5;
     groupBtn.layer.borderColor = [UIColor redColor].CGColor;
     groupBtn.layer.cornerRadius  = 3;
-    groupBtn.titleLabel.font =[UIFont systemFontOfSize:13];
+    groupBtn.titleLabel.font = [UIFont systemFontOfSize:13];
     [groupBtn setTitle:@"去付款" forState:UIControlStateNormal];
     [groupBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
     [groupBtn addTarget:self action:@selector(payClick:) forControlEvents:UIControlEventTouchUpInside];
@@ -143,7 +143,7 @@
 }
 
 - (void)payClick:(UIButton*)sender{
-    DZCashierViewController * cashier = [[DZCashierViewController alloc]init];
+    DZCashierViewController *cashier = [[DZCashierViewController alloc]init];
     switch (sender.tag) {
         case 0:
             [self.navigationController pushViewController:cashier animated:YES];

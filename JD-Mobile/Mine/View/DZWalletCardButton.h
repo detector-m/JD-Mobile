@@ -10,8 +10,8 @@
 
 @interface DZWalletCardButton : UIButton
 
-- (void)walletCardWith:(NSString*)number Title:(NSString*)title Width:(CGFloat)width height:(CGFloat)height;
+- (void)walletCardWith:(NSString *)number Title:(NSString *)title Width:(CGFloat)width height:(CGFloat)height;
 
-- (void)walletCardWith1:(NSString*)number Title:(NSString*)title Width:(CGFloat)width height:(CGFloat)height;
+- (void)walletCardWith1:(NSString *)number Title:(NSString *)title Width:(CGFloat)width height:(CGFloat)height;
 
 @end

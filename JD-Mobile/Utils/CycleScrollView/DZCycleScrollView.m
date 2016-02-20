@@ -223,10 +223,8 @@ NSString * const ID = @"cycleCell";
                                        
                                    }
                                }
-         
          ];
     }
-    
 }
 
 

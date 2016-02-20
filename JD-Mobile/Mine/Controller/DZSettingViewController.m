@@ -126,7 +126,7 @@
             break;
         case 1:
             if (indexPath.row == 0) {
-                DZAboutViewController * about = [[DZAboutViewController alloc]init];
+                DZAboutViewController *about = [[DZAboutViewController alloc]init];
                 [self.navigationController pushViewController:about animated:YES];
             }
             break;

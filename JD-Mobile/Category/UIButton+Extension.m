@@ -21,8 +21,8 @@
  *
  *  @return 返回button
  */
-+ (UIButton*) createButtonWithImage:(NSString *)image Title:(NSString *)title Target:(id)target Selector:(SEL)selector{
-    UIButton * button = [UIButton new];
++ (UIButton *) createButtonWithImage:(NSString *)image Title:(NSString *)title Target:(id)target Selector:(SEL)selector{
+    UIButton *button = [UIButton new];
     UIImage *Image = [[UIImage imageWithName:image] scaleImageWithSize:CGSizeMake(35, 35)];
     [button setImage:Image forState:UIControlStateNormal];
     [button setImage:[UIImage imageWithName:nil] forState:UIControlStateHighlighted];
@@ -30,7 +30,7 @@
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
         [button setTitleColor:nil forState:UIControlStateHighlighted];
-        button.titleLabel.font =[UIFont systemFontOfSize:14 ];
+        button.titleLabel.font = [UIFont systemFontOfSize:14 ];
         
     }
     button.contentHorizontalAlignment = UIControlContentHorizontalAlignmentCenter;//设置button的内容横向居中。。设置content是title和image一起变化
@@ -41,7 +41,6 @@
     [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
     
     return button;
-    
 }
 
 /**
@@ -55,8 +54,8 @@
  *
  *  @return 返回button
  */
-+ (UIButton*) createButtonWithFrame: (CGRect) frame Target:(id)target Selector:(SEL)selector Image:(NSString *)image ImagePressed:(NSString *)imagePressed{
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeCustom];
++ (UIButton *) createButtonWithFrame: (CGRect) frame Target:(id)target Selector:(SEL)selector Image:(NSString *)image ImagePressed:(NSString *)imagePressed{
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
     [button setFrame:frame];
     UIImage *newImage = [UIImage imageNamed: image];
     [button setBackgroundImage:newImage forState:UIControlStateNormal];
@@ -77,7 +76,7 @@
  *  @return 返回button
  */
 + (UIButton *) createButtonWithFrame:(CGRect)frame Title:(NSString *)title Target:(id)target Selector:(SEL)selector{
-    UIButton * button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     [button setFrame:frame];
     [button setTitle:title forState:UIControlStateNormal];
     [button addTarget:target action:selector forControlEvents:UIControlEventTouchUpInside];
@@ -86,9 +85,8 @@
     return button;
 }
 
-
 + (UIButton *) createButtonWithTitle:(NSString *)title Image:(NSString *)image Target:(id)target Selector:(SEL)selector{
-    UIButton * button = [UIButton new];
+    UIButton *button = [UIButton new];
     [button setTitle:title forState:UIControlStateNormal];
     [button.titleLabel setFont:[UIFont systemFontOfSize:14]];
     [button setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];

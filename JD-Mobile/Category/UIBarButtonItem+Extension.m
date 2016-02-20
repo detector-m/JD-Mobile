@@ -15,7 +15,6 @@
 + (instancetype)BarButtonItemWithTitle:(NSString *)title style:(UIBarButtonItemStyle)style target:(id)target action:(SEL)action {
     
     return [[self alloc] initWithTitle:title style:style target:target action:action];
-    
 }
 
 + (instancetype)BarButtonItemWithBackgroudImageName:(NSString *)backgroudImage highBackgroudImageName:(NSString *)highBackgroudImageName target:(id)target action:(SEL)action {
@@ -51,7 +50,7 @@
         [button setTitle:title forState:UIControlStateNormal];
         [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [button setTitleColor:nil forState:UIControlStateHighlighted];
-        button.titleLabel.font =[UIFont fontWithName:@"Helvetica-Bold" size:10 ];
+        button.titleLabel.font = [UIFont fontWithName:@"Helvetica-Bold" size:10 ];
         
     }
     

@@ -49,7 +49,7 @@
     if (!cell) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleValue1 reuseIdentifier:cellIdentifier];
     }
-    if (indexPath.section==0) {
+    if (indexPath.section == 0) {
         cell.textLabel.text = @[@"头像", @"用户名",@"昵称",@"性别",@"出生日期"][indexPath.row];
         if (indexPath.row == 0) {
             UIImageView *face = [[UIImageView alloc]initWithFrame:CGRectMake(self.tableView.frame.size.width-80,5,50,50)];

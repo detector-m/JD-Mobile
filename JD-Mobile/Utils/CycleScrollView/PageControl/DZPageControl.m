@@ -323,7 +323,6 @@ static CGSize const kDefaultDotSize = {8, 8};
     return _dots;
 }
 
-
 - (CGSize)dotSize {
     // Dot size logic depending on the source of the dot view
     if (self.dotImage && CGSizeEqualToSize(_dotSize, CGSizeZero)) {

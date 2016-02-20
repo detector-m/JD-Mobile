@@ -80,7 +80,7 @@
     return self.frame.size;
 }
 
-- (void) distributeSpacingHorizontallyWith:(NSArray*)views {
+- (void) distributeSpacingHorizontallyWith:(NSArray *)views {
     NSMutableArray *spaces = [NSMutableArray arrayWithCapacity:views.count+1];
     
     for ( int i = 0 ; i < views.count+1 ; ++i ) {
@@ -99,7 +99,7 @@
     
     [v0 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.equalTo(ws.mas_left);
-        make.centerY.equalTo(((UIView*)views[0]).mas_centerY);
+        make.centerY.equalTo(((UIView *)views[0]).mas_centerY);
     }];
     
     UIView *lastSpace = v0;
@@ -125,7 +125,8 @@
     }];
     
 }
-- (void) distributeSpacingVerticallyWith:(NSArray*)views {
+
+- (void) distributeSpacingVerticallyWith:(NSArray *)views {
     NSMutableArray *spaces = [NSMutableArray arrayWithCapacity:views.count+1];
     
     for ( int i = 0 ; i < views.count+1 ; ++i ) {
@@ -138,14 +139,13 @@
         }];
     }
     
-    
     UIView *v0 = spaces[0];
     
     __weak __typeof(&*self)ws = self;
     
     [v0 mas_makeConstraints:^(MASConstraintMaker *make) {
         make.top.equalTo(ws.mas_top);
-        make.centerX.equalTo(((UIView*)views[0]).mas_centerX);
+        make.centerX.equalTo(((UIView *)views[0]).mas_centerX);
     }];
     
     UIView *lastSpace = v0;

@@ -20,7 +20,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
 @interface DZLoginViewController ()<UITextFieldDelegate, UIGestureRecognizerDelegate,DZCustomSwitchDelegate,KINWebBrowserDelegate,MBProgressHUDDelegate>
 {
     KINWebBrowserViewController *webBrowser;
-    MBProgressHUD * HUD;
+    MBProgressHUD *HUD;
     
 }
 @property (nonatomic, strong) UITextField *accountField;
@@ -145,7 +145,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     [self.view addSubview:_backPwdButton];
     
     //尾部
-    UIView * loginFootBg = [UIView new];
+    UIView *loginFootBg = [UIView new];
     loginFootBg.backgroundColor = [UIColor whiteColor];
     [self.view addSubview:loginFootBg];
     [loginFootBg mas_makeConstraints:^(MASConstraintMaker *make) {
@@ -176,7 +176,7 @@ static NSString *const defaultAddress = @"https://plogin.m.jd.com/user/login.act
     [self.view addGestureRecognizer:gesture];
 }
 
-- (void)onClick:(UIButton*)sender{
+- (void)onClick:(UIButton *)sender{
     DZRegisterViewController *registerView = [[DZRegisterViewController alloc] init];
     switch (sender.tag) {
         case 0:

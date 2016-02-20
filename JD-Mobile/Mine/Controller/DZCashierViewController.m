@@ -10,7 +10,7 @@
 
 @interface DZCashierViewController ()<MBProgressHUDDelegate>
 {
-    MBProgressHUD * HUD;
+    MBProgressHUD *HUD;
     float _money;
 }
 
@@ -76,7 +76,7 @@
     [header addSubview:title];
     
     UILabel *price = [[UILabel alloc]initWithFrame:CGRectMake(self.view.width-110, 0, 90, 40)];
-    price.text=[NSString stringWithFormat:@"%.2f元",_money];
+    price.text = [NSString stringWithFormat:@"%.2f元",_money];
     price.textAlignment = NSTextAlignmentRight;
     price.textColor = [UIColor redColor];
     price.font = [UIFont systemFontOfSize:15];
@@ -85,7 +85,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    static NSString *cellIdentifier=@"UITableViewCellIdentifierKey";
+    static NSString *cellIdentifier = @"UITableViewCellIdentifierKey";
     
     //首先根据标示去缓存池取
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];

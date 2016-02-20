@@ -18,6 +18,6 @@
 @property (nonatomic, assign) CGFloat centerX;
 @property (nonatomic, assign) CGFloat centerY;
 
-- (void) distributeSpacingVerticallyWith:(NSArray*)views;
+- (void) distributeSpacingVerticallyWith:(NSArray *)views;
 
 @end

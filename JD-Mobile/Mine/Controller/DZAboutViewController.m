@@ -36,9 +36,9 @@
     XLog(@"shareOnClick");
 }
 
-- (UIView*)addHeaderView{
-    UIView * headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height/2)];
-    UIImageView * iamgeView = [UIImageView new];
+- (UIView *)addHeaderView{
+    UIView *headerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height/2)];
+    UIImageView *iamgeView = [UIImageView new];
     iamgeView.layer.borderWidth = 2;
     iamgeView.layer.borderColor = [UIColor lightGrayColor].CGColor;
     iamgeView.layer.cornerRadius = 10;
@@ -46,7 +46,7 @@
     [headerView addSubview:iamgeView];
     [DZMasonyUtil centerView:iamgeView size:CGSizeMake(150, 150)];
     
-    UILabel * label = [[UILabel alloc]initWithFrame:CGRectMake(0, headerView.size.height-60, headerView.size.width, 30)];
+    UILabel *label = [[UILabel alloc]initWithFrame:CGRectMake(0, headerView.size.height-60, headerView.size.width, 30)];
     label.text = @"扫描二维码，您的朋友也可以关注下たこ";
     label.textAlignment = NSTextAlignmentCenter;
     label.font = [UIFont systemFontOfSize:16];
@@ -54,16 +54,16 @@
     return headerView;
 }
 
-- (UIView*)addFooterView{
-    UIView * footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height-self.view.height/2-40*3)];
-    UILabel * labelEn = [[UILabel alloc]initWithFrame:CGRectMake(0, footerView.size.height-100, self.view.width, 30)];
+- (UIView *)addFooterView{
+    UIView *footerView = [[UIView alloc]initWithFrame:CGRectMake(0, 0, self.view.width, self.view.height-self.view.height/2-40*3)];
+    UILabel *labelEn = [[UILabel alloc]initWithFrame:CGRectMake(0, footerView.size.height-100, self.view.width, 30)];
     labelEn.text = @"Copyright©2016";
     labelEn.textColor = [UIColor grayColor];
     labelEn.font = [UIFont systemFontOfSize:14];
     labelEn.textAlignment = NSTextAlignmentCenter;
     [footerView addSubview:labelEn];
     
-    UILabel * labelCn = [[UILabel alloc]initWithFrame:CGRectMake(0, footerView.size.height-115, self.view.width, 30)];
+    UILabel *labelCn = [[UILabel alloc]initWithFrame:CGRectMake(0, footerView.size.height-115, self.view.width, 30)];
     labelCn.text = @"Chars-D 版权所有";
     labelCn.textColor=[UIColor grayColor];
     labelCn.font=[UIFont systemFontOfSize:14];

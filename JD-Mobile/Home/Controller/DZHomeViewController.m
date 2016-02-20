@@ -26,9 +26,9 @@
     
     UISearchBar *_searchBar;
     DZCycleScrollView *_cycleScrollView;
-    UITableView * _tableView;
+    UITableView *_tableView;
     UIView *_loadAvataView;
-    UIButton * topBtn;
+    UIButton *topBtn;
     CGFloat lastContentOffset;
     
 }
