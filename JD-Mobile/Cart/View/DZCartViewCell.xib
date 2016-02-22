@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14C2055" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="87" id="HEv-hj-9ct" customClass="DZCartViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="130"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="HEv-hj-9ct" id="EgG-NP-vnE">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Li-b4-Zoo">
+                        <rect key="frame" x="10" y="55" width="20" height="20"/>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="8Bh-OC-kPq">
+                        <rect key="frame" x="33" y="15" width="100" height="100"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="苹果（Apple）iPhone6 （A1586）16GB金色 移动联通电信4G手机" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="31h-pk-aal">
+                        <rect key="frame" x="150" y="15" width="160" height="54"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jJd-MY-yXT">
+                        <rect key="frame" x="150" y="88" width="25" height="25"/>
+                        <state key="normal" backgroundImage="syncart_less_btn_enable">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="subClick:" destination="HEv-hj-9ct" eventType="touchUpInside" id="Brb-ai-fLo"/>
+                        </connections>
+                    </button>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1" textAlignment="center" minimumFontSize="17" background="syncart_middle_btn_enable" translatesAutoresizingMaskIntoConstraints="NO" id="3mT-t8-oQH">
+                        <rect key="frame" x="175" y="88" width="40" height="25"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HNy-hn-Uys">
+                        <rect key="frame" x="215" y="88" width="25" height="25"/>
+                        <state key="normal" backgroundImage="syncart_more_btn_enable">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="addClick:" destination="HEv-hj-9ct" eventType="touchUpInside" id="qTE-3P-8EK"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Izd-3v-ZDI">
+                        <rect key="frame" x="247" y="88" width="70" height="25"/>
+                        <state key="normal" title="延保服务">
+                            <color key="titleColor" red="0.43529411759999997" green="0.4431372549" blue="0.47450980390000003" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="￥4783.00" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xRb-Yc-4Hs">
+                        <rect key="frame" x="150" y="65" width="80" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="cartActivity" destination="Izd-3v-ZDI" id="3cc-Pr-YH8"/>
+                <outlet property="cartImg" destination="8Bh-OC-kPq" id="wXN-Vi-i4G"/>
+                <outlet property="cartNumber" destination="3mT-t8-oQH" id="9zK-Fw-uNG"/>
+                <outlet property="cartPrice" destination="xRb-Yc-4Hs" id="hxS-yy-Lzq"/>
+                <outlet property="cartRedio" destination="3Li-b4-Zoo" id="NJJ-uR-rxf"/>
+                <outlet property="cartSub" destination="HNy-hn-Uys" id="PKR-iM-QGf"/>
+                <outlet property="cartTitle" destination="31h-pk-aal" id="ZMa-yN-WW2"/>
+            </connections>
+            <point key="canvasLocation" x="261" y="239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="syncart_less_btn_enable" width="25" height="25"/>
+        <image name="syncart_middle_btn_enable" width="40" height="25"/>
+        <image name="syncart_more_btn_enable" width="25" height="25"/>
+    </resources>
+</document>

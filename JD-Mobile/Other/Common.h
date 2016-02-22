@@ -18,6 +18,7 @@
 #define DZCommonColor [UIColor colorWithRed:0.478 green:0.478 blue:0.478 alpha:1]
 //颜色
 #define DZColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+#define rgba(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 
 //是否为iOS7
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)
