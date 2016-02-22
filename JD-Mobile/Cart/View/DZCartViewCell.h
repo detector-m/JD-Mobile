@@ -10,6 +10,18 @@
 
 @interface DZCartViewCell : UITableViewCell
 
+@property (weak, nonatomic) IBOutlet UIImageView *cartRedio;
+
+@property (weak, nonatomic) IBOutlet UIImageView *cartImg;
+@property (weak, nonatomic) IBOutlet UILabel *cartTitle;
+@property (weak, nonatomic) IBOutlet UILabel *cartPrice;
+
+@property (weak, nonatomic) IBOutlet UIButton *cartAdd;
+@property (weak, nonatomic) IBOutlet UITextField *cartNumber;
+@property (weak, nonatomic) IBOutlet UIButton *cartSub;
+
+@property (weak, nonatomic) IBOutlet UIButton *cartActivity;
+
 /**
  *  文本框内容改变后的回调
  */

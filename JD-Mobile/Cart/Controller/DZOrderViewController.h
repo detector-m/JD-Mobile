@@ -10,4 +10,6 @@
 
 @interface DZOrderViewController : UIViewController
 
+- (instancetype)initWithOrderCount:(int)count money:(float)money;
+
 @end

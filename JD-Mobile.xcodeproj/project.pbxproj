@@ -13,6 +13,15 @@
 		D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57E1C722FF6000794BD /* UIImage+Extension.m */; };
 		D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */; };
 		D50BE5851C723301000794BD /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE5841C723301000794BD /* NSString+Extension.m */; };
+		D52924D31C7B3809003E41E8 /* NSMutableAttributedString+TY.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924C21C7B3809003E41E8 /* NSMutableAttributedString+TY.m */; };
+		D52924D41C7B3809003E41E8 /* TYAttributedLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924C41C7B3809003E41E8 /* TYAttributedLabel.m */; };
+		D52924D51C7B3809003E41E8 /* TYDrawStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924C61C7B3809003E41E8 /* TYDrawStorage.m */; };
+		D52924D61C7B3809003E41E8 /* TYImageStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924C81C7B3809003E41E8 /* TYImageStorage.m */; };
+		D52924D71C7B3809003E41E8 /* TYLinkTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924CA1C7B3809003E41E8 /* TYLinkTextStorage.m */; };
+		D52924D81C7B3809003E41E8 /* TYTextContainer+Extended.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924CB1C7B3809003E41E8 /* TYTextContainer+Extended.m */; };
+		D52924D91C7B3809003E41E8 /* TYTextContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924CD1C7B3809003E41E8 /* TYTextContainer.m */; };
+		D52924DA1C7B3809003E41E8 /* TYTextStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924CF1C7B3809003E41E8 /* TYTextStorage.m */; };
+		D52924DB1C7B3809003E41E8 /* TYViewStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = D52924D21C7B3809003E41E8 /* TYViewStorage.m */; };
 		D53C20B51C72A69700C2C21E /* dzRefeshView_arrow@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D53C20B41C72A69700C2C21E /* dzRefeshView_arrow@2x.png */; };
 		D53C20B81C72A76E00C2C21E /* DZRefreshView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C20B71C72A76E00C2C21E /* DZRefreshView.m */; };
 		D53C20BB1C72A79600C2C21E /* DZRefreshHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = D53C20BA1C72A79600C2C21E /* DZRefreshHeaderView.m */; };
@@ -162,6 +171,24 @@
 		D50BE5811C723254000794BD /* UIBarButtonItem+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Extension.m"; sourceTree = "<group>"; };
 		D50BE5831C723301000794BD /* NSString+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
 		D50BE5841C723301000794BD /* NSString+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		D52924C11C7B3809003E41E8 /* NSMutableAttributedString+TY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+TY.h"; sourceTree = "<group>"; };
+		D52924C21C7B3809003E41E8 /* NSMutableAttributedString+TY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+TY.m"; sourceTree = "<group>"; };
+		D52924C31C7B3809003E41E8 /* TYAttributedLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAttributedLabel.h; sourceTree = "<group>"; };
+		D52924C41C7B3809003E41E8 /* TYAttributedLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAttributedLabel.m; sourceTree = "<group>"; };
+		D52924C51C7B3809003E41E8 /* TYDrawStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYDrawStorage.h; sourceTree = "<group>"; };
+		D52924C61C7B3809003E41E8 /* TYDrawStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYDrawStorage.m; sourceTree = "<group>"; };
+		D52924C71C7B3809003E41E8 /* TYImageStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYImageStorage.h; sourceTree = "<group>"; };
+		D52924C81C7B3809003E41E8 /* TYImageStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYImageStorage.m; sourceTree = "<group>"; };
+		D52924C91C7B3809003E41E8 /* TYLinkTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYLinkTextStorage.h; sourceTree = "<group>"; };
+		D52924CA1C7B3809003E41E8 /* TYLinkTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYLinkTextStorage.m; sourceTree = "<group>"; };
+		D52924CB1C7B3809003E41E8 /* TYTextContainer+Extended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYTextContainer+Extended.m"; sourceTree = "<group>"; };
+		D52924CC1C7B3809003E41E8 /* TYTextContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTextContainer.h; sourceTree = "<group>"; };
+		D52924CD1C7B3809003E41E8 /* TYTextContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTextContainer.m; sourceTree = "<group>"; };
+		D52924CE1C7B3809003E41E8 /* TYTextStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTextStorage.h; sourceTree = "<group>"; };
+		D52924CF1C7B3809003E41E8 /* TYTextStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYTextStorage.m; sourceTree = "<group>"; };
+		D52924D01C7B3809003E41E8 /* TYTextStorageProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYTextStorageProtocol.h; sourceTree = "<group>"; };
+		D52924D11C7B3809003E41E8 /* TYViewStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYViewStorage.h; sourceTree = "<group>"; };
+		D52924D21C7B3809003E41E8 /* TYViewStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYViewStorage.m; sourceTree = "<group>"; };
 		D53C20B41C72A69700C2C21E /* dzRefeshView_arrow@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "dzRefeshView_arrow@2x.png"; sourceTree = "<group>"; };
 		D53C20B61C72A76E00C2C21E /* DZRefreshView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZRefreshView.h; sourceTree = "<group>"; };
 		D53C20B71C72A76E00C2C21E /* DZRefreshView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZRefreshView.m; sourceTree = "<group>"; };
@@ -427,6 +454,31 @@
 				D50BE5781C722B3E000794BD /* loadAvatar@2x.png */,
 			);
 			path = image;
+			sourceTree = "<group>";
+		};
+		D52924C01C7B3809003E41E8 /* TYAttributedLabel */ = {
+			isa = PBXGroup;
+			children = (
+				D52924C11C7B3809003E41E8 /* NSMutableAttributedString+TY.h */,
+				D52924C21C7B3809003E41E8 /* NSMutableAttributedString+TY.m */,
+				D52924C31C7B3809003E41E8 /* TYAttributedLabel.h */,
+				D52924C41C7B3809003E41E8 /* TYAttributedLabel.m */,
+				D52924C51C7B3809003E41E8 /* TYDrawStorage.h */,
+				D52924C61C7B3809003E41E8 /* TYDrawStorage.m */,
+				D52924C71C7B3809003E41E8 /* TYImageStorage.h */,
+				D52924C81C7B3809003E41E8 /* TYImageStorage.m */,
+				D52924C91C7B3809003E41E8 /* TYLinkTextStorage.h */,
+				D52924CA1C7B3809003E41E8 /* TYLinkTextStorage.m */,
+				D52924CB1C7B3809003E41E8 /* TYTextContainer+Extended.m */,
+				D52924CC1C7B3809003E41E8 /* TYTextContainer.h */,
+				D52924CD1C7B3809003E41E8 /* TYTextContainer.m */,
+				D52924CE1C7B3809003E41E8 /* TYTextStorage.h */,
+				D52924CF1C7B3809003E41E8 /* TYTextStorage.m */,
+				D52924D01C7B3809003E41E8 /* TYTextStorageProtocol.h */,
+				D52924D11C7B3809003E41E8 /* TYViewStorage.h */,
+				D52924D21C7B3809003E41E8 /* TYViewStorage.m */,
+			);
+			path = TYAttributedLabel;
 			sourceTree = "<group>";
 		};
 		D53C20B31C72A69700C2C21E /* RefreshView */ = {
@@ -874,6 +926,7 @@
 		D55611C41C68ADA500890AC3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D52924C01C7B3809003E41E8 /* TYAttributedLabel */,
 				D57442661C70DA2400B1BE0D /* CycleScrollView */,
 				D53C20B31C72A69700C2C21E /* RefreshView */,
 				D57F40691C76185C00B07E07 /* DZUserDefaultsUtils.h */,
@@ -1341,6 +1394,8 @@
 				D568123A1C787A500068A943 /* NSString+Extend.m in Sources */,
 				D53DF5941C70C063001648AB /* DZImage6ViewCell.m in Sources */,
 				D57F406B1C76185C00B07E07 /* DZUserDefaultsUtils.m in Sources */,
+				D52924D51C7B3809003E41E8 /* TYDrawStorage.m in Sources */,
+				D52924D81C7B3809003E41E8 /* TYTextContainer+Extended.m in Sources */,
 				D5BA98EF1C714CC900D21FDE /* DZAbstractDotView.m in Sources */,
 				D5BA99011C71548000D21FDE /* DZCollectionViewCell.m in Sources */,
 				D56812481C787A500068A943 /* UIView+Extend.m in Sources */,
@@ -1357,14 +1412,17 @@
 				D57F40591C75E44000B07E07 /* DZWalletCardButton.m in Sources */,
 				D568123F1C787A500068A943 /* UIImage+Blur.m in Sources */,
 				D556117A1C68946200890AC3 /* main.m in Sources */,
+				D52924D31C7B3809003E41E8 /* NSMutableAttributedString+TY.m in Sources */,
 				D5976B541C709D2F0005B338 /* DZDiscoveryViewController.m in Sources */,
 				D57442651C70CD1F00B1BE0D /* UIView+Extension.m in Sources */,
 				D57F404E1C75DD7700B07E07 /* DZCustomSwitch.m in Sources */,
+				D52924D41C7B3809003E41E8 /* TYAttributedLabel.m in Sources */,
 				D5E805131C777CCF0078AF52 /* DZMyOrderViewController.m in Sources */,
 				D57F40481C75DC4D00B07E07 /* DZUserModel.m in Sources */,
 				D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */,
 				D568123D1C787A500068A943 /* UIColor+Extend.m in Sources */,
 				D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */,
+				D52924D91C7B3809003E41E8 /* TYTextContainer.m in Sources */,
 				D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */,
 				D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */,
 				D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */,
@@ -1376,6 +1434,7 @@
 				D57F40741C761B4E00B07E07 /* UIButton+Extension.m in Sources */,
 				D56812441C787A500068A943 /* UIImage+ImageEffects.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
+				D52924DA1C7B3809003E41E8 /* TYTextStorage.m in Sources */,
 				D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */,
 				D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */,
 				D56811FC1C787A010068A943 /* SMPageControl.m in Sources */,
@@ -1409,12 +1468,15 @@
 				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
 				D56812471C787A500068A943 /* UITableViewCell+Extend.m in Sources */,
 				D56811F11C78759C0068A943 /* DZOrderViewController.m in Sources */,
+				D52924DB1C7B3809003E41E8 /* TYViewStorage.m in Sources */,
+				D52924D61C7B3809003E41E8 /* TYImageStorage.m in Sources */,
 				D57F405F1C7608AA00B07E07 /* DZBaseDao.m in Sources */,
 				D56812431C787A500068A943 /* UIImage+FixOrientation.m in Sources */,
 				D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */,
 				D5BA98FB1C71537500D21FDE /* UIView+DZExtension.m in Sources */,
 				D57F40531C75E30500B07E07 /* DZTextField.m in Sources */,
 				D53C20C31C72A8C100C2C21E /* UIView+DZ.m in Sources */,
+				D52924D71C7B3809003E41E8 /* TYLinkTextStorage.m in Sources */,
 				D5976B4E1C709C690005B338 /* DZHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
