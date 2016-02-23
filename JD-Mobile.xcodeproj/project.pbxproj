@@ -212,6 +212,19 @@
 		D5A5EA5F1C7C883D0046D7BF /* DZMultilevelCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA5D1C7C883D0046D7BF /* DZMultilevelCollectionViewCell.xib */; };
 		D5A5EA631C7C895C0046D7BF /* DZMultilevelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA611C7C895C0046D7BF /* DZMultilevelTableViewCell.m */; };
 		D5A5EA641C7C895C0046D7BF /* DZMultilevelTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA621C7C895C0046D7BF /* DZMultilevelTableViewCell.xib */; };
+		D5A5EA671C7CBA050046D7BF /* DZCommodityInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA661C7CBA050046D7BF /* DZCommodityInfoCell.m */; };
+		D5A5EA6B1C7CBAD40046D7BF /* DZCommoditySelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA691C7CBAD40046D7BF /* DZCommoditySelectCell.m */; };
+		D5A5EA6C1C7CBAD40046D7BF /* DZCommoditySelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA6A1C7CBAD40046D7BF /* DZCommoditySelectCell.xib */; };
+		D5A5EA701C7CBCD20046D7BF /* DZCommodityAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA6E1C7CBCD20046D7BF /* DZCommodityAddressCell.m */; };
+		D5A5EA711C7CBCD20046D7BF /* DZCommodityAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA6F1C7CBCD20046D7BF /* DZCommodityAddressCell.xib */; };
+		D5A5EA751C7CC2BE0046D7BF /* DZCommodityPackCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA731C7CC2BE0046D7BF /* DZCommodityPackCell.m */; };
+		D5A5EA761C7CC2BE0046D7BF /* DZCommodityPackCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA741C7CC2BE0046D7BF /* DZCommodityPackCell.xib */; };
+		D5A5EA7A1C7CC3CB0046D7BF /* DZCommodityComponentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA781C7CC3CB0046D7BF /* DZCommodityComponentCell.m */; };
+		D5A5EA7B1C7CC3CB0046D7BF /* DZCommodityComponentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA791C7CC3CB0046D7BF /* DZCommodityComponentCell.xib */; };
+		D5A5EA7F1C7CC4D50046D7BF /* DZCommodityPraiseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA7D1C7CC4D50046D7BF /* DZCommodityPraiseCell.m */; };
+		D5A5EA801C7CC4D50046D7BF /* DZCommodityPraiseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA7E1C7CC4D50046D7BF /* DZCommodityPraiseCell.xib */; };
+		D5A5EA841C7CC6DA0046D7BF /* DZCommoditySectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5A5EA821C7CC6DA0046D7BF /* DZCommoditySectionCell.m */; };
+		D5A5EA851C7CC6DA0046D7BF /* DZCommoditySectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D5A5EA831C7CC6DA0046D7BF /* DZCommoditySectionCell.xib */; };
 		D5BA98EF1C714CC900D21FDE /* DZAbstractDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98EE1C714CC900D21FDE /* DZAbstractDotView.m */; };
 		D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98F11C714D7900D21FDE /* DZAnimatedDotView.m */; };
 		D5BA98F51C714F0600D21FDE /* DZDotView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98F41C714F0600D21FDE /* DZDotView.m */; };
@@ -546,6 +559,26 @@
 		D5A5EA601C7C895C0046D7BF /* DZMultilevelTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMultilevelTableViewCell.h; sourceTree = "<group>"; };
 		D5A5EA611C7C895C0046D7BF /* DZMultilevelTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMultilevelTableViewCell.m; sourceTree = "<group>"; };
 		D5A5EA621C7C895C0046D7BF /* DZMultilevelTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZMultilevelTableViewCell.xib; sourceTree = "<group>"; };
+		D5A5EA651C7CBA050046D7BF /* DZCommodityInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityInfoCell.h; sourceTree = "<group>"; };
+		D5A5EA661C7CBA050046D7BF /* DZCommodityInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityInfoCell.m; sourceTree = "<group>"; };
+		D5A5EA681C7CBAD40046D7BF /* DZCommoditySelectCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommoditySelectCell.h; sourceTree = "<group>"; };
+		D5A5EA691C7CBAD40046D7BF /* DZCommoditySelectCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommoditySelectCell.m; sourceTree = "<group>"; };
+		D5A5EA6A1C7CBAD40046D7BF /* DZCommoditySelectCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZCommoditySelectCell.xib; sourceTree = "<group>"; };
+		D5A5EA6D1C7CBCD20046D7BF /* DZCommodityAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityAddressCell.h; sourceTree = "<group>"; };
+		D5A5EA6E1C7CBCD20046D7BF /* DZCommodityAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityAddressCell.m; sourceTree = "<group>"; };
+		D5A5EA6F1C7CBCD20046D7BF /* DZCommodityAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZCommodityAddressCell.xib; sourceTree = "<group>"; };
+		D5A5EA721C7CC2BE0046D7BF /* DZCommodityPackCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityPackCell.h; sourceTree = "<group>"; };
+		D5A5EA731C7CC2BE0046D7BF /* DZCommodityPackCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityPackCell.m; sourceTree = "<group>"; };
+		D5A5EA741C7CC2BE0046D7BF /* DZCommodityPackCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZCommodityPackCell.xib; sourceTree = "<group>"; };
+		D5A5EA771C7CC3CB0046D7BF /* DZCommodityComponentCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityComponentCell.h; sourceTree = "<group>"; };
+		D5A5EA781C7CC3CB0046D7BF /* DZCommodityComponentCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityComponentCell.m; sourceTree = "<group>"; };
+		D5A5EA791C7CC3CB0046D7BF /* DZCommodityComponentCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZCommodityComponentCell.xib; sourceTree = "<group>"; };
+		D5A5EA7C1C7CC4D50046D7BF /* DZCommodityPraiseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityPraiseCell.h; sourceTree = "<group>"; };
+		D5A5EA7D1C7CC4D50046D7BF /* DZCommodityPraiseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityPraiseCell.m; sourceTree = "<group>"; };
+		D5A5EA7E1C7CC4D50046D7BF /* DZCommodityPraiseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZCommodityPraiseCell.xib; sourceTree = "<group>"; };
+		D5A5EA811C7CC6DA0046D7BF /* DZCommoditySectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommoditySectionCell.h; sourceTree = "<group>"; };
+		D5A5EA821C7CC6DA0046D7BF /* DZCommoditySectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommoditySectionCell.m; sourceTree = "<group>"; };
+		D5A5EA831C7CC6DA0046D7BF /* DZCommoditySectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DZCommoditySectionCell.xib; sourceTree = "<group>"; };
 		D5BA98ED1C714CC900D21FDE /* DZAbstractDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAbstractDotView.h; sourceTree = "<group>"; };
 		D5BA98EE1C714CC900D21FDE /* DZAbstractDotView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZAbstractDotView.m; sourceTree = "<group>"; };
 		D5BA98F01C714D7900D21FDE /* DZAnimatedDotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAnimatedDotView.h; sourceTree = "<group>"; };
@@ -902,6 +935,26 @@
 		D55611AF1C68ADA500890AC3 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D5A5EA651C7CBA050046D7BF /* DZCommodityInfoCell.h */,
+				D5A5EA661C7CBA050046D7BF /* DZCommodityInfoCell.m */,
+				D5A5EA681C7CBAD40046D7BF /* DZCommoditySelectCell.h */,
+				D5A5EA691C7CBAD40046D7BF /* DZCommoditySelectCell.m */,
+				D5A5EA6A1C7CBAD40046D7BF /* DZCommoditySelectCell.xib */,
+				D5A5EA6D1C7CBCD20046D7BF /* DZCommodityAddressCell.h */,
+				D5A5EA6E1C7CBCD20046D7BF /* DZCommodityAddressCell.m */,
+				D5A5EA6F1C7CBCD20046D7BF /* DZCommodityAddressCell.xib */,
+				D5A5EA721C7CC2BE0046D7BF /* DZCommodityPackCell.h */,
+				D5A5EA731C7CC2BE0046D7BF /* DZCommodityPackCell.m */,
+				D5A5EA741C7CC2BE0046D7BF /* DZCommodityPackCell.xib */,
+				D5A5EA771C7CC3CB0046D7BF /* DZCommodityComponentCell.h */,
+				D5A5EA781C7CC3CB0046D7BF /* DZCommodityComponentCell.m */,
+				D5A5EA791C7CC3CB0046D7BF /* DZCommodityComponentCell.xib */,
+				D5A5EA7C1C7CC4D50046D7BF /* DZCommodityPraiseCell.h */,
+				D5A5EA7D1C7CC4D50046D7BF /* DZCommodityPraiseCell.m */,
+				D5A5EA7E1C7CC4D50046D7BF /* DZCommodityPraiseCell.xib */,
+				D5A5EA811C7CC6DA0046D7BF /* DZCommoditySectionCell.h */,
+				D5A5EA821C7CC6DA0046D7BF /* DZCommoditySectionCell.m */,
+				D5A5EA831C7CC6DA0046D7BF /* DZCommoditySectionCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -1547,6 +1600,7 @@
 				D5A5EA101C7C84360046D7BF /* 542a6b2eNff29739a.png in Resources */,
 				D5A5EA641C7C895C0046D7BF /* DZMultilevelTableViewCell.xib in Resources */,
 				D5A5EA311C7C84360046D7BF /* cell_04.PNG in Resources */,
+				D5A5EA6C1C7CBAD40046D7BF /* DZCommoditySelectCell.xib in Resources */,
 				D5A5EA181C7C84360046D7BF /* 542a6bc7N754c653b.jpg in Resources */,
 				D5A5EA151C7C84360046D7BF /* 542a6ba0N217a273b.jpg in Resources */,
 				D5A5EA0E1C7C84360046D7BF /* 542a6afdN0db158f1.jpg in Resources */,
@@ -1562,10 +1616,12 @@
 				D5A5EA411C7C84360046D7BF /* IMG_2207.PNG in Resources */,
 				D56812761C787A980068A943 /* 55F3F9CC-A08E-4CBE-9C96-0AF1C472649C.codesnippet in Resources */,
 				D5A5EA331C7C84360046D7BF /* cell_06.PNG in Resources */,
+				D5A5EA761C7CC2BE0046D7BF /* DZCommodityPackCell.xib in Resources */,
 				D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */,
 				D5A5EA371C7C84360046D7BF /* guide_1334x750_frame3.jpg in Resources */,
 				D5A5EA4E1C7C84360046D7BF /* MENU_0_0_7.PNG in Resources */,
 				D56812731C787A980068A943 /* 34E99E58-FB7E-4AAE-9346-291A969ACBF2.codesnippet in Resources */,
+				D5A5EA851C7CC6DA0046D7BF /* DZCommoditySectionCell.xib in Resources */,
 				D5A5EA3A1C7C84360046D7BF /* h1.jpg in Resources */,
 				D5A5EA2E1C7C84360046D7BF /* cell_01.PNG in Resources */,
 				D5A5EA5F1C7C883D0046D7BF /* DZMultilevelCollectionViewCell.xib in Resources */,
@@ -1586,6 +1642,7 @@
 				D5A5EA071C7C84360046D7BF /* 542a6a54N3977d9a8.jpg in Resources */,
 				D5A5EA111C7C84360046D7BF /* 542a6b44Nb24c2e00.jpg in Resources */,
 				D5A5EA461C7C84360046D7BF /* MENU_0_0_1.PNG in Resources */,
+				D5A5EA7B1C7CC3CB0046D7BF /* DZCommodityComponentCell.xib in Resources */,
 				D5A5EA351C7C84360046D7BF /* guide_1334x750_frame1.jpg in Resources */,
 				D568126F1C787A980068A943 /* 0FD636EB-A690-4719-90F7-19572E156EDF.codesnippet in Resources */,
 				D568127F1C787A980068A943 /* 9FD350E8-1D13-465B-8882-879EAA259681.codesnippet in Resources */,
@@ -1628,6 +1685,7 @@
 				D5A5EA4A1C7C84360046D7BF /* MENU_0_0_3.PNG in Resources */,
 				D5A5EA2F1C7C84360046D7BF /* cell_02.PNG in Resources */,
 				D568126D1C787A980068A943 /* 05D1EB67-DA6A-4AE2-AE04-A683B5065ECA.codesnippet in Resources */,
+				D5A5EA711C7CBCD20046D7BF /* DZCommodityAddressCell.xib in Resources */,
 				D56812801C787A980068A943 /* C111A937-498A-4706-93D3-4F29D86E8FCD.codesnippet in Resources */,
 				D568127D1C787A980068A943 /* 8B5C05F5-4175-4987-ACC4-53FB3225EA8C.codesnippet in Resources */,
 				D56812841C787A980068A943 /* D4FB6F07-4FB2-446E-825D-4BCDF19F478D.codesnippet in Resources */,
@@ -1639,6 +1697,7 @@
 				D5A5EA171C7C84360046D7BF /* 542a6bbaN6518d78e.jpg in Resources */,
 				D55611851C68946200890AC3 /* Images.xcassets in Resources */,
 				D5A5EA471C7C84360046D7BF /* MENU_0_0_10.PNG in Resources */,
+				D5A5EA801C7CC4D50046D7BF /* DZCommodityPraiseCell.xib in Resources */,
 				D5A5EA2A1C7C84360046D7BF /* C_0.PNG in Resources */,
 				D5A5EA551C7C84B10046D7BF /* DZCommodityViewCell.xib in Resources */,
 				D56812751C787A980068A943 /* 52ED5232-DDA6-43D4-868E-335AB2C5638C.codesnippet in Resources */,
@@ -1738,6 +1797,7 @@
 				D56812481C787A500068A943 /* UIView+Extend.m in Sources */,
 				D5976B4B1C709B5A0005B338 /* DZNavigationController.m in Sources */,
 				D57F40621C76091C00B07E07 /* DZDatabase.m in Sources */,
+				D5A5EA7A1C7CC3CB0046D7BF /* DZCommodityComponentCell.m in Sources */,
 				D53C20BE1C72A7B400C2C21E /* DZRefreshFooterView.m in Sources */,
 				D5E805101C777AF20078AF52 /* DZCashierViewController.m in Sources */,
 				D57F406E1C7619AD00B07E07 /* DZLolitaFunctions.m in Sources */,
@@ -1767,12 +1827,16 @@
 				D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */,
 				D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */,
 				D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */,
+				D5A5EA701C7CBCD20046D7BF /* DZCommodityAddressCell.m in Sources */,
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
 				D5FB095A1C7A8C5500404A99 /* DZCartViewCell.m in Sources */,
+				D5A5EA751C7CC2BE0046D7BF /* DZCommodityPackCell.m in Sources */,
 				D50159151C7BD6D80009E9E0 /* DZCategoryMenuModel.m in Sources */,
 				D568128D1C788E890068A943 /* DZScrollViewButton.m in Sources */,
 				D56812371C787A500068A943 /* NSArray+Extend.m in Sources */,
+				D5A5EA671C7CBA050046D7BF /* DZCommodityInfoCell.m in Sources */,
 				D57F40741C761B4E00B07E07 /* UIButton+Extension.m in Sources */,
+				D5A5EA7F1C7CC4D50046D7BF /* DZCommodityPraiseCell.m in Sources */,
 				D56812441C787A500068A943 /* UIImage+ImageEffects.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
 				D52924DA1C7B3809003E41E8 /* TYTextStorage.m in Sources */,
@@ -1782,6 +1846,7 @@
 				D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */,
 				D56811FC1C787A010068A943 /* SMPageControl.m in Sources */,
 				D56812351C787A500068A943 /* CALayer+Anim.m in Sources */,
+				D5A5EA841C7CC6DA0046D7BF /* DZCommoditySectionCell.m in Sources */,
 				D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */,
 				D53C20B81C72A76E00C2C21E /* DZRefreshView.m in Sources */,
 				D57F404B1C75DC8900B07E07 /* DZMyOrderModel.m in Sources */,
@@ -1818,6 +1883,7 @@
 				D52924D61C7B3809003E41E8 /* TYImageStorage.m in Sources */,
 				D57F405F1C7608AA00B07E07 /* DZBaseDao.m in Sources */,
 				D56812431C787A500068A943 /* UIImage+FixOrientation.m in Sources */,
+				D5A5EA6B1C7CBAD40046D7BF /* DZCommoditySelectCell.m in Sources */,
 				D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */,
 				D5BA98FB1C71537500D21FDE /* UIView+DZExtension.m in Sources */,
 				D57F40531C75E30500B07E07 /* DZTextField.m in Sources */,
