@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		4333457013C6F724B86B71A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927CA4705B1EF75BD8743A5 /* libPods.a */; };
+		D50159151C7BD6D80009E9E0 /* DZCategoryMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50159141C7BD6D80009E9E0 /* DZCategoryMenuModel.m */; };
+		D50159181C7BD7C40009E9E0 /* DZCommodityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50159171C7BD7C40009E9E0 /* DZCommodityModel.m */; };
 		D50BE5791C722B3E000794BD /* loadAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5781C722B3E000794BD /* loadAvatar@2x.png */; };
 		D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57B1C722E70000794BD /* DZSearchBarView.m */; };
 		D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57E1C722FF6000794BD /* UIImage+Extension.m */; };
@@ -162,6 +164,10 @@
 		19CC2AC90500E857DB3214E9 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		6E30EE1A880119AF2B6B0530 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		9927CA4705B1EF75BD8743A5 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D50159131C7BD6D80009E9E0 /* DZCategoryMenuModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCategoryMenuModel.h; sourceTree = "<group>"; };
+		D50159141C7BD6D80009E9E0 /* DZCategoryMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCategoryMenuModel.m; sourceTree = "<group>"; };
+		D50159161C7BD7C40009E9E0 /* DZCommodityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityModel.h; sourceTree = "<group>"; };
+		D50159171C7BD7C40009E9E0 /* DZCommodityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityModel.m; sourceTree = "<group>"; };
 		D50BE5781C722B3E000794BD /* loadAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadAvatar@2x.png"; sourceTree = "<group>"; };
 		D50BE57A1C722E70000794BD /* DZSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSearchBarView.h; sourceTree = "<group>"; };
 		D50BE57B1C722E70000794BD /* DZSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSearchBarView.m; sourceTree = "<group>"; };
@@ -681,6 +687,10 @@
 		D55611AA1C68ADA500890AC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D50159131C7BD6D80009E9E0 /* DZCategoryMenuModel.h */,
+				D50159141C7BD6D80009E9E0 /* DZCategoryMenuModel.m */,
+				D50159161C7BD7C40009E9E0 /* DZCommodityModel.h */,
+				D50159171C7BD7C40009E9E0 /* DZCommodityModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1429,6 +1439,7 @@
 				D53DF5911C70C063001648AB /* DZImage3ViewCell.m in Sources */,
 				D55611A01C68AD7100890AC3 /* AppDelegate.m in Sources */,
 				D5FB095A1C7A8C5500404A99 /* DZCartViewCell.m in Sources */,
+				D50159151C7BD6D80009E9E0 /* DZCategoryMenuModel.m in Sources */,
 				D568128D1C788E890068A943 /* DZScrollViewButton.m in Sources */,
 				D56812371C787A500068A943 /* NSArray+Extend.m in Sources */,
 				D57F40741C761B4E00B07E07 /* UIButton+Extension.m in Sources */,
@@ -1436,6 +1447,7 @@
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
 				D52924DA1C7B3809003E41E8 /* TYTextStorage.m in Sources */,
 				D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */,
+				D50159181C7BD7C40009E9E0 /* DZCommodityModel.m in Sources */,
 				D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */,
 				D56811FC1C787A010068A943 /* SMPageControl.m in Sources */,
 				D56812351C787A500068A943 /* CALayer+Anim.m in Sources */,
