@@ -21,10 +21,7 @@
  *
  *
  */
-+ (instancetype)cellConfigWithClassName:(NSString *)className
-                                  title:(NSString *)title
-                         showInfoMethod:(SEL)showInfoMethod
-                           heightOfCell:(CGFloat)heightOfCell {
++ (instancetype)cellConfigWithClassName:(NSString *)className title:(NSString *)title showInfoMethod:(SEL)showInfoMethod heightOfCell:(CGFloat)heightOfCell {
     DZCellConfig *cellConfig = [DZCellConfig new];
     
     cellConfig.className = className;
@@ -40,7 +37,6 @@
 - (UITableViewCell *)cellOfCellConfigWithTableView:(UITableView *)tableView
                                          dataModel:(id)dataModel {
     Class cellClass = NSClassFromString(self.className);
-    
     
     // 重用cell
     NSString *cellID = self.className;

@@ -10,6 +10,7 @@
 		4333457013C6F724B86B71A4 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9927CA4705B1EF75BD8743A5 /* libPods.a */; };
 		D50159151C7BD6D80009E9E0 /* DZCategoryMenuModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50159141C7BD6D80009E9E0 /* DZCategoryMenuModel.m */; };
 		D50159181C7BD7C40009E9E0 /* DZCommodityModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D50159171C7BD7C40009E9E0 /* DZCommodityModel.m */; };
+		D501591E1C7BDE2B0009E9E0 /* DZDetailsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D501591D1C7BDE2B0009E9E0 /* DZDetailsModel.m */; };
 		D50BE5791C722B3E000794BD /* loadAvatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D50BE5781C722B3E000794BD /* loadAvatar@2x.png */; };
 		D50BE57C1C722E70000794BD /* DZSearchBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57B1C722E70000794BD /* DZSearchBarView.m */; };
 		D50BE57F1C722FF6000794BD /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = D50BE57E1C722FF6000794BD /* UIImage+Extension.m */; };
@@ -168,6 +169,8 @@
 		D50159141C7BD6D80009E9E0 /* DZCategoryMenuModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCategoryMenuModel.m; sourceTree = "<group>"; };
 		D50159161C7BD7C40009E9E0 /* DZCommodityModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityModel.h; sourceTree = "<group>"; };
 		D50159171C7BD7C40009E9E0 /* DZCommodityModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityModel.m; sourceTree = "<group>"; };
+		D501591C1C7BDE2B0009E9E0 /* DZDetailsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZDetailsModel.h; sourceTree = "<group>"; };
+		D501591D1C7BDE2B0009E9E0 /* DZDetailsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZDetailsModel.m; sourceTree = "<group>"; };
 		D50BE5781C722B3E000794BD /* loadAvatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "loadAvatar@2x.png"; sourceTree = "<group>"; };
 		D50BE57A1C722E70000794BD /* DZSearchBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZSearchBarView.h; sourceTree = "<group>"; };
 		D50BE57B1C722E70000794BD /* DZSearchBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZSearchBarView.m; sourceTree = "<group>"; };
@@ -722,6 +725,8 @@
 		D55611AE1C68ADA500890AC3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D501591C1C7BDE2B0009E9E0 /* DZDetailsModel.h */,
+				D501591D1C7BDE2B0009E9E0 /* DZDetailsModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1433,6 +1438,7 @@
 				D568123D1C787A500068A943 /* UIColor+Extend.m in Sources */,
 				D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */,
 				D52924D91C7B3809003E41E8 /* TYTextContainer.m in Sources */,
+				D501591E1C7BDE2B0009E9E0 /* DZDetailsModel.m in Sources */,
 				D53DF5851C70BE2F001648AB /* RCDraggableButton.m in Sources */,
 				D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */,
 				D5976B5E1C70B03B0005B338 /* DZCellConfig.m in Sources */,

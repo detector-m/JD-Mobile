@@ -11,17 +11,17 @@
 @implementation DZCategoryMenuModel
 
 #pragma mark 根据字典初始化对象
--(DZCategoryMenuModel *)initWithDictionary:(NSDictionary *)dic{
+-(DZCategoryMenuModel *)initWithDictionary:(NSDictionary *)dict{
     if (self == [self init]) {
-        self.Id = [dic[@"Id"] intValue];
-        self.menuName = dic[@"menuName"];
+        self.Id = [dict[@"Id"] intValue];
+        self.menuName = dict[@"menuName"];
     }
     return self;
 }
 
 #pragma mark 初始化对象（静态方法）
-+(DZCategoryMenuModel *)statusWithDictionary:(NSDictionary *)dic{
-    DZCategoryMenuModel *categoryMenu = [[DZCategoryMenuModel alloc]initWithDictionary:dic];
++(DZCategoryMenuModel *)statusWithDictionary:(NSDictionary *)dict{
+    DZCategoryMenuModel *categoryMenu = [[DZCategoryMenuModel alloc]initWithDictionary:dict];
     return categoryMenu;
 }
 

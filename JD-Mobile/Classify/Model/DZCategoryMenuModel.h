@@ -22,7 +22,7 @@
 @property(strong,nonatomic) NSArray * nextArray;
 
 /** 菜单层数*/
-@property(assign,nonatomic) NSInteger meunNumber;
+@property(assign,nonatomic) NSInteger menuNumber;
 
 @property(assign,nonatomic) float offsetScorller;
 
