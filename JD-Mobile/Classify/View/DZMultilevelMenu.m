@@ -155,7 +155,7 @@
     
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if (!cell) {
-        cell = [[NSBundle mainBundle] loadNibNamed:@"MultilevelTableViewCell" owner:self options:nil][0];
+        cell = [[NSBundle mainBundle] loadNibNamed:@"DZMultilevelTableViewCell" owner:self options:nil][0];
         UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(kLeftWidth-0.5, 0, 0.5, 44)];
         label.backgroundColor = tableView.separatorColor;
         [cell addSubview:label];
