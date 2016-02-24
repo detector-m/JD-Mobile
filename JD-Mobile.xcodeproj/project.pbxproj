@@ -233,6 +233,23 @@
 		D5BA98FE1C7153DF00D21FDE /* NSData+DZDataCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA98FD1C7153DF00D21FDE /* NSData+DZDataCache.m */; };
 		D5BA99011C71548000D21FDE /* DZCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA99001C71548000D21FDE /* DZCollectionViewCell.m */; };
 		D5BA99041C71554100D21FDE /* DZCycleScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5BA99031C71554100D21FDE /* DZCycleScrollView.m */; };
+		D5C3D8971C7D27AE00912BB5 /* DZCommodityCellConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8961C7D27AE00912BB5 /* DZCommodityCellConfig.m */; };
+		D5C3D8AB1C7D2C5E00912BB5 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5C3D8991C7D2C5E00912BB5 /* fontawesome-webfont.ttf */; };
+		D5C3D8AC1C7D2C5E00912BB5 /* FAImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D89D1C7D2C5E00912BB5 /* FAImageView.m */; };
+		D5C3D8AD1C7D2C5E00912BB5 /* NSString+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D89F1C7D2C5E00912BB5 /* NSString+FontAwesome.m */; };
+		D5C3D8AE1C7D2C5E00912BB5 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8A01C7D2C5E00912BB5 /* README.md */; };
+		D5C3D8AF1C7D2C5E00912BB5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5C3D8A21C7D2C5E00912BB5 /* FontAwesome.ttf */; };
+		D5C3D8B01C7D2C5E00912BB5 /* UIFont+FontAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8A41C7D2C5E00912BB5 /* UIFont+FontAwesome.m */; };
+		D5C3D8B11C7D2C5E00912BB5 /* FontAwesome+iOS.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D5C3D8A51C7D2C5E00912BB5 /* FontAwesome+iOS.podspec */; };
+		D5C3D8B21C7D2C5E00912BB5 /* fontawesome-webfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D5C3D8A61C7D2C5E00912BB5 /* fontawesome-webfont.ttf */; };
+		D5C3D8B31C7D2C5E00912BB5 /* UIButton+PPiAwesome.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8A81C7D2C5E00912BB5 /* UIButton+PPiAwesome.m */; };
+		D5C3D8B41C7D2C5E00912BB5 /* PPiFlatSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8AA1C7D2C5E00912BB5 /* PPiFlatSegmentedControl.m */; };
+		D5C3D8C21C7D2C8500912BB5 /* RECommonFunctions.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8B71C7D2C8500912BB5 /* RECommonFunctions.m */; };
+		D5C3D8C31C7D2C8500912BB5 /* REFrostedContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8B91C7D2C8500912BB5 /* REFrostedContainerViewController.m */; };
+		D5C3D8C41C7D2C8500912BB5 /* REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8BB1C7D2C8500912BB5 /* REFrostedViewController.m */; };
+		D5C3D8C51C7D2C8500912BB5 /* UIImage+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8BD1C7D2C8500912BB5 /* UIImage+REFrostedViewController.m */; };
+		D5C3D8C61C7D2C8500912BB5 /* UIView+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8BF1C7D2C8500912BB5 /* UIView+REFrostedViewController.m */; };
+		D5C3D8C71C7D2C8500912BB5 /* UIViewController+REFrostedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5C3D8C11C7D2C8500912BB5 /* UIViewController+REFrostedViewController.m */; };
 		D5E805051C7765510078AF52 /* DZMyAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805041C7765510078AF52 /* DZMyAccountViewController.m */; };
 		D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E805071C776D450078AF52 /* DZAboutViewController.m */; };
 		D5E8050D1C7778210078AF52 /* DZSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D5E8050C1C7778210078AF52 /* DZSettingViewController.m */; };
@@ -595,6 +612,35 @@
 		D5BA99001C71548000D21FDE /* DZCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCollectionViewCell.m; sourceTree = "<group>"; };
 		D5BA99021C71554100D21FDE /* DZCycleScrollView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCycleScrollView.h; sourceTree = "<group>"; };
 		D5BA99031C71554100D21FDE /* DZCycleScrollView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCycleScrollView.m; sourceTree = "<group>"; };
+		D5C3D8951C7D27AE00912BB5 /* DZCommodityCellConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZCommodityCellConfig.h; sourceTree = "<group>"; };
+		D5C3D8961C7D27AE00912BB5 /* DZCommodityCellConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZCommodityCellConfig.m; sourceTree = "<group>"; };
+		D5C3D8991C7D2C5E00912BB5 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		D5C3D89C1C7D2C5E00912BB5 /* FAImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FAImageView.h; sourceTree = "<group>"; };
+		D5C3D89D1C7D2C5E00912BB5 /* FAImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FAImageView.m; sourceTree = "<group>"; };
+		D5C3D89E1C7D2C5E00912BB5 /* NSString+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FontAwesome.h"; sourceTree = "<group>"; };
+		D5C3D89F1C7D2C5E00912BB5 /* NSString+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FontAwesome.m"; sourceTree = "<group>"; };
+		D5C3D8A01C7D2C5E00912BB5 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		D5C3D8A21C7D2C5E00912BB5 /* FontAwesome.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FontAwesome.ttf; sourceTree = "<group>"; };
+		D5C3D8A31C7D2C5E00912BB5 /* UIFont+FontAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+FontAwesome.h"; sourceTree = "<group>"; };
+		D5C3D8A41C7D2C5E00912BB5 /* UIFont+FontAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+FontAwesome.m"; sourceTree = "<group>"; };
+		D5C3D8A51C7D2C5E00912BB5 /* FontAwesome+iOS.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "FontAwesome+iOS.podspec"; sourceTree = "<group>"; };
+		D5C3D8A61C7D2C5E00912BB5 /* fontawesome-webfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "fontawesome-webfont.ttf"; sourceTree = "<group>"; };
+		D5C3D8A71C7D2C5E00912BB5 /* UIButton+PPiAwesome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+PPiAwesome.h"; sourceTree = "<group>"; };
+		D5C3D8A81C7D2C5E00912BB5 /* UIButton+PPiAwesome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+PPiAwesome.m"; sourceTree = "<group>"; };
+		D5C3D8A91C7D2C5E00912BB5 /* PPiFlatSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PPiFlatSegmentedControl.h; sourceTree = "<group>"; };
+		D5C3D8AA1C7D2C5E00912BB5 /* PPiFlatSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PPiFlatSegmentedControl.m; sourceTree = "<group>"; };
+		D5C3D8B61C7D2C8500912BB5 /* RECommonFunctions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RECommonFunctions.h; sourceTree = "<group>"; };
+		D5C3D8B71C7D2C8500912BB5 /* RECommonFunctions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RECommonFunctions.m; sourceTree = "<group>"; };
+		D5C3D8B81C7D2C8500912BB5 /* REFrostedContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedContainerViewController.h; sourceTree = "<group>"; };
+		D5C3D8B91C7D2C8500912BB5 /* REFrostedContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedContainerViewController.m; sourceTree = "<group>"; };
+		D5C3D8BA1C7D2C8500912BB5 /* REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = REFrostedViewController.h; sourceTree = "<group>"; };
+		D5C3D8BB1C7D2C8500912BB5 /* REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = REFrostedViewController.m; sourceTree = "<group>"; };
+		D5C3D8BC1C7D2C8500912BB5 /* UIImage+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+REFrostedViewController.h"; sourceTree = "<group>"; };
+		D5C3D8BD1C7D2C8500912BB5 /* UIImage+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+REFrostedViewController.m"; sourceTree = "<group>"; };
+		D5C3D8BE1C7D2C8500912BB5 /* UIView+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+REFrostedViewController.h"; sourceTree = "<group>"; };
+		D5C3D8BF1C7D2C8500912BB5 /* UIView+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+REFrostedViewController.m"; sourceTree = "<group>"; };
+		D5C3D8C01C7D2C8500912BB5 /* UIViewController+REFrostedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+REFrostedViewController.h"; sourceTree = "<group>"; };
+		D5C3D8C11C7D2C8500912BB5 /* UIViewController+REFrostedViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+REFrostedViewController.m"; sourceTree = "<group>"; };
 		D5E805031C7765510078AF52 /* DZMyAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZMyAccountViewController.h; sourceTree = "<group>"; };
 		D5E805041C7765510078AF52 /* DZMyAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DZMyAccountViewController.m; sourceTree = "<group>"; };
 		D5E805061C776D450078AF52 /* DZAboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DZAboutViewController.h; sourceTree = "<group>"; };
@@ -928,6 +974,8 @@
 			children = (
 				D501591C1C7BDE2B0009E9E0 /* DZDetailsModel.h */,
 				D501591D1C7BDE2B0009E9E0 /* DZDetailsModel.m */,
+				D5C3D8951C7D27AE00912BB5 /* DZCommodityCellConfig.h */,
+				D5C3D8961C7D27AE00912BB5 /* DZCommodityCellConfig.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -1154,6 +1202,8 @@
 		D55611C41C68ADA500890AC3 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				D5C3D8B51C7D2C8500912BB5 /* REFrostedViewController */,
+				D5C3D8981C7D2C5E00912BB5 /* PPiFlatSegmentedControl */,
 				D52924C01C7B3809003E41E8 /* TYAttributedLabel */,
 				D57442661C70DA2400B1BE0D /* CycleScrollView */,
 				D53C20B31C72A69700C2C21E /* RefreshView */,
@@ -1510,6 +1560,71 @@
 			path = image;
 			sourceTree = "<group>";
 		};
+		D5C3D8981C7D2C5E00912BB5 /* PPiFlatSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3D8991C7D2C5E00912BB5 /* fontawesome-webfont.ttf */,
+				D5C3D89A1C7D2C5E00912BB5 /* PPiAwesomeButton */,
+				D5C3D8A91C7D2C5E00912BB5 /* PPiFlatSegmentedControl.h */,
+				D5C3D8AA1C7D2C5E00912BB5 /* PPiFlatSegmentedControl.m */,
+			);
+			path = PPiFlatSegmentedControl;
+			sourceTree = "<group>";
+		};
+		D5C3D89A1C7D2C5E00912BB5 /* PPiAwesomeButton */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3D89B1C7D2C5E00912BB5 /* FontAwesome */,
+				D5C3D8A51C7D2C5E00912BB5 /* FontAwesome+iOS.podspec */,
+				D5C3D8A61C7D2C5E00912BB5 /* fontawesome-webfont.ttf */,
+				D5C3D8A71C7D2C5E00912BB5 /* UIButton+PPiAwesome.h */,
+				D5C3D8A81C7D2C5E00912BB5 /* UIButton+PPiAwesome.m */,
+			);
+			path = PPiAwesomeButton;
+			sourceTree = "<group>";
+		};
+		D5C3D89B1C7D2C5E00912BB5 /* FontAwesome */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3D89C1C7D2C5E00912BB5 /* FAImageView.h */,
+				D5C3D89D1C7D2C5E00912BB5 /* FAImageView.m */,
+				D5C3D89E1C7D2C5E00912BB5 /* NSString+FontAwesome.h */,
+				D5C3D89F1C7D2C5E00912BB5 /* NSString+FontAwesome.m */,
+				D5C3D8A01C7D2C5E00912BB5 /* README.md */,
+				D5C3D8A11C7D2C5E00912BB5 /* Resources */,
+				D5C3D8A31C7D2C5E00912BB5 /* UIFont+FontAwesome.h */,
+				D5C3D8A41C7D2C5E00912BB5 /* UIFont+FontAwesome.m */,
+			);
+			path = FontAwesome;
+			sourceTree = "<group>";
+		};
+		D5C3D8A11C7D2C5E00912BB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3D8A21C7D2C5E00912BB5 /* FontAwesome.ttf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		D5C3D8B51C7D2C8500912BB5 /* REFrostedViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D5C3D8B61C7D2C8500912BB5 /* RECommonFunctions.h */,
+				D5C3D8B71C7D2C8500912BB5 /* RECommonFunctions.m */,
+				D5C3D8B81C7D2C8500912BB5 /* REFrostedContainerViewController.h */,
+				D5C3D8B91C7D2C8500912BB5 /* REFrostedContainerViewController.m */,
+				D5C3D8BA1C7D2C8500912BB5 /* REFrostedViewController.h */,
+				D5C3D8BB1C7D2C8500912BB5 /* REFrostedViewController.m */,
+				D5C3D8BC1C7D2C8500912BB5 /* UIImage+REFrostedViewController.h */,
+				D5C3D8BD1C7D2C8500912BB5 /* UIImage+REFrostedViewController.m */,
+				D5C3D8BE1C7D2C8500912BB5 /* UIView+REFrostedViewController.h */,
+				D5C3D8BF1C7D2C8500912BB5 /* UIView+REFrostedViewController.m */,
+				D5C3D8C01C7D2C8500912BB5 /* UIViewController+REFrostedViewController.h */,
+				D5C3D8C11C7D2C8500912BB5 /* UIViewController+REFrostedViewController.m */,
+			);
+			path = REFrostedViewController;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1616,8 +1731,10 @@
 				D5A5EA411C7C84360046D7BF /* IMG_2207.PNG in Resources */,
 				D56812761C787A980068A943 /* 55F3F9CC-A08E-4CBE-9C96-0AF1C472649C.codesnippet in Resources */,
 				D5A5EA331C7C84360046D7BF /* cell_06.PNG in Resources */,
+				D5C3D8B11C7D2C5E00912BB5 /* FontAwesome+iOS.podspec in Resources */,
 				D5A5EA761C7CC2BE0046D7BF /* DZCommodityPackCell.xib in Resources */,
 				D55611881C68946200890AC3 /* LaunchScreen.xib in Resources */,
+				D5C3D8B21C7D2C5E00912BB5 /* fontawesome-webfont.ttf in Resources */,
 				D5A5EA371C7C84360046D7BF /* guide_1334x750_frame3.jpg in Resources */,
 				D5A5EA4E1C7C84360046D7BF /* MENU_0_0_7.PNG in Resources */,
 				D56812731C787A980068A943 /* 34E99E58-FB7E-4AAE-9346-291A969ACBF2.codesnippet in Resources */,
@@ -1638,6 +1755,7 @@
 				D56812821C787A980068A943 /* CC7FEED4-F3CD-4F95-9D9E-A5B370C33CFF.codesnippet in Resources */,
 				D5A5EA421C7C84360046D7BF /* IMG_2211.PNG in Resources */,
 				D56812881C787A980068A943 /* EA88047C-7110-4957-B60E-1138362E45D1.codesnippet in Resources */,
+				D5C3D8AB1C7D2C5E00912BB5 /* fontawesome-webfont.ttf in Resources */,
 				D5A5EA271C7C84360046D7BF /* 544dfedfNbfc0f1de.jpg in Resources */,
 				D5A5EA071C7C84360046D7BF /* 542a6a54N3977d9a8.jpg in Resources */,
 				D5A5EA111C7C84360046D7BF /* 542a6b44Nb24c2e00.jpg in Resources */,
@@ -1690,6 +1808,7 @@
 				D568127D1C787A980068A943 /* 8B5C05F5-4175-4987-ACC4-53FB3225EA8C.codesnippet in Resources */,
 				D56812841C787A980068A943 /* D4FB6F07-4FB2-446E-825D-4BCDF19F478D.codesnippet in Resources */,
 				D56812851C787A980068A943 /* D71B0FCA-8D09-423D-BB8A-D4614E973F2B.codesnippet in Resources */,
+				D5C3D8AF1C7D2C5E00912BB5 /* FontAwesome.ttf in Resources */,
 				D5A5EA391C7C84360046D7BF /* guide_1334x750_frame5.jpg in Resources */,
 				D56812871C787A980068A943 /* EA467D07-0DA8-4A44-9496-2674C8D21C13.codesnippet in Resources */,
 				D5A5EA301C7C84360046D7BF /* cell_03.PNG in Resources */,
@@ -1784,10 +1903,12 @@
 				D5976B571C709DA70005B338 /* DZCartViewController.m in Sources */,
 				D56811EE1C7874020068A943 /* DZCartScrollModel.m in Sources */,
 				D56812491C787A500068A943 /* UIWindow+Launch.m in Sources */,
+				D5C3D8C41C7D2C8500912BB5 /* REFrostedViewController.m in Sources */,
 				D57F40651C760AA800B07E07 /* DZUserDao.m in Sources */,
 				D568123A1C787A500068A943 /* NSString+Extend.m in Sources */,
 				D53DF5941C70C063001648AB /* DZImage6ViewCell.m in Sources */,
 				D5A5EA591C7C87630046D7BF /* DZCollectionHeader.m in Sources */,
+				D5C3D8B41C7D2C5E00912BB5 /* PPiFlatSegmentedControl.m in Sources */,
 				D57F406B1C76185C00B07E07 /* DZUserDefaultsUtils.m in Sources */,
 				D52924D51C7B3809003E41E8 /* TYDrawStorage.m in Sources */,
 				D50159211C7BE1EA0009E9E0 /* DZCommodityViewController.m in Sources */,
@@ -1803,6 +1924,7 @@
 				D57F406E1C7619AD00B07E07 /* DZLolitaFunctions.m in Sources */,
 				D57F40711C761AB700B07E07 /* MBProgressHUD+MJ.m in Sources */,
 				D56812411C787A500068A943 /* UIImage+Cut.m in Sources */,
+				D5C3D8C31C7D2C8500912BB5 /* REFrostedContainerViewController.m in Sources */,
 				D56812461C787A500068A943 /* UIImage+TintColor.m in Sources */,
 				D56812421C787A500068A943 /* UIImage+Extend.m in Sources */,
 				D5976B481C7098BB0005B338 /* DZTabBarController.m in Sources */,
@@ -1818,6 +1940,8 @@
 				D5A5EA5E1C7C883D0046D7BF /* DZMultilevelCollectionViewCell.m in Sources */,
 				D5E805131C777CCF0078AF52 /* DZMyOrderViewController.m in Sources */,
 				D57F40481C75DC4D00B07E07 /* DZUserModel.m in Sources */,
+				D5C3D8B01C7D2C5E00912BB5 /* UIFont+FontAwesome.m in Sources */,
+				D5C3D8AC1C7D2C5E00912BB5 /* FAImageView.m in Sources */,
 				D53DF5931C70C063001648AB /* DZImage5ViewCell.m in Sources */,
 				D568123D1C787A500068A943 /* UIColor+Extend.m in Sources */,
 				D5BA98F21C714D7900D21FDE /* DZAnimatedDotView.m in Sources */,
@@ -1840,6 +1964,7 @@
 				D56812441C787A500068A943 /* UIImage+ImageEffects.m in Sources */,
 				D5976B5A1C709DE90005B338 /* DZMineViewController.m in Sources */,
 				D52924DA1C7B3809003E41E8 /* TYTextStorage.m in Sources */,
+				D5C3D8C71C7D2C8500912BB5 /* UIViewController+REFrostedViewController.m in Sources */,
 				D5E805081C776D450078AF52 /* DZAboutViewController.m in Sources */,
 				D50159181C7BD7C40009E9E0 /* DZCommodityModel.m in Sources */,
 				D50159271C7BE2C20009E9E0 /* DZDetailsViewController.m in Sources */,
@@ -1852,8 +1977,11 @@
 				D57F404B1C75DC8900B07E07 /* DZMyOrderModel.m in Sources */,
 				D56812381C787A500068A943 /* NSDate+Extend.m in Sources */,
 				D5976B511C709CDC0005B338 /* DZClassifyViewController.m in Sources */,
+				D5C3D8C21C7D2C8500912BB5 /* RECommonFunctions.m in Sources */,
 				D568123C1C787A500068A943 /* UIButton+ImageBtn.m in Sources */,
 				D56812401C787A500068A943 /* UIImage+Color.m in Sources */,
+				D5C3D8971C7D27AE00912BB5 /* DZCommodityCellConfig.m in Sources */,
+				D5C3D8AE1C7D2C5E00912BB5 /* README.md in Sources */,
 				D5BA98FE1C7153DF00D21FDE /* NSData+DZDataCache.m in Sources */,
 				D568123B1C787A500068A943 /* NSString+Password.m in Sources */,
 				D5BA99041C71554100D21FDE /* DZCycleScrollView.m in Sources */,
@@ -1863,6 +1991,7 @@
 				D5A5EA541C7C84B10046D7BF /* DZCommodityViewCell.m in Sources */,
 				D56811F41C78761A0068A943 /* DZScrollView.m in Sources */,
 				D57F40681C760CF000B07E07 /* DZRegisterViewController.m in Sources */,
+				D5C3D8AD1C7D2C5E00912BB5 /* NSString+FontAwesome.m in Sources */,
 				D5BA98F81C714F5600D21FDE /* DZPageControl.m in Sources */,
 				D5BA98F51C714F0600D21FDE /* DZDotView.m in Sources */,
 				D53C20BB1C72A79600C2C21E /* DZRefreshHeaderView.m in Sources */,
@@ -1874,16 +2003,19 @@
 				D57F40771C761C8400B07E07 /* DZMasonyUtil.m in Sources */,
 				D50BE5821C723254000794BD /* UIBarButtonItem+Extension.m in Sources */,
 				D5E8050D1C7778210078AF52 /* DZSettingViewController.m in Sources */,
+				D5C3D8B31C7D2C5E00912BB5 /* UIButton+PPiAwesome.m in Sources */,
 				D53DF5881C70BF6C001648AB /* DZImage2ViewCell.m in Sources */,
 				D56811FB1C787A010068A943 /* CorePageControl.m in Sources */,
 				D53DF5921C70C063001648AB /* DZImage4ViewCell.m in Sources */,
 				D56812471C787A500068A943 /* UITableViewCell+Extend.m in Sources */,
 				D56811F11C78759C0068A943 /* DZOrderViewController.m in Sources */,
+				D5C3D8C61C7D2C8500912BB5 /* UIView+REFrostedViewController.m in Sources */,
 				D52924DB1C7B3809003E41E8 /* TYViewStorage.m in Sources */,
 				D52924D61C7B3809003E41E8 /* TYImageStorage.m in Sources */,
 				D57F405F1C7608AA00B07E07 /* DZBaseDao.m in Sources */,
 				D56812431C787A500068A943 /* UIImage+FixOrientation.m in Sources */,
 				D5A5EA6B1C7CBAD40046D7BF /* DZCommoditySelectCell.m in Sources */,
+				D5C3D8C51C7D2C8500912BB5 /* UIImage+REFrostedViewController.m in Sources */,
 				D5976B641C70B4A80005B338 /* DZImage1ViewCell.m in Sources */,
 				D5BA98FB1C71537500D21FDE /* UIView+DZExtension.m in Sources */,
 				D57F40531C75E30500B07E07 /* DZTextField.m in Sources */,

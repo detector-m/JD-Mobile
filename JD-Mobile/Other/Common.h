@@ -19,6 +19,8 @@
 //颜色
 #define DZColor(r,g,b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
 #define rgba(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+//导航栏标题字体大小
+#define DZNavigationFont [UIFont boldSystemFontOfSize:16]
 
 //是否为iOS7
 #define iOS7 ([[UIDevice currentDevice].systemVersion doubleValue] >= 7.0)

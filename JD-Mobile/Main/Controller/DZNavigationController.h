@@ -10,4 +10,6 @@
 
 @interface DZNavigationController : UINavigationController
 
+- (void)showRightMenu;
+
 @end
