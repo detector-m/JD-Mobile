@@ -121,8 +121,7 @@
 -(void)setPageToPositionIndex:(NSInteger)positionIndex{
     [self prepareViewAtPositionIndex:positionIndex];
     [self prepareViewAtPositionIndex:positionIndex - 1];
-    [self prepareViewAtPositionIndex:positionIndex + 1];
-    
+    [self prepareViewAtPositionIndex:positionIndex + 1];    
     
     NSArray *allKeyArray = _onShowViewDictionary.allKeys;
     for (NSInteger i = allKeyArray.count-1; i >= 0; i--) {

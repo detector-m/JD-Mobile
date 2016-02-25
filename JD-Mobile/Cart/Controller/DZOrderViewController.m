@@ -24,10 +24,9 @@
 @implementation DZOrderViewController
 
 - (instancetype)initWithOrderCount:(int)count money:(float)money{
-    self = [super init];
-    if (self) {
-        _count=count;
-        _money=money;
+    if (self = [super init]) {
+        _count = count;
+        _money = money;
     }
     return self;
 }
@@ -67,7 +66,7 @@
     price.font = [UIFont systemFontOfSize:18];
     price.text = [NSString stringWithFormat:@"实付款：￥%.2f", _money * _count];
     [_buttomView addSubview:price];
-    UIButton *addCart = [UIButton createButtonWithFrame:CGRectMake(self.view.width-140, 0, 140, 60) Title:@"提交订单" Target:self Selector:@selector(submitClick)];
+    UIButton *addCart = [UIButton createButtonWithFrame:CGRectMake(self.view.width-120, 0, 120, 60) Title:@"提交订单" Target:self Selector:@selector(submitClick)];
     [addCart.titleLabel setFont:[UIFont systemFontOfSize:20]];
     [addCart setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [addCart setBackgroundColor:DZColor(255, 100, 98)];
@@ -89,7 +88,7 @@
     nameImg.image = [UIImage imageNamed:@"address_name_icon"];
     [addressBg addSubview:nameImg];
     UILabel *name = [[UILabel alloc]initWithFrame:CGRectMake(30, 20, 100, 20)];
-    name.text = @"丁博洋";
+    name.text = @"Chars";
     [addressBg addSubview:name];
     
     UIImageView *phoneImg = [[UIImageView alloc]initWithFrame:CGRectMake(130, 20, 20, 20)];
@@ -105,7 +104,7 @@
     address.font = [UIFont systemFontOfSize:14];
     address.textColor = [UIColor darkGrayColor];
     address.numberOfLines = 2;
-    address.text = @"";
+    address.text = @"北京市昌平区";
     [addressBg addSubview:address];
     
     UIImageView *moreImg = [[UIImageView alloc]initWithFrame:CGRectMake(headerView.size.width-30, 0, 30, headerView.size.height)];
@@ -168,17 +167,17 @@
                 name.text = @"苹果（Apple）iPhone6 (A1586)16GB金色 移动联通电信4G手机";
                 name.numberOfLines = 2;
                 name.textColor = DZColor(147, 147, 147);
-                name.font = [UIFont systemFontOfSize:15];
+                name.font = [UIFont systemFontOfSize:14];
                 [view addSubview:name];
                 UILabel *count = [[UILabel alloc]initWithFrame:CGRectMake(0, view.size.height-35, view.size.width, 20)];
                 count.textColor = DZColor(79, 79, 79);
                 count.text = [NSString stringWithFormat:@"x%i",_count];
-                count.font = [UIFont systemFontOfSize:15];
+                count.font = [UIFont systemFontOfSize:14];
                 [view addSubview:count];
                 [cell.contentView addSubview:view];
-                cell.detailTextLabel.text = [NSString stringWithFormat:@"￥%.2f",_money];
-                cell.detailTextLabel.textColor = DZColor(255, 100, 98);
-                cell.detailTextLabel.font = [UIFont systemFontOfSize:15];
+//                cell.detailTextLabel.text = [NSString stringWithFormat:@"￥%.2f",_money];
+//                cell.detailTextLabel.textColor = DZColor(255, 100, 98);
+//                cell.detailTextLabel.font = [UIFont systemFontOfSize:15];
             }
             
             break;
@@ -187,7 +186,7 @@
                 cell.textLabel.text = @"支付配送";
                 UILabel *peixong = [[UILabel alloc]initWithFrame:CGRectMake(0, 0, self.tableView.frame.size.width-30, 80)];
                 peixong.font = [UIFont systemFontOfSize:15];
-                peixong.text = @"在线支付\n京东快递\n2015-7-1(周三) 09:00-15:00";
+                peixong.text = @"在线支付\n京东快递\n2016-2-10(周三) 09:00-15:00";
                 peixong.textAlignment = NSTextAlignmentRight;
                 peixong.numberOfLines = 0;
                 [cell.contentView addSubview:peixong];

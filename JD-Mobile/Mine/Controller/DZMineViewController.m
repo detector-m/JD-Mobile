@@ -167,7 +167,7 @@
     grade.text = @"至尊用户";
     [header addSubview:grade];
     
-    UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(240, header.size.height-80, 120, 20)];
+    UILabel *address = [[UILabel alloc]initWithFrame:CGRectMake(190, header.size.height-80, 120, 20)];
     address.textColor = [UIColor whiteColor];
     address.font = [UIFont systemFontOfSize:12];
     address.text = @"账户管理、收货地址〉";
@@ -381,15 +381,11 @@
             [self.navigationController pushViewController:myOrder animated:YES];
             break;
         case 2:
-            
             break;
         case 3:
-            
             break;
         case 4:
-            
             break;
-            
         default:
             break;
     }

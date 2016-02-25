@@ -108,7 +108,7 @@
         
         if (indexPath.row == 0) {
             cell.textLabel.text = @"关于";
-            cell.detailTextLabel.text = @"V4.2.1";
+            cell.detailTextLabel.text = @"V4.4.1";
             cell.accessoryView = [[UIImageView alloc]initWithImage:[UIImage imageNamed:@"my_list_arrow"]];
         }
     }

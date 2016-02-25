@@ -19,7 +19,6 @@
     imageView.layer.cornerRadius = 4.0f;
     [self addSubview:imageView];
     
-    
     UILabel *titleLel = [[UILabel alloc]initWithFrame:CGRectMake(12.5,imageView.size.height, 100, 50)];
     titleLel.text = title;
     titleLel.numberOfLines = 2;

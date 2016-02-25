@@ -104,10 +104,10 @@
     [_buttomView addSubview:selectedBtn];
     price = [[UILabel alloc]initWithFrame:CGRectMake(80, 0, 150, 60)];
     price.textColor = [UIColor whiteColor];
-    price.font = [UIFont systemFontOfSize:18];
+    price.font = [UIFont systemFontOfSize:16];
     price.text = @"合计:￥4783.00";
     [_buttomView addSubview:price];
-    UIButton *addCart = [UIButton createButtonWithFrame:CGRectMake(self.view.width-140, 0, 140, 60) Title:@"去结算" Target:self Selector:@selector(jieShuanClick)];
+    UIButton *addCart = [UIButton createButtonWithFrame:CGRectMake(self.view.width-100, 0, 100, 60) Title:@"去结算" Target:self Selector:@selector(jieShuanClick)];
     [addCart.titleLabel setFont:[UIFont systemFontOfSize:20]];
     [addCart setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     [addCart setBackgroundColor:DZColor(255, 100, 98)];
@@ -359,6 +359,7 @@
     cell.cartTitle.text = @"苹果（Apple）iPhone6 （A1586）16GB金色 移动联通电信4G手机";
     cell.cartPrice.text = @"￥4783.00";
     cell.cartNumber.text = @"1";
+    _currentNum = [cell.cartNumber.text intValue];
     _money = 4783;
     cell.callBack = ^(int currentNum){
         _currentNum = currentNum;
@@ -411,7 +412,7 @@
     return footerView;
 }
 
-#pragma mark DBYScrollViewDataSource
+#pragma mark DZScrollViewDataSource
 -(UIView *)viewForDZScrollView:(DZScrollView *)adScrollView atPage:(NSInteger)pageIndex{
     UIView *view = [adScrollView dequeueReusableView];//先获取重用池里面的
     
@@ -439,7 +440,7 @@
     return _myArray.count/3;
 }
 
-#pragma mark DBYScrollViewDelegate
+#pragma mark DZScrollViewDelegate
 -(void)adScrollView:(DZScrollView *)adScrollView didClickedAtPage:(NSInteger)pageIndex{
     XLog(@"-->>点击了:%@",[ _myArray objectAtIndex:pageIndex]);
 }
