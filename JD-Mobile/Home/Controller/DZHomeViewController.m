@@ -20,6 +20,7 @@
 #import "DZSearchBarView.h"
 #import "UIBarButtonItem+Extension.h"
 #import "DZRefresh.h"
+#import "AppDelegate.h"
 
 @interface DZHomeViewController ()<UITableViewDataSource, UITableViewDelegate, DZCycleScrollViewDelegate, DZSearchBarViewDelegate>
 {
@@ -27,7 +28,6 @@
     UISearchBar *_searchBar;
     DZCycleScrollView *_cycleScrollView;
     UITableView *_tableView;
-    UIView *_loadAvataView;
     UIButton *topBtn;
     CGFloat lastContentOffset;
     
@@ -97,8 +97,6 @@
     // Do any additional setup after loading the view.
     
     [self setupUI];
-    
-    [self loadAvatarInKeyView];
 }
 
 - (void)setupUI {
@@ -128,72 +126,15 @@
     [self.view  addSubview:topBtn];
     //下拉刷新
     [self setupHeader];
-    
-    //显示拖动按钮
-    _loadAvataView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
-    _loadAvataView.hidden = NO;
 }
 
 #pragma mark display
 - (void)viewWillAppear:(BOOL)animated; {
-    _loadAvataView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
-    _loadAvataView.hidden = NO;
+    (( AppDelegate *) [UIApplication sharedApplication].delegate).avatar.hidden = NO;
 }
 
 - (void)viewDidDisappear:(BOOL)animated{
-    _loadAvataView = [[UIApplication sharedApplication].keyWindow viewWithTag:100];
-    _loadAvataView.hidden = YES;
-}
-
-#pragma mark 加载悬浮小图标
-- (void)loadAvatarInKeyView {
-    RCDraggableButton *avatar = [[RCDraggableButton alloc] initInKeyWindowWithFrame:CGRectMake(0, 333.5, 60, 60)];
-    
-    [avatar setTag:100];
-    
-    [avatar setBackgroundImage:[UIImage imageNamed:@"loadAvatar"] forState:UIControlStateNormal];
-    avatar.adjustsImageWhenHighlighted = NO;
-    [avatar setLongPressBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow LongPress");
-        //More todo here.
-        
-    }];
-    
-    [avatar setTapBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow Tap");
-        //More todo here.
-        
-    }];
-    
-    [avatar setDoubleTapBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow DoubleTap");
-        //More todo here.
-        
-    }];
-    
-    [avatar setDraggingBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow Dragging");
-        //More todo here.
-        
-    }];
-    
-    [avatar setDragDoneBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow DragDone");
-        //More todo here.
-        
-    }];
-    
-    [avatar setAutoDockingBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow AutoDocking");
-        //More todo here.
-        
-    }];
-    
-    [avatar setAutoDockingDoneBlock:^(RCDraggableButton *avatar) {
-        XLog(@"\n\tAvatar in keyWindow AutoDockingDone");
-        //More todo here.
-        
-    }];
+    (( AppDelegate *) [UIApplication sharedApplication].delegate).avatar.hidden = YES;
 }
 
 #pragma mark - 设置导航栏

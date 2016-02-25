@@ -15,12 +15,65 @@
 
 @implementation AppDelegate
 
+#pragma mark 加载悬浮小图标
+- (void)loadAvatarInKeyView {
+    _avatar = [[RCDraggableButton alloc] initInKeyWindowWithFrame:CGRectMake(0, 333.5, 60, 60)];
+    
+    [_avatar setTag:100];
+    
+    [_avatar setBackgroundImage:[UIImage imageNamed:@"loadAvatar"] forState:UIControlStateNormal];
+    _avatar.adjustsImageWhenHighlighted = NO;
+    [_avatar setLongPressBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow LongPress");
+        //More todo here.
+        
+    }];
+    
+    [_avatar setTapBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow Tap");
+        //More todo here.
+        
+    }];
+    
+    [_avatar setDoubleTapBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow DoubleTap");
+        //More todo here.
+        
+    }];
+    
+    [_avatar setDraggingBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow Dragging");
+        //More todo here.
+        
+    }];
+    
+    [_avatar setDragDoneBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow DragDone");
+        //More todo here.
+        
+    }];
+    
+    [_avatar setAutoDockingBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow AutoDocking");
+        //More todo here.
+        
+    }];
+    
+    [_avatar setAutoDockingDoneBlock:^(RCDraggableButton *avatar) {
+        XLog(@"\n\tAvatar in keyWindow AutoDockingDone");
+        //More todo here.
+        
+    }];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = [[DZTabBarController alloc] init];
     [self.window makeKeyAndVisible];
+    
+    [self loadAvatarInKeyView];
     
     return YES;
 }

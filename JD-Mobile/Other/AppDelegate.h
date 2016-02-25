@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RCDraggableButton.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+
+@property (strong, nonatomic) RCDraggableButton * avatar;
+
 @end
 
