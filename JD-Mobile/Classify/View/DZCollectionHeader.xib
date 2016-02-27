@@ -18,7 +18,7 @@
                 </label>
             </subviews>
             <connections>
-                <outlet property="headerTitile" destination="ReJ-QX-y8D" id="J0i-st-R5p"/>
+                <outlet property="headerTitle" destination="ReJ-QX-y8D" id="peX-ga-7LX"/>
             </connections>
         </collectionReusableView>
     </objects>

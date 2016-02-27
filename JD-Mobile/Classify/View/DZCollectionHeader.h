@@ -10,6 +10,6 @@
 
 @interface DZCollectionHeader : UICollectionReusableView
 
-@property (weak, nonatomic) IBOutlet UILabel *headerTitile;
+@property (weak, nonatomic) IBOutlet UILabel *headerTitle;
 
 @end

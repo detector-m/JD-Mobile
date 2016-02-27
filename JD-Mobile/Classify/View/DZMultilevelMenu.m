@@ -305,7 +305,7 @@
             DZCategoryMenuModel *menu = title.nextArray[indexPath.section];
             label.text = menu.menuName;
         }else{
-            label.text=@"暂无";
+            label.text = @"暂无";
         }
     }else if ([kind isEqualToString:UICollectionElementKindSectionFooter]){
         view.backgroundColor = [UIColor lightGrayColor];

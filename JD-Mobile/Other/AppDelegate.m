@@ -74,6 +74,21 @@
     [self.window makeKeyAndVisible];
     
     [self loadAvatarInKeyView];
+
+    //对于大于ios8.1的系统需要注册用户协议通知才能实现applicationIconBadgeNumber
+#if __IPHONE_8_1
+    if (iOS8){
+        UIUserNotificationType myTypes = UIUserNotificationTypeBadge | UIUserNotificationTypeAlert | UIUserNotificationTypeSound;
+        UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:myTypes categories:nil];
+        [application registerUserNotificationSettings:settings];
+    }else{
+        [application registerForRemoteNotificationTypes:UIUserNotificationTypeBadge|UIUserNotificationTypeAlert|UIUserNotificationTypeSound];
+    }
+    
+#else
+    UIRemoteNotificationType myTypes = UIRemoteNotificationTypeBadge|UIRemoteNotificationTypeAlert|UIRemoteNotificationTypeSound;
+    [application registerForRemoteNotificationTypes:myTypes];
+#endif
     
     return YES;
 }

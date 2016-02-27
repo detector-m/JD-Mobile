@@ -58,9 +58,7 @@
 }
 
 - (void)initData{
-    
     _list = [NSMutableArray arrayWithCapacity:0];
-    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"Category" ofType:@"plist"];
     NSArray *array = [NSArray arrayWithContentsOfFile:path];
     
